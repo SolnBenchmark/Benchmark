@@ -38,22 +38,20 @@ The file names in submission shall be in the format:
 |Frame size|Kx=200, Ky=200 |pixels|
 
 ### Emitter distribution 
-2D specimen is located at [0,Lx]x[0,Ly]. 
-
 |Parameter|variable and value| unit|
 |:-----|:-----|:-----|
-|Specimen size|Lx=25000, Ly=25000| nm|
+|Range of view| [0,Lx]x[0,Ly] |nm| 
+|Range of view size|Lx=25000, Ly=25000| nm|
 |Number of emitters|M=961| |
 
-Each emitter is randomly distributed in a square of sizes 782.56x782.56 (nm^2) so that their PSFs are well isolated. 
+Each emitter is randomly distributed in a square of sizes 782.56x782.56 (nm<sup>2</sup>) so that their PSFs are well isolated. 
 
-### Emitter intensity and signal to noise ratio (SNR)
+### Emitter intensity 
 |Parameter|variable and value| unit|
 |:-----:|:-----:|:-----:|
 |Emitter intensity (mean number of emitted photons)|I=300000|photons/s|
 
-Noise in three data frames are different.  
-
+### Noise and signal to noise ratio in three data frames  
 |Data frame|Parameter|variable and value| unit|
 |:-----|:-----|:-----|:-----|
 |**SESF2DGauss_highSNR_Frame.tif**|Mean of Poisson noise|b=0.5|photons/s/nm<sup>2</sup>|
@@ -85,10 +83,33 @@ Noise in three data frames are different.
 | |                           |SNR=37.78|dB|
 
 ### Optical system
-na=1.4; lambda=520 (nm); a=2*pi*na/lambda; PSF: 2D Gaussian PSF; Standard deviation is estimated from an Airy PSF: sigma=1.3238/a=78.26 (nm). 
+|Parameter|variable and value| unit|
+|:-----|:-----|:-----|
+|numerical aperture|na=1.4| |
+|Fluorescence wavelength|lambda=520|nm|
+|Standard deviation|78.26|nm|
+
+PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2*pi*na/lambda. 
 
 ### Frame 
-Pixel size: Dx=100, Dy=100 (nm). Frame size: Kx=Lx/Dx=250, Ky=Ly/Dy=250 (pixels). Frame time: Dt=0.01 (s), or frame rate: 1/Dt=100 (frames/s). Photon count per frame per emitter: DtxI=3000.         
+|Parameter|variable and value| unit|
+|:-----|:-----|:-----|
+|Pixel size|Dx=100, Dy=100|nm|
+|Frame size|Kx=Lx/Dx=250, Ky=Ly/Dy=250|pixels|
+|Frame time|Dt=0.01|s|
+|Correspondingly | |
+|Frame rate|1/Dt=100|frames/s|
+|Photon count|DtxI=3000|photons/frame/emitter|
 
-### Notes 
-Poisson noise is caused by autofluorescence. PSF - point spread function. Signal to Poission noise ratio (SPNR): rp=I/b (nm^2/emitter); SPNR=10log10(rp) (dB). Signal to Gaussian noise ratio (SGNR): rg=I/G (nm^2/emitter); SGNR=10log10(rg) (dB). Total signal to noise ratio (SNR): r=1/(1/rp+1/rg) (nm^2/emitter); SNR=10log10(r) (dB). 
+### Notes and definitions
+Poisson noise is caused by autofluorescence. PSF - point spread function. 
+
+Signal to noise ratio
+|Parameter|variable and value| unit|
+|:-----|:-----|:-----|
+|Signal to Poission noise ratio|rp=I/b|nm<sup>2</sup>/emitter|
+| |SPNR=10log10(rp)|dB|
+|Signal to Gaussian noise ratio|rg=I/G|nm<sup>2</sup>/emitter|
+| |SGNR=10log10(rg)|dB|
+|Total signal to noise ratio|r=rp\*rg/(rp+rg)|nm<sup>2</sup>/emitter|
+| |SNR=10log10(r)|dB|
