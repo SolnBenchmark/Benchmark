@@ -32,15 +32,35 @@ The file names in submission shall be in the format: **SESF2DGauss_highSNR_xy_al
 |Parameter|variable and value| unit|
 |:-----:|:-----:|:-----:|
 |Specimen size|Lx=25000, Ly=25000| nm|
-|Emitter #|M=961| |
+|Number of emitters|M=961| |
 
 Each emitter is randomly distributed in a square of sizes 782.56x782.56 (nm^2) so that their PSFs are well isolated. 
 
 ### Emitter intensity and signal to noise ratio (SNR)
-Emitter intensity (mean number of emitted photons): I=300000 (photons/s). Noise in three data frames are different.  
+|Parameter|variable and value| unit|
+|:-----:|:-----:|:-----:|
+|Emitter intensity (mean number of emitted photons)|I=300000|photons/s|
 
-**SESF2DGauss_highSNR_Frame.tif**: Mean of Poisson noise: b=0.5 (photons/s/nm^2). Variance of Gaussian noise: G=0.5 (photons/s/nm^2). 
-Mean of Gaussian noise: mu=0.5 (photons/s/nm^2). With these parameters, rp=? (nm^2/emitter); SPNR=57.78 (dB); rg=? (nm^2/emitter); SGNR=57.78 (dB); r=? (nm^2/emitter); SNR=54.77 (dB). 
+Noise in three data frames are different.  
+
+**SESF2DGauss_highSNR_Frame.tif**
+
+|Parameter|variable and value| unit|
+|:-----:|:-----:|:-----:|
+|Mean of Poisson noise|b=0.5|photons/s/nm^2|
+|Variance of Gaussian noise|G=0.5|photons/s/nm^2| 
+|Mean of Gaussian noise|mu=0.5|photons/s/nm^2|
+
+Corresponding SNRs
+
+|Parameter|variable and value| unit|
+|:-----:|:-----:|:-----:|
+|Signal to Poisson noise ratio|rp=?|nm^2/emitter|
+|                             |SPNR=57.78|dB|
+|Signal to Gaussian noise ratio|rg=?|nm^2/emitter|
+|                             |SGNR=57.78|dB|
+|Total signal to noise ratio|r=?|nm^2/emitter|
+|                           |SNR=54.77|dB|
 
 **SESF2DGauss_mediumSNR_Frame.tif**: Mean of Poisson (autofluorescence) noise: b=15 (photons/s/nm^2). Variance of Gaussian noise: G=10 (photons/s/nm^2). Mean of Gaussian noise: mu=0.5 (photons/s/nm^2). With these parameters, rp=? (nm^2/emitter); SPNR=43.01 (dB); rg=? (nm^2/emitter); SGNR=44.77 (dB); r=? (nm^2/emitter); SNR=40.79 (dB). 
 
