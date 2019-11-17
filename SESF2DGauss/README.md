@@ -21,7 +21,10 @@ The file names in submission shall be in the format: **SESF2DGauss_highSNR_xy_al
 
 ## Parameters
 ### Data frame
-Pixel size: dx=100, dy=100 (nm). Frame size: Kx=200, Ky=200 pixels.
+|Parameter|variable and value| unit|
+|:-----:|:-----:|:-----:|
+|Pixel size| dx=100, dy=100 |(nm)|
+|Frame size|Kx=200, Ky=200 |pixels|
 
 ### Emitter distribution 
 2D specimen is located at [0,Lx]x[0,Ly]. Specimen size: Lx=25000, Ly=25000 (nm). Number of emitters: M=961. Each emitter is randomly distributed in a square of sizes 782.56x782.56 (nm^2) so that their PSFs are well isolated. 
