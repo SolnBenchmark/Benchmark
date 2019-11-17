@@ -48,10 +48,10 @@ Within the region of view, each emitter is randomly distributed in a square of s
 |Pixel size| dx=100, dy=100 |nm|
 |Frame size|Kx=250, Ky=250 |pixels|
 
-### Emitter intensity 
+### Emitter intensity (mean number of emitted photons)
 |Parameter|variable and value| unit|
 |:-----:|:-----:|:-----:|
-|Emitter intensity (mean number of emitted photons)|I=300000|photons/s|
+|Emitter intensity |I=300000|photons/s/emitter|
 
 ### Noise and signal to noise ratio in three data frames  
 |Data frame|Parameter|variable and value| unit|
