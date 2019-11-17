@@ -35,5 +35,4 @@ Frame size: Kx=200, Ky=200 pixels
 Please cite the following references:
 
 [1] Y. Sun, "Localization precision of stochastic optical localization nanoscopy using single frames," J. Biomed. Optics, vol. 18, no. 11, pp. % 111418-14, Oct. 2013.
-
 [2] Y. Sun, "Root mean square minimum distance as a quality metric for % stochastic optical localization nanoscopy images," Sci. Reports, vol. 8, % no. 1, pp. 17211, Nov. 2018.
