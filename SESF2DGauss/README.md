@@ -16,7 +16,7 @@ For each of them, the emitter locations (x,y) shall be estimated and save them r
 
 4.1254239e+02   6.8510823e+03
 
-The file names in submission shall be in the form: **SESF2DGauss_highSNR_xy_algorithmName.txt**, 
+The file names in submission shall be in the format: **SESF2DGauss_highSNR_xy_algorithmName.txt**, 
 **SESF2DGauss_mediumSNR_xy_algorithmName.txt**, **SESF2DGauss_lowSNR_xy_algorithmName.txt**
 
 ## Parameters
