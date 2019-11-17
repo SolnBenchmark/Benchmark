@@ -37,7 +37,7 @@ The three data frames are synthesized by using the following parameters.
 |Parameter|variable and value| unit|
 |:-----|:-----|:-----|
 |Pixel size| dx=100, dy=100 |nm|
-|Frame size|Kx=200, Ky=200 |pixels|
+|Frame size|Kx=250, Ky=250 |pixels|
 
 ### Emitter distribution 
 |Parameter|variable and value| unit|
