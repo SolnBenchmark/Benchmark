@@ -3,6 +3,23 @@
 # Purpose
 Benchmark performance of localization algorithms in estimation of single isolated emitters from a single data frame. 
 
+# Method
+Three data frames with a high, medium, and low SNR are synthesized with the file names: **SESF2DGauss_highSNR_Frame.tif**, **SESF2DGauss_mediumSNR_Frame.tif**, **SESF2DGauss_lowSNR_Frame.tif**
+
+The emitter locations (x,y) shall be estimated from each of them. 
+
+For each data frame, save the 2D emitter locations row by row in a .txt file: e.g.
+
+4.4184628e+02   5.0638849e+03
+
+4.2119986e+02   5.8867272e+03
+
+... ...
+
+4.1254239e+02   6.8510823e+03
+
+The file names shall be in the form: **SESF2DGauss_highSNR_xy_algorithmName.txt**, **SESF2DGauss_mediumSNR_xy_algorithmName.txt**, **SESF2DGauss_lowSNR_xy_algorithmName.txt**
+
 # Parameters
 ### Optical system 
 
@@ -25,7 +42,7 @@ Emitter intensity (mean number of emitted photons): I=300000 (photons/s)
 
 Three data frames generated with a high, medium, and low level of noise:  
 
-*SESF2DGauss_highSNR_Frame.tif* 
+**SESF2DGauss_highSNR_Frame.tif** 
 
 Mean of Poisson (autofluorescence) noise: b=0.5 (photons/s/nm^2); 
 
@@ -35,20 +52,35 @@ Mean of Gaussian noise: mu=0.5 (photons/s/nm^2)
 
 With these parameters, 
 
-rp=? (nm^2/emitter); SPNR=57.78 (dB)
+rp=? (nm^2/emitter); SPNR=57.78 (dB); rg=? (nm^2/emitter); SGNR=57.78 (dB); r=? (nm^2/emitter); SNR=54.77 (dB)
 
-rg=? (nm^2/emitter); SGNR=57.78 (dB)
+**SESF2DGauss_mediumSNR_Frame.tif** 
 
-% rp=Ih/b, 
+Mean of Poisson (autofluorescence) noise: b=15 (photons/s/nm^2); 
 
-switch SNRr
-  case 'highSNR'    % r=1/(1/rp+1/rg), 10*log10(r)=54.77 (dB)
-    rng(key+0) ; 
-  case 'mediumSNR'  % r=1/(1/rp+1/rg), 10*log10(r)=40.79 (dB)
-    rng(key+1) ;  
-    b=15 ;          % rp=Ih/b, 10*log10(rp)=43.01 (dB)
-    G=10 ;          % rg=Ih/G, 10*log10(rg)=44.77 (dB)
-  case 'lowSNR'     % r=1/(1/rp+1/rg), 10*log10(r)=37.78 (dB)
+Variance of Gaussian noise: G=10 (photons/s/nm^2) 
+
+Mean of Gaussian noise: mu=0.5 (photons/s/nm^2) 
+
+With these parameters, 
+
+rp=? (nm^2/emitter); SPNR=43.01 (dB); rg=? (nm^2/emitter); SGNR=44.77 (dB); r=? (nm^2/emitter); SNR=40.79 (dB)
+
+**SESF2DGauss_lowSNR_Frame.tif** 
+
+Mean of Poisson (autofluorescence) noise: b=30 (photons/s/nm^2); 
+
+Variance of Gaussian noise: G=20 (photons/s/nm^2) 
+
+Mean of Gaussian noise: mu=0.5 (photons/s/nm^2) 
+
+With these parameters, 
+
+rp=? (nm^2/emitter); SPNR=43.01 (dB); rg=? (nm^2/emitter); SGNR=44.77 (dB); r=? (nm^2/emitter); SNR=40.79 (dB)
+
+
+
+case 'lowSNR'     % r=1/(1/rp+1/rg), 10*log10(r)=37.78 (dB)
     rng(key+2) ;
     b=30 ;          % rp=Ih/b, 10*log10(rp)=40.00 (dB)
     G=20 ;          % rg=Ih/G, 10*log10(rg)=41.76 (dB)
@@ -95,9 +127,9 @@ xy0=xy' ;             % ground truth emitter locaitons
 filename_xy0=strcat('SESF2DGauss_',SNRr,'_xy0','.txt') ; 
 save(filename_xy0,'-ascii','xy0') ;
 
-### Note
+### Definitions 
 Signal to Poission noise ratio (SPNR): rp=I/b (nm^2/emitter); SPNR=10log10(rp) (dB) 
 
 Signal to Gaussian noise ratio (SGNR): rg=I/G (nm^2/emitter); SGNR=10log10(rg) (dB) 
 
-Total SNRG: r=1/(1/rp+1/rg) (nm^2/emitter); SNR=10log10(r) (dB) 
+Total SNR: r=1/(1/rp+1/rg) (nm^2/emitter); SNR=10log10(r) (dB) 
