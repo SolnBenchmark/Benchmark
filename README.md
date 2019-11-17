@@ -1,6 +1,6 @@
 # Leaderboards
 The leaderboards will be updated after a submission. 
-###### SESF2DGauss - Single Emitter Single Frame 2D Gaussian PSF ######
+_ SESF2DGauss - Single Emitter Single Frame 2D Gaussian PSF _
 |Algorithm|High SNR|Medium SNR|Low SNR|Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
 |IAUG     |3.052   |8.855     |12.407 |8.105  |
