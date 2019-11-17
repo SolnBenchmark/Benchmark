@@ -4,7 +4,13 @@
 Benchmark performance of localization algorithms in estimation of single isolated emitters from a single data frame. 
 
 ## Method
-Three data frames with a high, medium, and low SNR are synthesized with the file names: **SESF2DGauss_highSNR_Frame.tif**, **SESF2DGauss_mediumSNR_Frame.tif**, **SESF2DGauss_lowSNR_Frame.tif** with 16 bits in depth. 
+Three data frames with a high, medium, and low SNR are synthesized and saved as tiff files with 16 bits in depth:
+
+**SESF2DGauss_highSNR_Frame.tif**
+
+**SESF2DGauss_mediumSNR_Frame.tif**
+
+**SESF2DGauss_lowSNR_Frame.tif**
 
 For each of them, the emitter locations (x,y) shall be estimated and save them row by row in a .txt file: e.g.
 
@@ -16,13 +22,18 @@ For each of them, the emitter locations (x,y) shall be estimated and save them r
 
 4.1254239e+02   6.8510823e+03
 
-The file names in submission shall be in the format: **SESF2DGauss_highSNR_xy_algorithmName.txt**, 
-**SESF2DGauss_mediumSNR_xy_algorithmName.txt**, **SESF2DGauss_lowSNR_xy_algorithmName.txt**.
+The file names in submission shall be in the format: 
+
+**SESF2DGauss_highSNR_xy_algorithmName.txt** 
+
+**SESF2DGauss_mediumSNR_xy_algorithmName.txt**
+
+**SESF2DGauss_lowSNR_xy_algorithmName.txt**.
 
 ## Parameters
 ### Data frame
 |Parameter|variable and value| unit|
-|:-----:|:-----:|:-----:|
+|:-----|:-----|:-----|
 |Pixel size| dx=100, dy=100 |nm|
 |Frame size|Kx=200, Ky=200 |pixels|
 
@@ -30,7 +41,7 @@ The file names in submission shall be in the format: **SESF2DGauss_highSNR_xy_al
 2D specimen is located at [0,Lx]x[0,Ly]. 
 
 |Parameter|variable and value| unit|
-|:-----:|:-----:|:-----:|
+|:-----|:-----|:-----|
 |Specimen size|Lx=25000, Ly=25000| nm|
 |Number of emitters|M=961| |
 
@@ -54,10 +65,24 @@ Noise in three data frames are different.
 | |                             |SGNR=57.78|dB|
 | |Total signal to noise ratio|r=?|nm<sup>2</sup>/emitter|
 | |                           |SNR=54.77|dB|
-
-**SESF2DGauss_mediumSNR_Frame.tif**: Mean of Poisson (autofluorescence) noise: b=15 (photons/s/nm^2). Variance of Gaussian noise: G=10 (photons/s/nm^2). Mean of Gaussian noise: mu=0.5 (photons/s/nm^2). With these parameters, rp=? (nm^2/emitter); SPNR=43.01 (dB); rg=? (nm^2/emitter); SGNR=44.77 (dB); r=? (nm^2/emitter); SNR=40.79 (dB). 
-
-**SESF2DGauss_lowSNR_Frame.tif**: Mean of Poisson (autofluorescence) noise: b=30 (photons/s/nm^2). Variance of Gaussian noise: G=20 (photons/s/nm^2). Mean of Gaussian noise: mu=0.5 (photons/s/nm^2). With these parameters, rp=? (nm^2/emitter); SPNR=43.01 (dB); rg=? (nm^2/emitter); SGNR=44.77 (dB); r=? (nm^2/emitter); SNR=40.79 (dB).
+|**SESF2DGauss_mediumSNR_Frame.tif**|Mean of Poisson noise|b=15|photons/s/nm<sup>2</sup>|
+| |Variance of Gaussian noise|G=10|photons/s/nm<sup>2</sup>| 
+| |Mean of Gaussian noise|mu=0.5|photons/s/nm<sup>2</sup>|
+|Corresponding SNRs|Signal to Poisson noise ratio|rp=?|nm<sup>2</sup>/emitter|
+| |                             |SPNR=43.01|dB|
+| |Signal to Gaussian noise ratio|rg=?|nm<sup>2</sup>/emitter|
+| |                             |SGNR=44.77|dB|
+| |Total signal to noise ratio|r=?|nm<sup>2</sup>/emitter|
+| |                           |SNR=40.79|dB|
+|**SESF2DGauss_lowSNR_Frame.tif**|Mean of Poisson noise|b=30|photons/s/nm<sup>2</sup>|
+| |Variance of Gaussian noise|G=20|photons/s/nm<sup>2</sup>| 
+| |Mean of Gaussian noise|mu=0.5|photons/s/nm<sup>2</sup>|
+|Corresponding SNRs|Signal to Poisson noise ratio|rp=?|nm<sup>2</sup>/emitter|
+| |                             |SPNR=43.01|dB|
+| |Signal to Gaussian noise ratio|rg=?|nm<sup>2</sup>/emitter|
+| |                             |SGNR=44.77|dB|
+| |Total signal to noise ratio|r=?|nm<sup>2</sup>/emitter|
+| |                           |SNR=40.79|dB|
 
 ### Optical system
 na=1.4; lambda=520 (nm); a=2*pi*na/lambda; PSF: 2D Gaussian PSF; Standard deviation is estimated from an Airy PSF: sigma=1.3238/a=78.26 (nm). 
