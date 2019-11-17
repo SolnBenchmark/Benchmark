@@ -20,8 +20,6 @@ The file names in submission shall be in the format: **SESF2DGauss_highSNR_xy_al
 **SESF2DGauss_mediumSNR_xy_algorithmName.txt**, **SESF2DGauss_lowSNR_xy_algorithmName.txt**
 
 ## Parameters
-### Optical system 
-
 ### Data frame
 Pixel size: dx=100, dy=100 (nm); Frame size: Kx=200, Ky=200 pixels
 
