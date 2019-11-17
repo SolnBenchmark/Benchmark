@@ -33,12 +33,6 @@ The file names in submission shall be in the format:
 ## Parameters
 The three data frames are synthesized by using the following parameters. 
 
-### Data frame
-|Parameter|variable and value| unit|
-|:-----|:-----|:-----|
-|Pixel size| dx=100, dy=100 |nm|
-|Frame size|Kx=250, Ky=250 |pixels|
-
 ### Emitter distribution 
 |Parameter|variable and value| unit|
 |:-----|:-----|:-----|
@@ -46,7 +40,13 @@ The three data frames are synthesized by using the following parameters.
 |Region of view size|Lx=25000, Ly=25000| nm|
 |Number of emitters|M=961| |
 
-Each emitter is randomly distributed in a square of sizes 782.56x782.56 (nm<sup>2</sup>) so that their PSFs are well isolated. 
+Within the region of view, each emitter is randomly distributed in a square of sizes 783x783 (nm<sup>2</sup>) so that their PSFs are well isolated. 
+
+### Data frame
+|Parameter|variable and value| unit|
+|:-----|:-----|:-----|
+|Pixel size| dx=100, dy=100 |nm|
+|Frame size|Kx=250, Ky=250 |pixels|
 
 ### Emitter intensity 
 |Parameter|variable and value| unit|
@@ -91,7 +91,7 @@ Each emitter is randomly distributed in a square of sizes 782.56x782.56 (nm<sup>
 |Fluorescence wavelength|lambda=520|nm|
 |Standard deviation|78.26|nm|
 
-PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2*pi*na/lambda. 
+PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*\pi\*na/lambda. 
 
 ### Frame 
 |Parameter|variable and value| unit|
