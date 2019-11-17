@@ -3,6 +3,16 @@ Benchmark localization algorithms for stochastic optical localization nanoscopy
 
 # Leaderboard
 
+
+# Purpose
+Benchmark the performance of a localization algorithm in estimation of single isolated emitters from a single data frame. 
+
+# Metric
+Root mean square minimum distance (RMSMD) between the estimated emitter locations and the ground truth locations. 
+
+# Benchmarking 
+The information-achieving unbiased Gaussian estimator that 
+
 # 2D Airy PSF
 
 Data frame:
