@@ -101,7 +101,7 @@ PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF 
 |Frame time|Dt=0.01|s|
 |Correspondingly | |
 |Frame rate|1/Dt=100|frames/s|
-|Photon count|DtxI=3000|photons/frame/emitter|
+|Photon count|Dt\*I=3000|photons/frame/emitter|
 
 ### Definitions
 |Parameter|Definition| unit|
