@@ -1,5 +1,5 @@
 # SolnBenchmark
-SolnBenchmark provides a site to evaluate the performance of localization algorithms in terms of root mean square minimum distance (RMSMD) with the benchmark of the information-achieving unbiased Gaussian estimator for stochastic optical localization nanoscopy (SOLN). 
+SolnBenchmark provides a site to evaluate the performance of localization algorithms in terms of root mean square minimum distance (RMSMD) with the benchmark of the information-achieving unbiased Gaussian (IAUG) estimator for stochastic optical localization nanoscopy (SOLN). 
 
 # Leaderboards
 The leaderboards will be updated after a submission. 
