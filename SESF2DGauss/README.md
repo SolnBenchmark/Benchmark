@@ -4,7 +4,13 @@
 Benchmark performance of localization algorithms in estimation of single isolated emitters from a single data frame. 
 
 # Method
-Three data frames with a high, medium, and low SNR are synthesized with the file names: **SESF2DGauss_highSNR_Frame.tif**, **SESF2DGauss_mediumSNR_Frame.tif**, **SESF2DGauss_lowSNR_Frame.tif**
+Three data frames with a high, medium, and low SNR are synthesized with the file names: 
+
+**SESF2DGauss_highSNR_Frame.tif**
+
+**SESF2DGauss_mediumSNR_Frame.tif**
+
+**SESF2DGauss_lowSNR_Frame.tif**
 
 The emitter locations (x,y) shall be estimated from each of them. 
 
@@ -18,7 +24,13 @@ For each data frame, save the 2D emitter locations row by row in a .txt file: e.
 
 4.1254239e+02   6.8510823e+03
 
-The file names shall be in the form: **SESF2DGauss_highSNR_xy_algorithmName.txt**, **SESF2DGauss_mediumSNR_xy_algorithmName.txt**, **SESF2DGauss_lowSNR_xy_algorithmName.txt**
+The file names in submission shall be in the form: 
+
+**SESF2DGauss_highSNR_xy_algorithmName.txt**
+
+**SESF2DGauss_mediumSNR_xy_algorithmName.txt**
+
+**SESF2DGauss_lowSNR_xy_algorithmName.txt**
 
 # Parameters
 ### Optical system 
