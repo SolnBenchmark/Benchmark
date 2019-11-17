@@ -32,7 +32,8 @@ The file names in submission shall be in the format: **SESF2DGauss_highSNR_xy_al
 |Parameter|variable and value| unit|
 |:-----:|:-----:|:-----:|
 |Specimen size|Lx=25000, Ly=25000| nm|
-|Emitter #|M=961|
+|Emitter #|M=961| |
+
 Each emitter is randomly distributed in a square of sizes 782.56x782.56 (nm^2) so that their PSFs are well isolated. 
 
 ### Emitter intensity and signal to noise ratio (SNR)
