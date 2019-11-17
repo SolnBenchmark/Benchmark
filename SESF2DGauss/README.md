@@ -91,7 +91,7 @@ Within the region of view, each emitter is randomly distributed in a square of s
 |Fluorescence wavelength|lambda=520|nm|
 |Standard deviation|78.26|nm|
 
-PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*\{pi}\*na/lambda. 
+PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*pi\*na/lambda. 
 
 ### Frame 
 |Parameter|variable and value| unit|
