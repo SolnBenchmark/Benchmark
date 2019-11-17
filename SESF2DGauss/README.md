@@ -59,30 +59,30 @@ Noise in three data frames are different.
 |**SESF2DGauss_highSNR_Frame.tif**|Mean of Poisson noise|b=0.5|photons/s/nm<sup>2</sup>|
 | |Variance of Gaussian noise|G=0.5|photons/s/nm<sup>2</sup>| 
 | |Mean of Gaussian noise|mu=0.5|photons/s/nm<sup>2</sup>|
-|Corresponding SNRs|Signal to Poisson noise ratio|rp=?|nm<sup>2</sup>/emitter|
+|Corresponding SNRs|Signal to Poisson noise ratio|rp=600000|nm<sup>2</sup>/emitter|
 | |                             |SPNR=57.78|dB|
-| |Signal to Gaussian noise ratio|rg=?|nm<sup>2</sup>/emitter|
+| |Signal to Gaussian noise ratio|rg=600000|nm<sup>2</sup>/emitter|
 | |                             |SGNR=57.78|dB|
-| |Total signal to noise ratio|r=?|nm<sup>2</sup>/emitter|
+| |Total signal to noise ratio|r=300000|nm<sup>2</sup>/emitter|
 | |                           |SNR=54.77|dB|
 |**SESF2DGauss_mediumSNR_Frame.tif**|Mean of Poisson noise|b=15|photons/s/nm<sup>2</sup>|
 | |Variance of Gaussian noise|G=10|photons/s/nm<sup>2</sup>| 
 | |Mean of Gaussian noise|mu=0.5|photons/s/nm<sup>2</sup>|
-|Corresponding SNRs|Signal to Poisson noise ratio|rp=?|nm<sup>2</sup>/emitter|
+|Corresponding SNRs|Signal to Poisson noise ratio|rp=20000|nm<sup>2</sup>/emitter|
 | |                             |SPNR=43.01|dB|
-| |Signal to Gaussian noise ratio|rg=?|nm<sup>2</sup>/emitter|
+| |Signal to Gaussian noise ratio|rg=30000|nm<sup>2</sup>/emitter|
 | |                             |SGNR=44.77|dB|
-| |Total signal to noise ratio|r=?|nm<sup>2</sup>/emitter|
+| |Total signal to noise ratio|r=12000|nm<sup>2</sup>/emitter|
 | |                           |SNR=40.79|dB|
 |**SESF2DGauss_lowSNR_Frame.tif**|Mean of Poisson noise|b=30|photons/s/nm<sup>2</sup>|
 | |Variance of Gaussian noise|G=20|photons/s/nm<sup>2</sup>| 
 | |Mean of Gaussian noise|mu=0.5|photons/s/nm<sup>2</sup>|
-|Corresponding SNRs|Signal to Poisson noise ratio|rp=?|nm<sup>2</sup>/emitter|
-| |                             |SPNR=43.01|dB|
-| |Signal to Gaussian noise ratio|rg=?|nm<sup>2</sup>/emitter|
-| |                             |SGNR=44.77|dB|
-| |Total signal to noise ratio|r=?|nm<sup>2</sup>/emitter|
-| |                           |SNR=40.79|dB|
+|Corresponding SNRs|Signal to Poisson noise ratio|rp=10000|nm<sup>2</sup>/emitter|
+| |                             |SPNR=40.00|dB|
+| |Signal to Gaussian noise ratio|rg=15000|nm<sup>2</sup>/emitter|
+| |                             |SGNR=41.76|dB|
+| |Total signal to noise ratio|r=6000|nm<sup>2</sup>/emitter|
+| |                           |SNR=37.78|dB|
 
 ### Optical system
 na=1.4; lambda=520 (nm); a=2*pi*na/lambda; PSF: 2D Gaussian PSF; Standard deviation is estimated from an Airy PSF: sigma=1.3238/a=78.26 (nm). 
