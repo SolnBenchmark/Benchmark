@@ -12,6 +12,12 @@ The leaderboards will be updated after a submission.
 |:-------:|:------:|:--------:|:-----:|:-----:|
 |IAUG     |3.052   |8.855     |12.407 |8.105  |
 
+# Participants
+
+|Algorithm|Participant|Group|Department|Institution|Country|
+|:-------:|:------:|:--------:|:-----:|:-----:|:-----:|
+|IAUG     |Yi Sun |Nanoscopy Lab|Electrical Engineering |The City College of New York|USA|
+
 # References and citation
 [1] Y. Sun, "Localization precision of stochastic optical localization nanoscopy using single frames," J. Biomed. Optics, vol. 18, no. 11, pp. 111418-14, Oct. 2013.
 
