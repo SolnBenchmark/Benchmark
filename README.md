@@ -1,7 +1,10 @@
-# Benchmark
-Benchmark localization algorithms for stochastic optical localization nanoscopy
+# Leaderboards
+## SESF2DGauss - Single Emitter Single Frame 2D Gaussian PSF
 
-# Leaderboard
+
+
+# SolnBenchmark
+SolnBenchmark provides a means to benchmark localization algorithms for stochastic optical localization nanoscopy (SOLN). 
 
 
 # Purpose
