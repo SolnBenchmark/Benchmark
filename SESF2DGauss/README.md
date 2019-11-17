@@ -1,20 +1,12 @@
 # SESF2DGauss: Single Emitter Single Frame 2D Gaussian PSF
 
-# Purpose
+## Purpose
 Benchmark performance of localization algorithms in estimation of single isolated emitters from a single data frame. 
 
-# Method
-Three data frames with a high, medium, and low SNR are synthesized with the file names: 
+## Method
+Three data frames with a high, medium, and low SNR are synthesized with the file names: **SESF2DGauss_highSNR_Frame.tif**, **SESF2DGauss_mediumSNR_Frame.tif**, **SESF2DGauss_lowSNR_Frame.tif**
 
-**SESF2DGauss_highSNR_Frame.tif**
-
-**SESF2DGauss_mediumSNR_Frame.tif**
-
-**SESF2DGauss_lowSNR_Frame.tif**
-
-The emitter locations (x,y) shall be estimated from each of them. 
-
-For each data frame, save the 2D emitter locations row by row in a .txt file: e.g.
+For each of them, the emitter locations (x,y) shall be estimated and save them row by row in a .txt file: e.g.
 
 4.4184628e+02   5.0638849e+03
 
@@ -24,15 +16,10 @@ For each data frame, save the 2D emitter locations row by row in a .txt file: e.
 
 4.1254239e+02   6.8510823e+03
 
-The file names in submission shall be in the form: 
+The file names in submission shall be in the form: **SESF2DGauss_highSNR_xy_algorithmName.txt**, 
+**SESF2DGauss_mediumSNR_xy_algorithmName.txt**, **SESF2DGauss_lowSNR_xy_algorithmName.txt**
 
-**SESF2DGauss_highSNR_xy_algorithmName.txt**
-
-**SESF2DGauss_mediumSNR_xy_algorithmName.txt**
-
-**SESF2DGauss_lowSNR_xy_algorithmName.txt**
-
-# Parameters
+## Parameters
 ### Optical system 
 
 ### Data frame
