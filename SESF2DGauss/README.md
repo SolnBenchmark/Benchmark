@@ -6,7 +6,7 @@ Benchmark performance of localization algorithms in estimation of single isolate
 # Parameters
 ### Optical system 
 
-### Data frame:
+### Data frame
 
 Pixel size: dx=100, dy=100 (nm)
 
@@ -23,18 +23,27 @@ Each emitter is randomly distributed in a square of size 782.56x782.56 (nm^2)
 ### Emitter intensity and signal to noise ratio (SNR)
 Emitter intensity (mean number of emitted photons): I=300000 (photons/s)
 
-### Optical system
-na=1.4 ; lambda=520 (nm)
-a=2*pi*na/lambda ; 
-% 2D Gaussian PSF; sigma is estimated from Airy PSF
-sigma=1.3238/a ;      % = 78.26 nm
+Three data frames generated with a high, medium, and low level of noise:  
 
+*SESF2DGauss_highSNR_Frame.tif* 
+
+Mean of Poisson (autofluorescence) noise: b=0.5 (photons/s/nm^2); 
+
+Variance of Gaussian noise: G=0.5 (photons/s/nm^2) 
+
+Mean of Gaussian noise: mu=0.5 (photons/s/nm^2) 
+
+With these parameters, 
+
+rp=? (nm^2/emitter); SPNR=57.78 (dB)
+
+rg=? (nm^2/emitter); SGNR=57.78 (dB)
+
+% rp=Ih/b, 
 
 switch SNRr
   case 'highSNR'    % r=1/(1/rp+1/rg), 10*log10(r)=54.77 (dB)
     rng(key+0) ; 
-    b=0.5 ;         % rp=Ih/b, 10*log10(rp)=57.78 (dB)
-    G=0.5 ;         % rg=Ih/G, 10*log10(rg)=57.78 (dB)
   case 'mediumSNR'  % r=1/(1/rp+1/rg), 10*log10(r)=40.79 (dB)
     rng(key+1) ;  
     b=15 ;          % rp=Ih/b, 10*log10(rp)=43.01 (dB)
@@ -46,6 +55,15 @@ switch SNRr
   otherwise
     return ;
 end
+
+
+
+### Optical system
+na=1.4 ; lambda=520 (nm) ; a=2*pi*na/lambda ; 
+Point spread function (PSF): 2D Gaussian PSF; sigma is estimated from Airy PSF
+Standard deviation: sigma=1.3238/a=78.26 (nm)
+
+
 % rng(0) ;            % reiniitalize 
 %% Frame 
 % Specimen is located at [0,Lx]x[0,Ly]
@@ -77,3 +95,9 @@ xy0=xy' ;             % ground truth emitter locaitons
 filename_xy0=strcat('SESF2DGauss_',SNRr,'_xy0','.txt') ; 
 save(filename_xy0,'-ascii','xy0') ;
 
+### Note
+Signal to Poission noise ratio (SPNR): rp=I/b (nm^2/emitter); SPNR=10log10(rp) (dB) 
+
+Signal to Gaussian noise ratio (SGNR): rg=I/G (nm^2/emitter); SGNR=10log10(rg) (dB) 
+
+Total SNRG: r=1/(1/rp+1/rg) (nm^2/emitter); SNR=10log10(r) (dB) 
