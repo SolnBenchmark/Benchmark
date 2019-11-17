@@ -31,6 +31,8 @@ The file names in submission shall be in the format:
 **SESF2DGauss_lowSNR_xy_algorithmName.txt**.
 
 ## Parameters
+The three data frames are synthesized by using the following parameters. 
+
 ### Data frame
 |Parameter|variable and value| unit|
 |:-----|:-----|:-----|
