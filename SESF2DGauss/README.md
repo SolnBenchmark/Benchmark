@@ -40,8 +40,8 @@ The file names in submission shall be in the format:
 ### Emitter distribution 
 |Parameter|variable and value| unit|
 |:-----|:-----|:-----|
-|Range of view| [0,Lx]x[0,Ly] |nm| 
-|Range of view size|Lx=25000, Ly=25000| nm|
+|Region of view| [0,Lx]x[0,Ly] |nm| 
+|Region of view size|Lx=25000, Ly=25000| nm|
 |Number of emitters|M=961| |
 
 Each emitter is randomly distributed in a square of sizes 782.56x782.56 (nm<sup>2</sup>) so that their PSFs are well isolated. 
@@ -101,11 +101,8 @@ PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF 
 |Frame rate|1/Dt=100|frames/s|
 |Photon count|DtxI=3000|photons/frame/emitter|
 
-### Notes and definitions
-Poisson noise is caused by autofluorescence. PSF - point spread function. 
-
-Signal to noise ratio
-|Parameter|variable and value| unit|
+### Definitions
+|Parameter|Definition| unit|
 |:-----|:-----|:-----|
 |Signal to Poission noise ratio|rp=I/b|nm<sup>2</sup>/emitter|
 | |SPNR=10log10(rp)|dB|
