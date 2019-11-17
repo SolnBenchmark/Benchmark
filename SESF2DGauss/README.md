@@ -44,7 +44,7 @@ Each emitter is randomly distributed in a square of sizes 782.56x782.56 (nm^2) s
 Noise in three data frames are different.  
 
 |Data frame|Parameter|variable and value| unit|
-|:-----:|:-----:|:-----:|:-----:|
+|:-----|:-----|:-----|:-----|
 |**SESF2DGauss_highSNR_Frame.tif**|Mean of Poisson noise|b=0.5|photons/s/nm^2|
 | |Variance of Gaussian noise|G=0.5|photons/s/nm^2| 
 | |Mean of Gaussian noise|mu=0.5|photons/s/nm^2|
