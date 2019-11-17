@@ -23,11 +23,17 @@ The file names in submission shall be in the format: **SESF2DGauss_highSNR_xy_al
 ### Data frame
 |Parameter|variable and value| unit|
 |:-----:|:-----:|:-----:|
-|Pixel size| dx=100, dy=100 |(nm)|
+|Pixel size| dx=100, dy=100 |nm|
 |Frame size|Kx=200, Ky=200 |pixels|
 
 ### Emitter distribution 
-2D specimen is located at [0,Lx]x[0,Ly]. Specimen size: Lx=25000, Ly=25000 (nm). Number of emitters: M=961. Each emitter is randomly distributed in a square of sizes 782.56x782.56 (nm^2) so that their PSFs are well isolated. 
+2D specimen is located at [0,Lx]x[0,Ly]. 
+
+|Parameter|variable and value| unit|
+|:-----:|:-----:|:-----:|
+|Specimen size|Lx=25000, Ly=25000| nm|
+|Emitter #|M=961|
+Each emitter is randomly distributed in a square of sizes 782.56x782.56 (nm^2) so that their PSFs are well isolated. 
 
 ### Emitter intensity and signal to noise ratio (SNR)
 Emitter intensity (mean number of emitted photons): I=300000 (photons/s). Noise in three data frames are different.  
