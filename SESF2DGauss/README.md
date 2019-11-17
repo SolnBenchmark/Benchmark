@@ -36,7 +36,7 @@ The three data frames are synthesized by using the following parameters.
 ### Emitter distribution 
 |Parameter|variable and value| unit|
 |:-----|:-----|:-----|
-|Region of view| [0,Lx]x[0,Ly] |nm| 
+|Region of view|[0, Lx] x [0,Ly] |nm| 
 |Region of view size|Lx=25000, Ly=25000| nm|
 |Number of emitters|M=961| |
 
