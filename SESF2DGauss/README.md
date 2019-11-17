@@ -12,7 +12,7 @@ Three data frames with a high, medium, and low SNR are synthesized and saved as 
 
 **SESF2DGauss_lowSNR_Frame.tif**
 
-For each of them, the emitter locations (x,y) shall be estimated and save them row by row in a .txt file: e.g.
+For each of them, the emitter locations (x,y) shall be estimated and saved  row by row in a .txt file: e.g.
 
 4.4184628e+02   5.0638849e+03
 
