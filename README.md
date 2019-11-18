@@ -1,5 +1,5 @@
 # SolnBenchmark
-SolnBenchmark provides a means to evaluate and benchamrk the performance of a localization algorithm for stochastic optical localization nanoscopy (SOLN). The metric of root mean square minimum distance (RMSMD) evaluates the quality of a SOLN image. The information-achieving unbiased Gaussian (IAUG) estimator benchmarks the performance of a participant algorithm. The IAUG estimator achieves the Fisher information and the Cramer-Rao lower bound (CRLB) of a data frame.
+SolnBenchmark provides a means to evaluate and benchmark the performance of a localization algorithm for stochastic optical localization nanoscopy (SOLN). The metric of root mean square minimum distance (RMSMD) evaluates the quality of a SOLN image. The information-achieving unbiased Gaussian (IAUG) estimator benchmarks the performance of a participant algorithm. The IAUG estimator achieves the Fisher information and the Cramer-Rao lower bound (CRLB) of a data frame.
 
 # Leaderboards
 The leaderboards will be updated after a submission. 
@@ -27,7 +27,7 @@ The participant submits the estimated SOLN image.
 
 The quality of a submitted SOLN image is evaluated by RMSMD in comparison with the true emitter locations. 
 
-The rank and RMSMD of a participant algorithm are listed in the leaderborads. 
+The rank and RMSMD of a participant algorithm are listed in the leaderboards. 
 
 # Participants
 
