@@ -1,18 +1,6 @@
 # SolnBenchmark
 SolnBenchmark provides a means to evaluate performance of localization algorithms for stochastic optical localization nanoscopy (SOLN).
 
-A variety of data frames and data movies are synthesized and simulate experiments. 
-
-A participant algorithm estimates emitter locations from a data frame or data movie and generates a SOLN image consists of the estimated emitter locations. 
-
-The algorithm developer submits the estimated SONL image. 
-
-The quality of a submitted SOLN image is evaluated by the metric of root mean square minimum distance (RMSMD) by comparison with the truth emitter locations. 
-
-The RMSMD and rank of a participant algorithm are listed in the leaderborads. 
-
-The performance and rank are benchmarked by the information-achieving unbiased Gaussian (IAUG) estimator that achieves the Fisher information and the Cramer-Rao lower bound (CRLB) of a data frame. 
-
 # Leaderboards
 The leaderboards will be updated after a submission. 
 
@@ -29,6 +17,19 @@ The leaderboards will be updated after a submission.
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
 |IAUG     |3.052   |8.855     |12.407 |8.105  |
+
+# Method
+A variety of data frames and data movies are synthesized and simulate experiments. 
+
+A participant algorithm estimates emitter locations from a data frame or data movie and generates a SOLN image consists of the estimated emitter locations. 
+
+The algorithm developer submits the estimated SONL image. 
+
+The quality of a submitted SOLN image is evaluated by the metric of root mean square minimum distance (RMSMD) by comparison with the truth emitter locations. 
+
+The RMSMD and rank of a participant algorithm are listed in the leaderborads. 
+
+The performance and rank are benchmarked by the information-achieving unbiased Gaussian (IAUG) estimator that achieves the Fisher information and the Cramer-Rao lower bound (CRLB) of a data frame. 
 
 # Participants
 
