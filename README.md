@@ -19,7 +19,7 @@ The leaderboards will be updated after a submission.
 |IAUG     |3.052   |8.855     |12.407 |8.105  |
 
 # Method
-A variety of data frames and data movies are synthesized and simulate experiments. 
+A variety of data frames and data movies that simulate experiments are synthesized and . 
 
 A participant algorithm estimates emitter locations from a data frame or data movie and generates a SOLN image consists of the estimated emitter locations. 
 
