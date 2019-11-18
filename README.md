@@ -8,13 +8,13 @@ The leaderboards will be updated after a submission.
 
 ## Single emitter single frame
 
-**SESF2DGauss - Single Emitter Single Frame 2D Gaussian PSF: RMSMD**
+**SESF2DGauss - Single Emitter Single Frame 2D Gaussian PSF: RMSMD (nm)**
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
 |IAUG     |3.052   |8.855     |12.407 |8.105  |
 
-**SESF2DAiry - Single Emitter Single Frame 2D Airy PSF: RMSMD**
+**SESF2DAiry - Single Emitter Single Frame 2D Airy PSF: RMSMD (nm)**
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
