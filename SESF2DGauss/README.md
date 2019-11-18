@@ -1,7 +1,7 @@
 # SESF2DGauss: Single Emitter Single Frame 2D Gaussian PSF
 
 ## Purpose
-Benchmark performance of localization algorithms in estimation of single isolated emitters from a single data frame. 
+Evaluate and benchmark performance of localization algorithms in estimation of single isolated emitters from a single data frame. 
 
 ## Method
 Three data frames with a high, medium, and low SNR are synthesized and saved as tiff files with 16 bits in depth:
