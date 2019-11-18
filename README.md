@@ -33,7 +33,7 @@ The rank and RMSMD of a participant algorithm are listed in the leaderborads.
 
 |Algorithm |Participant |Affiliation |Country |
 |:-------:|:------:|:--------:|:-----:|
-|IAUG     |Yi Sun | Nanoscopy Lab, Electrical Engineering Department, The City College of New York |USA |
+|IAUG     |Yi Sun | Nanoscopy Lab, The City College of New York |USA |
 
 # Reference and citation
 [1] Y. Sun, "Localization precision of stochastic optical localization nanoscopy using single frames," J. Biomed. Optics, vol. 18, no. 11, pp. 111418-14, Oct. 2013.
