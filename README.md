@@ -21,9 +21,9 @@ The leaderboards will be updated after a submission.
 # Method
 A variety of data frames and data movies that simulate experiments are synthesized. 
 
-A participant algorithm estimates emitter locations from a data frame or data movie and generates a SOLN image consisting of the estimated emitter locations. 
+A participant algorithm estimates emitter locations from a data frame or data movie and generates a SOLN image consisting of a list of the estimated emitter locations. 
 
-The participant submits the estimated SONL image. 
+The participant submits the estimated SOLN image. 
 
 The quality of a submitted SOLN image is evaluated by RMSMD in comparison with the true emitter locations. 
 
