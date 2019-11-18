@@ -1,5 +1,5 @@
 # SolnBenchmark
-SolnBenchmark is a site to evaluate the performance of localization algorithms in terms of the metric of root mean square minimum distance (RMSMD) with the benchmark of the information-achieving unbiased Gaussian (IAUG) estimator for stochastic optical localization nanoscopy (SOLN). 
+SolnBenchmark provides a means to evaluate performance of localization algorithms for stochastic optical localization nanoscopy (SOLN) in terms of the metric of root mean square minimum distance (RMSMD) with the benchmark of the information-achieving unbiased Gaussian (IAUG) estimator.
 
 The IAUG estimator achieves the Fisher infomration and the Cramer-Rao lower bound (CRLB) of a data frame. 
 
