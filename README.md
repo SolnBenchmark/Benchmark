@@ -30,7 +30,7 @@ The quality of a submitted SOLN image is evaluated by RMSMD in comparison with t
 The rank and RMSMD of a participant algorithm are listed in the leaderboards. 
 
 # Group
-Joint the group discussion: [Soln Benchmark](https://groups.google.com/forum/#!forum/soln-benchmark)
+Join the group discussion: [Soln Benchmark](https://groups.google.com/forum/#!forum/soln-benchmark)
 
 # Participants
 
