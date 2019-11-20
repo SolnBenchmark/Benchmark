@@ -33,29 +33,29 @@ The file names in submission shall be in the format:
 ## Parameters
 The three data frames are synthesized by using the following parameters. 
 
-### Emitter distribution 
+### Data frame 
 |Parameter |variable and value| unit|
 |:-----|:-----|:-----|
 |Region of view|[0,Lx] x [0,Ly] |nm| 
 |Region of view size |Lx=25000, Ly=25000| nm|
-|Number of emitters |M=961| |
-
-Within the region of view, each emitter is randomly distributed in a square of sizes 783x783 (nm<sup>2</sup>) so that their PSFs are well isolated. 
-
-### Data frame
-|Parameter |variable and value| unit|
-|:-----|:-----|:-----|
-|Pixel size| dx=100, dy=100 |nm|
-|Frame size |Kx=250, Ky=250 |pixels|
+|Pixel size |Dx=100, Dy=100|nm|
+|Frame size |Kx=Lx/Dx=250, Ky=Ly/Dy=250|pixels|
+|Frame time |Dt=0.01|s|
+|Correspondingly | |
+|Frame rate|1/Dt=100|frames/s|
+|Photon count |Dt\*I=3000|photons/frame/emitter|
 
 The corresponding 2D coordinates in a data frame is shown below. 
 
 ![Alt text](FrameCoordinates.png)
 
-### Emitter intensity (mean number of emitted photons)
+### Emitter distribution and intensity (mean number of emitted photons)
 |Parameter |variable and value| unit|
-|:-----:|:-----:|:-----:|
+|:-----|:-----|:-----|
+|Number of emitters |M=961| |
 |Emitter intensity |I=300000|photons/s/emitter|
+
+Within the region of view, each emitter is randomly distributed in a square of sizes 783x783 (nm<sup>2</sup>) so that their PSFs are well isolated. 
 
 ### Noise and signal to noise ratio in three data frames  
 |Data frame |Parameter |variable and value| unit|
@@ -96,16 +96,6 @@ The corresponding 2D coordinates in a data frame is shown below.
 |Standard deviation|78.26|nm|
 
 PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*pi\*na/lambda. 
-
-### Frame 
-|Parameter |variable and value| unit|
-|:-----|:-----|:-----|
-|Pixel size |Dx=100, Dy=100|nm|
-|Frame size |Kx=Lx/Dx=250, Ky=Ly/Dy=250|pixels|
-|Frame time |Dt=0.01|s|
-|Correspondingly | |
-|Frame rate|1/Dt=100|frames/s|
-|Photon count |Dt\*I=3000|photons/frame/emitter|
 
 ### Definitions
 |Parameter |Definition| unit|
