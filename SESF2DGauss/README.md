@@ -45,7 +45,7 @@ The three data frames are synthesized by using the following parameters.
 |Frame rate|1/Dt=100|frames/s|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
 
-The corresponding 2D coordinates in a data frame is shown below. 
+The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
 ![Alt text](FrameCoordinates.png)
 
