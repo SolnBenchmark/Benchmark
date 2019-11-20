@@ -48,6 +48,10 @@ Within the region of view, each emitter is randomly distributed in a square of s
 |Pixel size| dx=100, dy=100 |nm|
 |Frame size |Kx=250, Ky=250 |pixels|
 
+The corresponding 2D coordinates in a data frame is shown below. 
+
+![Alt text](FrameCoordinates.png)
+
 ### Emitter intensity (mean number of emitted photons)
 |Parameter |variable and value| unit|
 |:-----:|:-----:|:-----:|
