@@ -91,7 +91,7 @@ Within the region of view, each emitter is randomly distributed in a square of s
 ### Optical system
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|numerical aperture |na=1.4| |
+|Numerical aperture |na=1.4| |
 |Fluorescence wavelength |lambda=520|nm|
 |Standard deviation|78.26|nm|
 
