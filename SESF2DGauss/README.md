@@ -34,7 +34,7 @@ The file names in submission shall be in the format:
 The three data frames are synthesized by using the following parameters. 
 
 ### Data frame 
-|Parameter |variable and value| unit|
+|Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Region of view|[0,Lx] x [0,Ly] |nm| 
 |Region of view size |Lx=25000, Ly=25000| nm|
@@ -50,7 +50,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 ![Alt text](FrameCoordinates.png)
 
 ### Emitter distribution and intensity (mean number of emitted photons)
-|Parameter |variable and value| unit|
+|Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Number of emitters |M=961| |
 |Emitter intensity |I=300000|photons/s/emitter|
@@ -58,7 +58,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 Within the region of view, each emitter is randomly distributed in a square of sizes 783x783 (nm<sup>2</sup>) so that their PSFs are well isolated. 
 
 ### Noise and signal to noise ratio in three data frames  
-|Data frame |Parameter |variable and value| unit|
+|Data frame |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|:-----|
 |**SESF2DGauss_highSNR_Frame.tif**|Mean of Poisson noise |b=0.5|photons/s/nm<sup>2</sup>|
 | |Variance of Gaussian noise |G=0.5|photons/s/nm<sup>2</sup>| 
@@ -89,7 +89,7 @@ Within the region of view, each emitter is randomly distributed in a square of s
 | |                           |SNR=37.78|dB|
 
 ### Optical system
-|Parameter |variable and value| unit|
+|Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |numerical aperture |na=1.4| |
 |Fluorescence wavelength |lambda=520|nm|
@@ -98,7 +98,7 @@ Within the region of view, each emitter is randomly distributed in a square of s
 PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*pi\*na/lambda. 
 
 ### Definitions
-|Parameter |Definition| unit|
+|Parameter |Definition| Unit|
 |:-----|:-----|:-----|
 |Signal to Poisson noise ratio |rp=I/b|nm<sup>2</sup>/emitter|
 | |SPNR=10log10(rp)|dB|
@@ -106,4 +106,3 @@ PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF 
 | |SGNR=10log10(rg)|dB|
 |Total signal to noise ratio |r=rp\*rg/(rp+rg)|nm<sup>2</sup>/emitter|
 | |SNR=10log10(r)|dB|
-
