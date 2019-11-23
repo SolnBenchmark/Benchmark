@@ -10,7 +10,7 @@ The leaderboards will be updated after a submission.
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
-|IAUG     |3.05   |8.86     |12.41 |8.11  |
+|IAUG     |3.05   |8.86     |12.41 |8.10  |
 
 **SESF2DAiry - Single Emitter Single Frame 2D Airy PSF: RMSMD (nm)**
 
