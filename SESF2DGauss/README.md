@@ -4,15 +4,25 @@
 Evaluate and benchmark performance of localization algorithms in estimation of single isolated emitters from a single data frame. 
 
 ## Method
+### Three data frames 
+
 Three data frames with a high, medium, and low SNR are synthesized and saved as tiff files with 16 bits in depth:
 
 **SESF2DGauss_highSNR_Frame.tif**
 
+![Alt text](SESF2DGauss_highSNR_Frame.png)
+
 **SESF2DGauss_mediumSNR_Frame.tif**
+
+![Alt text](SESF2DGauss_mediumSNR_Frame.png)
 
 **SESF2DGauss_lowSNR_Frame.tif**
 
-For each of them, the emitter locations (x,y) shall be estimated and saved  row by row in a .txt file: e.g.
+![Alt text](SESF2DGauss_lowSNR_Frame.png)
+
+### Submission 
+
+For each data frame, the emitter locations (x,y) shall be estimated and saved  row by row in a .txt file: e.g.
 
 4.4184628e+02   5.0638849e+03
 
