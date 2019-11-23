@@ -10,13 +10,13 @@ The leaderboards will be updated after a submission.
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
-|IAUG     |3.052   |8.855     |12.407 |8.105  |
+|IAUG     |3.05   |8.86     |12.41 |8.11  |
 
 **SESF2DAiry - Single Emitter Single Frame 2D Airy PSF: RMSMD (nm)**
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
-|IAUG     |3.052   |8.855     |12.407 |8.105  |
+|IAUG     |    |      |  |   |
 
 # Method
 A variety of data frames and data movies that simulate experiments are synthesized. 
