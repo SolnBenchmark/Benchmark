@@ -14,6 +14,7 @@ Three data frames with a high, medium, and low SNR are synthesized and saved as 
 
 **SESF2DGauss_mediumSNR_Frame.tif**
 ![Alt text](SESF2DGauss_mediumSNR_Frame.png)
+
 **SESF2DGauss_lowSNR_Frame.tif**
 
 ![Alt text](SESF2DGauss_lowSNR_Frame.png)
