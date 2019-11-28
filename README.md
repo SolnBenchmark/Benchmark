@@ -18,7 +18,7 @@ The leaderboards will be updated after a submission.
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
-|IAUG     |    |      |  |   |
+|IAUG     |3.11|9.40|12.80|8.44|
 
 # Method
 A variety of data frames and data movies that simulate experiments are synthesized. 
