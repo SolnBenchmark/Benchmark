@@ -10,15 +10,15 @@ Three data frames with a high, medium, and low SNR are synthesized and saved as 
 
 **SESF2DAiry_highSNR_Frame.tif**
 
-![Alt text](SESF2DAiry_highSNR_Frame1.png)
+![Alt text](SESF2DAiry_highSNR_Frame.png)
 
 **SESF2DAiry_mediumSNR_Frame.tif**
 
-![Alt text](SESF2DAiry_mediumSNR_Frame1.png)
+![Alt text](SESF2DAiry_mediumSNR_Frame.png)
 
 **SESF2DAiry_lowSNR_Frame.tif**
 
-![Alt text](SESF2DAiry_lowSNR_Frame1.png)
+![Alt text](SESF2DAiry_lowSNR_Frame.png)
 
 ### Submission 
 
