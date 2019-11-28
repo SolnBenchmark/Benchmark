@@ -19,6 +19,7 @@ The leaderboards will be updated after a submission.
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
 |IAUG     |3.11|9.40|12.80|8.44|
+|SIC    |44.37|44.10|50.45|46.41|
 
 # Method
 A variety of data frames and data movies that simulate experiments are synthesized. 
@@ -39,6 +40,7 @@ Join the group discussion and receive announcements: [Soln Benchmark](https://gr
 |Algorithm |Participant |Affiliation |Country |
 |:-------:|:------:|:--------:|:-----:|
 |IAUG     |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
+|SIC      |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
 
 # Reference and citation
 [1] Y. Sun, "Localization precision of stochastic optical localization nanoscopy using single frames," J. Biomed. Optics, vol. 18, no. 11, pp. 111418-14, Oct. 2013.
