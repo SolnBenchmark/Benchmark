@@ -19,7 +19,7 @@ The leaderboards will be updated after a submission.
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
-|IAUG     |3.11|9.40|12.80|8.44|
+|IAUG     |3.05|9.34|13.07|8.49|
 |SIC      |59.98|62.52|72.98|65.16|
 
 # Method
