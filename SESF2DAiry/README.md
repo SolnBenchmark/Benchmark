@@ -57,7 +57,7 @@ The three data frames are synthesized by using the following parameters.
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
-![Alt text](FrameCoordinates.png)
+![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/SESF2DGauss/FrameCoordinates.png)
 
 ### Emitter distribution and intensity (mean number of emitted photons)
 |Parameter |Variable and value| Unit|
