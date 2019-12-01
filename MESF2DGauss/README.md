@@ -6,7 +6,7 @@ Evaluate and benchmark performance of localization algorithms in localization of
 ## Method
 ### Six data frames 
 
-Emitters are randomly and uniformly distributed in a region of view. Six data frames with different emitter densities are synthesized and saved as tiff files with 16 bits in depth:
+Six data frames with different emitter densities are synthesized and saved as tiff files with 16 bits in depth:
 
 **MESF2DGauss_density1_Frame.tif**
 
@@ -85,12 +85,12 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 ![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/SESF2DGauss/FrameCoordinates.png)
 
 ### Emitter distribution and intensity (mean number of emitted photons)
+Emitters are randomly and uniformly distributed in a region of view. 
+
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Number of emitters |M=1000| |
 |Emitter intensity |I=300000|photons/s/emitter|
-
-Within the region of view, each emitter is randomly distributed in a square of sizes 783x783 (nm<sup>2</sup>) so that their PSFs are well isolated. 
 
 ### Noise 
 |Parameter |Variable and value| Unit|
