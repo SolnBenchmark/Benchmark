@@ -8,19 +8,27 @@ The leaderboards will be updated after a submission.
 
 ## Single emitter single frame
 
-**SESF2DGauss - Single Emitter Single Frame 2D Gaussian PSF: RMSMD (nm)**
+**SESF2DGauss - Single Emitter Single Frame 2D Gaussian PSF: RMSMD (nm) vs SNR**
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
 |IAUG     |3.05   |8.86     |12.41 |8.10  |
-|SIC    |44.37|44.10|50.45|46.41|
+|SIC      |44.37  |44.10    |50.45 |46.41|
 
-**SESF2DAiry - Single Emitter Single Frame 2D Airy PSF: RMSMD (nm)**
+**SESF2DAiry - Single Emitter Single Frame 2D Airy PSF: RMSMD (nm) vs SNR**
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
 |IAUG     |3.05|9.34|13.07|8.49|
 |SIC      |56.96|65.34|78.15|66.82|
+
+## Multiple emitters single frame
+
+**MESF2DGauss - Multiple Emitter Single Frame 2D Gaussian PSF: RMSMD (nm) vs Density (emt/um<sup>2</sup>)**
+
+| Algorithm |1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|6 emt/um<sup>2</sup>|10 emt/um<sup>2</sup>|Average|
+|:-------:|:------:|:--------:|:-----:|:-----:|:-----:|
+|IAUG     |8.99   |14.59     |15.01 |19.48  |14.52|
 
 # Method
 A variety of data frames and data movies that simulate experiments are synthesized. 
