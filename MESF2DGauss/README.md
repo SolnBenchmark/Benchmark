@@ -99,7 +99,8 @@ Emitters are randomly and uniformly distributed in a region of view.
 |Variance of Gaussian noise |G=10|photons/s/nm<sup>2</sup>| 
 |Mean of Gaussian noise |mu=0.5|photons/s/nm<sup>2</sup>|
 
-### Corresponding signal to noise ratios 
+Corresponding signal to noise ratios.
+
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Signal to Poisson noise ratio |rp=20000|nm<sup>2</sup>/emitter|
