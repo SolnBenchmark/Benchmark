@@ -59,7 +59,6 @@ The three data frames are synthesized by using the following parameters.
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Region of view|[0,Lx] x [0,Ly] |nm| 
-|Region of view size |Lx=25000, Ly=25000| nm|
 |Pixel size |Dx=100, Dy=100|nm|
 |Frame size |Kx=Lx/Dx=250, Ky=Ly/Dy=250|pixels|
 |Frame time |Dt=0.01|s|
@@ -67,31 +66,36 @@ The three data frames are synthesized by using the following parameters.
 |Frame rate|1/Dt=100|frames/s|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
 
+### Region of view size for five data frames 
+|Data frame |Parameter |Variable and value| Unit|
+|:-----|:-----|:-----|:-----|
+|**MESF2DGauss_density1_Frame.tif.tif** |Region of view size |Lx=32000, Ly=32000|nm|
+|Correspondingly |Emitter density |1|emitters/um<sup>2</sup>|
+|**MESF2DGauss_density2_Frame.tif.tif** |Region of view size |Lx=22000, Ly=22000|nm|
+|Correspondingly |Emitter density |2|emitters/um<sup>2</sup>|
+|**MESF2DGauss_density6_Frame.tif.tif** |Region of view size |Lx=13000, Ly=13000|nm|
+|Correspondingly |Emitter density |6|emitters/um<sup>2</sup>|
+|**MESF2DGauss_density10_Frame.tif.tif**|Region of view size |Lx=10000, Ly=10000|nm|
+|Correspondingly |Emitter density |10|emitters/um<sup>2</sup>|
+|**MESF2DGauss_density15_Frame.tif.tif**|Region of view size |Lx=8000, Ly=8000|nm|
+|Correspondingly |Emitter density |15|emitters/um<sup>2</sup>|
+
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
-![Alt text](FrameCoordinates.png)
+![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/SESF2DGauss/FrameCoordinates.png)
 
 ### Emitter distribution and intensity (mean number of emitted photons)
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Number of emitters |M=961| |
+|Number of emitters |M=1000| |
 |Emitter intensity |I=300000|photons/s/emitter|
 
 Within the region of view, each emitter is randomly distributed in a square of sizes 783x783 (nm<sup>2</sup>) so that their PSFs are well isolated. 
 
-### Noise and signal to noise ratio in three data frames  
-|Data frame |Parameter |Variable and value| Unit|
+### Noise and signal to noise ratio 
+| |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|:-----|
-|**SESF2DGauss_highSNR_Frame.tif**|Mean of Poisson noise |b=0.5|photons/s/nm<sup>2</sup>|
-| |Variance of Gaussian noise |G=0.5|photons/s/nm<sup>2</sup>| 
-| |Mean of Gaussian noise |mu=0.5|photons/s/nm<sup>2</sup>|
-|Corresponding SNRs |Signal to Poisson noise ratio |rp=600000|nm<sup>2</sup>/emitter|
-| |                             |SPNR=57.78|dB|
-| |Signal to Gaussian noise ratio |rg=600000|nm<sup>2</sup>/emitter|
-| |                             |SGNR=57.78|dB|
-| |Total signal to noise ratio |r=300000|nm<sup>2</sup>/emitter|
-| |                           |SNR=54.77|dB|
-|**SESF2DGauss_mediumSNR_Frame.tif**|Mean of Poisson noise |b=15|photons/s/nm<sup>2</sup>|
+| |Mean of Poisson noise |b=15|photons/s/nm<sup>2</sup>|
 | |Variance of Gaussian noise |G=10|photons/s/nm<sup>2</sup>| 
 | |Mean of Gaussian noise |mu=0.5|photons/s/nm<sup>2</sup>|
 |Corresponding SNRs |Signal to Poisson noise ratio |rp=20000|nm<sup>2</sup>/emitter|
@@ -100,15 +104,6 @@ Within the region of view, each emitter is randomly distributed in a square of s
 | |                             |SGNR=44.77|dB|
 | |Total signal to noise ratio |r=12000|nm<sup>2</sup>/emitter|
 | |                           |SNR=40.79|dB|
-|**SESF2DGauss_lowSNR_Frame.tif**|Mean of Poisson noise |b=30|photons/s/nm<sup>2</sup>|
-| |Variance of Gaussian noise |G=20|photons/s/nm<sup>2</sup>| 
-| |Mean of Gaussian noise |mu=0.5|photons/s/nm<sup>2</sup>|
-|Corresponding SNRs |Signal to Poisson noise ratio |rp=10000|nm<sup>2</sup>/emitter|
-| |                             |SPNR=40.00|dB|
-| |Signal to Gaussian noise ratio |rg=15000|nm<sup>2</sup>/emitter|
-| |                             |SGNR=41.76|dB|
-| |Total signal to noise ratio |r=6000|nm<sup>2</sup>/emitter|
-| |                           |SNR=37.78|dB|
 
 ### Optical system
 |Parameter |Variable and value| Unit|
