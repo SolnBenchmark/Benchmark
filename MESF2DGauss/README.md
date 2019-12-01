@@ -69,15 +69,15 @@ The three data frames are synthesized by using the following parameters.
 ### Region of view size for five data frames 
 |Data frame |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|:-----|
-|**MESF2DGauss_density1_Frame.tif.tif** |Region of view size |Lx=32000, Ly=32000|nm|
+|**MESF2DGauss_density1_Frame.tif** |Region of view size |Lx=32000, Ly=32000|nm|
 |Correspondingly |Emitter density |1|emitters/um<sup>2</sup>|
-|**MESF2DGauss_density2_Frame.tif.tif** |Region of view size |Lx=22000, Ly=22000|nm|
+|**MESF2DGauss_density2_Frame.tif** |Region of view size |Lx=22000, Ly=22000|nm|
 |Correspondingly |Emitter density |2|emitters/um<sup>2</sup>|
-|**MESF2DGauss_density6_Frame.tif.tif** |Region of view size |Lx=13000, Ly=13000|nm|
+|**MESF2DGauss_density6_Frame.tif** |Region of view size |Lx=13000, Ly=13000|nm|
 |Correspondingly |Emitter density |6|emitters/um<sup>2</sup>|
-|**MESF2DGauss_density10_Frame.tif.tif**|Region of view size |Lx=10000, Ly=10000|nm|
+|**MESF2DGauss_density10_Frame.tif**|Region of view size |Lx=10000, Ly=10000|nm|
 |Correspondingly |Emitter density |10|emitters/um<sup>2</sup>|
-|**MESF2DGauss_density15_Frame.tif.tif**|Region of view size |Lx=8000, Ly=8000|nm|
+|**MESF2DGauss_density15_Frame.tif**|Region of view size |Lx=8000, Ly=8000|nm|
 |Correspondingly |Emitter density |15|emitters/um<sup>2</sup>|
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
