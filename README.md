@@ -26,7 +26,7 @@ The leaderboards will be updated after a submission.
 
 **MESF2DGauss - Multiple Emitter Single Frame 2D Gaussian PSF: RMSMD (nm) vs Density**
 
-| Algorithm |1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|6 emt/um<sup>2</sup>|10 emt/um<sup>2</sup>|Average|15 emt/um<sup>2</sup>|Average|
+| Algorithm |1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|6 emt/um<sup>2</sup>|10 emt/um<sup>2</sup>|15 emt/um<sup>2</sup>|Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|:-----:|:-----:|
 |IAUG     |8.99   |14.59     |15.01 |19.48  |24.33 |16.48|
 
