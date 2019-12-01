@@ -92,18 +92,22 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 
 Within the region of view, each emitter is randomly distributed in a square of sizes 783x783 (nm<sup>2</sup>) so that their PSFs are well isolated. 
 
+### Noise 
+|Parameter |Variable and value| Unit|
+|:-----|:-----|:-----|
+|Mean of Poisson noise |b=15|photons/s/nm<sup>2</sup>|
+|Variance of Gaussian noise |G=10|photons/s/nm<sup>2</sup>| 
+|Mean of Gaussian noise |mu=0.5|photons/s/nm<sup>2</sup>|
+
 ### Noise and signal to noise ratio 
-| |Parameter |Variable and value| Unit|
-|:-----|:-----|:-----|:-----|
-| |Mean of Poisson noise |b=15|photons/s/nm<sup>2</sup>|
-| |Variance of Gaussian noise |G=10|photons/s/nm<sup>2</sup>| 
-| |Mean of Gaussian noise |mu=0.5|photons/s/nm<sup>2</sup>|
-|Corresponding SNRs |Signal to Poisson noise ratio |rp=20000|nm<sup>2</sup>/emitter|
-| |                             |SPNR=43.01|dB|
-| |Signal to Gaussian noise ratio |rg=30000|nm<sup>2</sup>/emitter|
-| |                             |SGNR=44.77|dB|
-| |Total signal to noise ratio |r=12000|nm<sup>2</sup>/emitter|
-| |                           |SNR=40.79|dB|
+|Parameter |Variable and value| Unit|
+|:-----|:-----|:-----|
+|Signal to Poisson noise ratio |rp=20000|nm<sup>2</sup>/emitter|
+|                             |SPNR=43.01|dB|
+|Signal to Gaussian noise ratio |rg=30000|nm<sup>2</sup>/emitter|
+|                             |SGNR=44.77|dB|
+|Total signal to noise ratio |r=12000|nm<sup>2</sup>/emitter|
+|                           |SNR=40.79|dB|
 
 ### Optical system
 |Parameter |Variable and value| Unit|
