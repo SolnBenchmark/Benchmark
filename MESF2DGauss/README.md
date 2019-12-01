@@ -6,7 +6,7 @@ Evaluate and benchmark performance of localization algorithms in localization of
 ## Method
 ### Six data frames 
 
-Six data frames with a different emitter density are synthesized and saved as tiff files with 16 bits in depth:
+Emitters are randomly and uniformly distributed in a region of view. Six data frames with different emitter densities are synthesized and saved as tiff files with 16 bits in depth:
 
 **MESF2DGauss_density1_Frame.tif**
 
