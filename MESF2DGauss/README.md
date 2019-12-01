@@ -85,7 +85,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 ![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/SESF2DGauss/FrameCoordinates.png)
 
 ### Emitter distribution and intensity (mean number of emitted photons)
-Emitters are randomly and uniformly distributed in a region of view. 
+Emitters are randomly and uniformly distributed in the region of view. 
 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
