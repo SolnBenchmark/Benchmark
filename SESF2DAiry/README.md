@@ -43,6 +43,14 @@ The file names in submission shall be in the format:
 ## Parameters
 The three data frames are synthesized by using the following parameters. 
 
+### Emitter distribution and intensity (mean number of emitted photons)
+|Parameter |Variable and value| Unit|
+|:-----|:-----|:-----|
+|Number of emitters |M=961| |
+|Emitter intensity |I=300000|photons/s/emitter|
+
+Within the region of view, each emitter is randomly distributed in a square of sizes 783x783 (nm<sup>2</sup>) so that their PSFs are well isolated. 
+
 ### Data frame 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
@@ -58,14 +66,6 @@ The three data frames are synthesized by using the following parameters.
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
 ![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/SESF2DGauss/FrameCoordinates.png)
-
-### Emitter distribution and intensity (mean number of emitted photons)
-|Parameter |Variable and value| Unit|
-|:-----|:-----|:-----|
-|Number of emitters |M=961| |
-|Emitter intensity |I=300000|photons/s/emitter|
-
-Within the region of view, each emitter is randomly distributed in a square of sizes 783x783 (nm<sup>2</sup>) so that their PSFs are well isolated. 
 
 ### Noise and signal to noise ratio in three data frames  
 |Data frame |Parameter |Variable and value| Unit|
