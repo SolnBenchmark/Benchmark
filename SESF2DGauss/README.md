@@ -8,7 +8,7 @@ Evaluate and benchmark performance of localization algorithms in estimation of s
 
 Three data frames with a high, medium, and low SNR are synthesized and saved as tiff files with 16 bits in depth:
 
-**SESF2DGauss_highSNR_Frame.tif**
+**SESF2DGauss_highSNR_Frame.tif (For purpose of demonstration, .png images are shwon here.)**
 
 ![Alt text](SESF2DGauss_highSNR_Frame.png)
 
