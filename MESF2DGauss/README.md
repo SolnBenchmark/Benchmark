@@ -8,7 +8,7 @@ Evaluate and benchmark performance of localization algorithms in localization of
 
 Five data frames with different emitter densities are synthesized and saved as tiff files with 16 bits in depth:
 
-**MESF2DGauss_density1_Frame.tif**
+**MESF2DGauss_density1_Frame.tif  (For purpose of demonstration, .png images are shwon here.)**
 
 ![Alt text](MESF2DGauss_density1_Frame.png)
 
