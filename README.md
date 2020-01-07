@@ -1,7 +1,9 @@
 # SolnBenchmark
-SolnBenchmark provides a means to evaluate and benchmark performance of localization algorithms for stochastic optical localization nanoscopy (SOLN). The metric of root mean square minimum distance (RMSMD) evaluates the quality of a SOLN image. The unbiased Gaussian information-achieving (UGIA) estimator benchmarks the performance of a participant algorithm. In this way, a participant algorithm challenges the performance bound of the Fisher information. 
+SolnBenchmark provides a means to evaluate and benchmark performance of localization algorithms for stochastic optical localization nanoscopy (SOLN). The metric of root mean square minimum distance (RMSMD) [2] evaluates the quality of a SOLN image. The unbiased Gaussian information-achieving (UGIA) estimators benchmark the performance of a participant algorithm. In this way, a participant algorithm challenges the performance bound of the Fisher information. 
 
-The UGIA estimator achieves the Fisher information and the Cramer-Rao lower bound (CRLB) of a data frame.
+The UGIA-F estimator achieves the Fisher information and the Cramer-Rao lower bound (CRLB) of a data frame [1][2].
+
+The UGIA-M estimator achieves the Fisher information and the Cramer-Rao lower bound (CRLB) of a data movie [3].
 
 # Leaderboards
 The leaderboards will be updated after a submission. 
@@ -55,6 +57,8 @@ Join the group discussion and receive announcements: [Soln Benchmark](https://gr
 [1] Y. Sun, "Localization precision of stochastic optical localization nanoscopy using single frames," J. Biomed. Optics, vol. 18, no. 11, pp. 111418-14, Oct. 2013.
 
 [2] Y. Sun, "Root mean square minimum distance as a quality metric for stochastic optical localization nanoscopy images," Sci. Reports, vol. 8, no. 1, pp. 17211, Nov. 2018.
+
+[3] Y. Sun, "Spatiotemporal resolution as an information theoretical property of stochastic optical localization nanoscopy," 2020 Quantitative BioImaging Conf., QBI 2020, Oxford, UK, Jan. 9-12, 2020. 
 
 # Contact
 
