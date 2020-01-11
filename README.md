@@ -14,14 +14,14 @@ The leaderboards will be updated after a submission.
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
-|UGIA     |3.05   |8.86     |12.41 |8.10  |
+|UGIA-F     |3.05   |8.86     |12.41 |8.10  |
 |SIC      |44.37  |44.10    |50.45 |46.41|
 
 **SESF2DAiry - Single Emitter Single Frame 2D Airy PSF: RMSMD (nm) vs SNR**
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
-|UGIA     |3.05|9.34|13.07|8.49|
+|UGIA-F     |3.05|9.34|13.07|8.49|
 |SIC      |56.96|65.34|78.15|66.82|
 
 ## Multiple emitters single frame
@@ -30,7 +30,7 @@ The leaderboards will be updated after a submission.
 
 | Algorithm |1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|6 emt/um<sup>2</sup>|10 emt/um<sup>2</sup>|15 emt/um<sup>2</sup>|Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|:-----:|:-----:|
-|UGIA     |9.39   |10.06     |12.09 |19.26  |29.02 |15.96|
+|UGIA-F     |9.39   |10.06     |12.09 |19.26  |29.02 |15.96|
 
 # Method
 A variety of data frames and data movies that simulate experiments are synthesized. 
@@ -50,7 +50,8 @@ Join the group discussion and receive announcements: [Soln Benchmark](https://gr
 
 |Algorithm |Participant |Affiliation |Country |
 |:-------:|:------:|:--------:|:-----:|
-|UGIA     |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
+|UGIA-F     |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
+|UGIA-M     |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
 |SIC      |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
 
 # Reference and citation
