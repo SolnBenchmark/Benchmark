@@ -63,4 +63,8 @@ Join the group discussion and receive announcements: [Soln Benchmark](https://gr
 
 # Contact
 
-Yi Sun, Electrical Engineering Department, Nanoscopy Laboratory, The City College of City University of New York, New York, NY 10031, USA
+Yi Sun
+
+E-mail: ysun@ccny.cuny.edu
+
+Electrical Engineering Department, Nanoscopy Laboratory, The City College of City University of New York, New York, NY 10031, USA
