@@ -59,7 +59,7 @@ Join the group discussion and receive announcements: [Soln Benchmark](https://gr
 
 [2] Y. Sun, "Root mean square minimum distance as a quality metric for stochastic optical localization nanoscopy images," Sci. Reports, vol. 8, no. 1, pp. 17211, Nov. 2018.
 
-[3] Y. Sun, "Spatiotemporal resolution as an information theoretical property of stochastic optical localization nanoscopy," 2020 Quantitative BioImaging Conf., QBI 2020, Oxford, UK, Jan. 9-12, 2020. 
+[3] Y. Sun, "Spatiotemporal resolution as an information theoretical property of stochastic optical localization nanoscopy," 2020 Quantitative BioImaging Conf., QBI 2020, Oxford, UK, Jan. 6-9, 2020. 
 
 # Contact
 
