@@ -55,11 +55,11 @@ Join the group discussion and receive announcements: [Soln Benchmark](https://gr
 |SIC      |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
 
 # Reference and citation
-[1] Y. Sun, "Localization precision of stochastic optical localization nanoscopy using single frames," J. Biomed. Optics, vol. 18, no. 11, pp. 111418-14, Oct. 2013.
+[1] Y. Sun, "[Localization precision of stochastic optical localization nanoscopy using single frames](http://biomedicaloptics.spiedigitallibrary.org/article.aspx?articleid=1762968)," J. Biomed. Optics, vol. 18, no. 11, pp. 111418-14, Oct. 2013.
 
-[2] Y. Sun, "Root mean square minimum distance as a quality metric for stochastic optical localization nanoscopy images," Sci. Reports, vol. 8, no. 1, pp. 17211, Nov. 2018.
+[2] Y. Sun, "[Root mean square minimum distance as a quality metric for stochastic optical localization nanoscopy images](https://www.nature.com/articles/s41598-018-35053-8)," Sci. Reports, vol. 8, no. 1, pp. 17211, Nov. 2018.
 
-[3] Y. Sun, "Spatiotemporal resolution as an information theoretical property of stochastic optical localization nanoscopy," 2020 Quantitative BioImaging Conf., QBI 2020, Oxford, UK, Jan. 6-9, 2020. 
+[3] Y. Sun, "[Spatiotemporal resolution as an information theoretical property of stochastic optical localization nanoscopy](https://www.researchgate.net/publication/335798848_Spatiotemporal_Resolution_as_an_Information_Theoretical_Property_of_Stochastic_Optical_Localization_Nanoscopy)," 2020 Quantitative BioImaging Conf., QBI 2020, Oxford, UK, Jan. 6-9, 2020. 
 
 # Contact
 
