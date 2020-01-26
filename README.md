@@ -15,7 +15,7 @@ The leaderboards will be updated after a submission.
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
 |UGIA-F     |3.05   |8.86     |12.41 |8.10  |
-|SIC      |44.37  |44.10    |50.45 |46.41|
+|SIC      |44.37  |44.10    |50.45 |46.31|
 
 **SESF2DAiry - Single Emitter Single Frame 2D Airy PSF: RMSMD (nm) vs SNR**
 
