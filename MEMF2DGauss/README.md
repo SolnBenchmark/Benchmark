@@ -60,7 +60,7 @@ Emitters are randomly and uniformly distributed in the region of view.
 |Frame size |Kx=Lx/Dx, Ky=Ly/Dy|pixels|
 |Frame time |Dt=0.01|sec|
 |Correspondingly | |
-|Frame rate|1/Dt=100|frames/s|
+|Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
 
 ### Region of view and frame size for five data frames 
