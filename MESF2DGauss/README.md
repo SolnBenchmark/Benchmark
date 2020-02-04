@@ -30,7 +30,7 @@ Five data frames with different emitter densities are synthesized and saved as t
 
 ### Submission 
 
-For each data frame, the emitter locations (x,y) shall be estimated and saved  row by row in a .txt file: e.g.
+For each data frame, the emitter locations (x,y) shall be estimated and saved row by row in a .txt file: e.g.
 
 4.4184628e+02   5.0638849e+03
 
