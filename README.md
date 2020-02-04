@@ -61,8 +61,8 @@ Join the group discussion and receive announcements: [Soln Benchmark](https://gr
 
 |Algorithm |Participant |Affiliation |Country |
 |:-------:|:------:|:--------:|:-----:|
-|UGIA-F     |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
 |UGIA-M     |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
+|UGIA-F     |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
 |SIC      |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
 
 # Reference and citation
