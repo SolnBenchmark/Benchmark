@@ -48,6 +48,8 @@ The three data movies are synthesized by using the following parameters.
 |:-----|:-----|:-----|
 |Emitter intensity |I=300000|photons/s/emitter|
 
+XXX STOP HERE XXX
+
 Emitters are randomly and uniformly distributed in the region of view. 
 
 ### Data frame 
