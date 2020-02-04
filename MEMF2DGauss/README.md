@@ -46,7 +46,7 @@ The three data movies are synthesized by using the following parameters.
 ### Emitter distribution and intensity (mean number of emitted photons)
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Emitter intensity |I=300000|photons/s/emitter|
+|Emitter intensity |I=300000|photons/sec/emitter|
 
 XXX STOP HERE XXX
 
@@ -58,7 +58,7 @@ Emitters are randomly and uniformly distributed in the region of view.
 |Region of view|[0,Lx] x [0,Ly] |nm| 
 |Pixel size |Dx=100, Dy=100|nm|
 |Frame size |Kx=Lx/Dx, Ky=Ly/Dy|pixels|
-|Frame time |Dt=0.01|s|
+|Frame time |Dt=0.01|sec|
 |Correspondingly | |
 |Frame rate|1/Dt=100|frames/s|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
