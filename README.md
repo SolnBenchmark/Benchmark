@@ -33,6 +33,16 @@ The leaderboards will be updated after a submission.
 |UGIA-F     |9.39   |10.06     |12.09 |19.26  |29.02 |15.96|
 |SIC        |44.45  |45.49     |46.57 |48.63  |50.56 |47.14|
 
+## Multiple emitters multiple frames
+
+**MEMF2DGauss - Multiple Emitter Multiple Frames 2D Gaussian PSF: RMSMD (nm) vs emitter distance**
+
+|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
+|:-------:|:-----:|:-----:|:-----:|:-----:|
+|UGIA-M   |3.96   |4.08   | 3.82  |3.95|
+|UGIA-F   |15.97  |26.11  | 75.28 |39.12|
+|SIC      |41.40  |38.66  | 38.92 |39.66|
+
 # Method
 A variety of data frames and data movies that simulate experiments are synthesized. 
 
