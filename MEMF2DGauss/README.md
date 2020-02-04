@@ -12,11 +12,11 @@ Three data movies with different distances between adjacent emitters are synthes
 
 ![Alt text](MEMF2DGauss_eD40nm_Frame10.png)
 
-**MEMF2DGauss_eD30nm_movie.zip  **
+**MEMF2DGauss_eD30nm_movie.zip**
 
 ![Alt text](MEMF2DGauss_eD30nm_Frame10.png)
 
-**MEMF2DGauss_eD20nm_movie.zip  **
+**MEMF2DGauss_eD20nm_movie.zip**
 
 ![Alt text](MEMF2DGauss_eD20nm_Frame10.png)
 
