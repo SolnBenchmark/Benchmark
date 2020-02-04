@@ -89,9 +89,9 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 ### Noise 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Mean of Poisson noise |b=15|photons/s/nm<sup>2</sup>|
-|Variance of Gaussian noise |G=10|photons/s/nm<sup>2</sup>| 
-|Mean of Gaussian noise |mu=0.5|photons/s/nm<sup>2</sup>|
+|Mean of Poisson noise |b=15|photons/sec/nm<sup>2</sup>|
+|Variance of Gaussian noise |G=10|photons/sec/nm<sup>2</sup>| 
+|Mean of Gaussian noise |mu=0.5|photons/sec/nm<sup>2</sup>|
 
 **Corresponding signal to noise ratios**
 
