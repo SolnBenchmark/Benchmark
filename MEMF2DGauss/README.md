@@ -41,12 +41,11 @@ The file names in submission shall be in the format:
 **MEMF2DGauss_eD20nm_xy_algorithmName.txt** 
 
 ## Parameters
-The three data frames are synthesized by using the following parameters. 
+The three data movies are synthesized by using the following parameters. 
 
 ### Emitter distribution and intensity (mean number of emitted photons)
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Number of emitters |M=1000| |
 |Emitter intensity |I=300000|photons/s/emitter|
 
 Emitters are randomly and uniformly distributed in the region of view. 
