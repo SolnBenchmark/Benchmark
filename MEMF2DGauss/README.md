@@ -63,15 +63,15 @@ Emitters are located on a helix with different adjacent-emitter distance in thre
 
 **Emitter activation**
 
-Each emitter is independently activated by following a Markov chain. The matrix of state transition probabilities is 
+Each emitter is independently activated by following a Markov chain [2]. The matrix of state transition probabilities is 
 
-| | | | | |
-|:-----|:-----|:-----|:-----|:-----|
-|r00 |r01 |r02 |r03 |r04 |
-|r10 |0   |0   |0   |0 |
-|0   |r21 |0   |0   |0 |
-|0   |0   |r32 |0   |0 |
-|0   |0   |0   |r43 |0 |
+| |0 |1 |2 |3 |4 |
+|:-----|:-----|:-----|:-----|:-----|:-----|
+|0 |r00 |r01 |r02 |r03 |r04 |
+|1 |r10 |0   |0   |0   |0 |
+|2 |0   |r21 |0   |0   |0 |
+|3 |0   |0   |r32 |0   |0 |
+|4 |0   |0   |0   |r43 |0 |
 
 where rij indicates the transition probability from state j to i, and r00=0.96, r01=0.5, r02=0.7, r03=0.8, r04=1.0, r10=1-r00, r21=1-r01, r32=1-r02, r43=1-r03.  
 
@@ -79,32 +79,14 @@ where rij indicates the transition probability from state j to i, and r00=0.96, 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Region of view|[0,Lx] x [0,Ly] |nm| 
-|Pixel size |Dx=100, Dy=100|nm|
-|Frame size |Kx=Lx/Dx, Ky=Ly/Dy|pixels|
+|Region of view size|Lx=2048, Ly=2048|nm|
+|Pixel size |Dx=128, Dy=128|nm|
+|Frame size |Kx=16, Ky=16|pixels|
 |Frame time |Dt=0.01|sec|
 |Correspondingly | |
 |Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
 |Number of frames |150| |
-
-### Region of view and frame size for five data frames 
-|Data frame |Parameter |Variable and value| Unit|
-|:-----|:-----|:-----|:-----|
-|**MESF2DGauss_density1_Frame.tif** |Region of view size |Lx=32000, Ly=32000|nm|
-|Correspondingly |Emitter density |1|emitters/um<sup>2</sup>|
-|                |Frame size |Kx=320, Ky=320|pixels|
-|**MESF2DGauss_density2_Frame.tif** |Region of view size |Lx=22000, Ly=22000|nm|
-|Correspondingly |Emitter density |2|emitters/um<sup>2</sup>|
-|                |Frame size |Kx=220, Ky=220|pixels|
-|**MESF2DGauss_density6_Frame.tif** |Region of view size |Lx=13000, Ly=13000|nm|
-|Correspondingly |Emitter density |6|emitters/um<sup>2</sup>|
-|                |Frame size |Kx=130, Ky=130|pixels|
-|**MESF2DGauss_density10_Frame.tif**|Region of view size |Lx=10000, Ly=10000|nm|
-|Correspondingly |Emitter density |10|emitters/um<sup>2</sup>|
-|                |Frame size |Kx=100, Ky=100|pixels|
-|**MESF2DGauss_density15_Frame.tif**|Region of view size |Lx=8000, Ly=8000|nm|
-|Correspondingly |Emitter density |15|emitters/um<sup>2</sup>|
-|                |Frame size |Kx=80, Ky=80|pixels|
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
@@ -135,7 +117,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 |Fluorescence wavelength |lambda=520|nm|
 |Standard deviation|78.26|nm|
 
-PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*pi\*na/lambda. 
+PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*pi\*na/lambda [1]. 
 
 ### Definitions
 |Parameter |Definition| Unit|
