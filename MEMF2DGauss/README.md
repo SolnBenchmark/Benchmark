@@ -8,7 +8,7 @@ Evaluate and benchmark performance of localization algorithms in localization of
 
 Three data movies with different distances between adjacent emitters are synthesized and saved as tiff files with 16 bits in depth, each of which is stored in a zip file:
 
-**MEMF2DGauss_eD40nm_movie.zip  (For purpose of demonstration, .png images of the 10th frames are shwon here.)**
+**MEMF2DGauss_eD40nm_movie.zip  (For purpose of demonstration, .png images of the 10th frames are shown here.)**
 
 ![Alt text](MEMF2DGauss_eD40nm_Frame10.png)
 
