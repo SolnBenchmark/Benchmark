@@ -65,6 +65,9 @@ Join the group discussion and receive announcements: [Soln Benchmark](https://gr
 |UGIA-F     |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
 |SIC      |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
 
+# Matlab Codes
+The data movies, data frames, UGIA-F estimator, and UGIA-M estimators all are generated and simulated by Matlab codes. The codes for a particular evaluation and benchmark are included in the corresponding subfolder, e.g. MEMF2DGauss/Codes. The functions that are called by these codes are included in the folder /MyMatlab. 
+
 # Reference and citation
 [1] Y. Sun, "Localization precision of stochastic optical localization nanoscopy using single frames," J. Biomed. Optics, vol. 18, no. 11, pp. 111418-14, Oct. 2013.
 
