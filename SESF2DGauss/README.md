@@ -32,7 +32,7 @@ For each data frame, the emitter locations (x,y) shall be estimated and saved  r
 
 4.1254239e+02   6.8510823e+03
 
-The file names in submission shall be in the format: 
+The filenames in submission shall be in the format: 
 
 **SESF2DGauss_highSNR_xy_algorithmName.txt** 
 
@@ -104,7 +104,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 |Fluorescence wavelength |lambda=520|nm|
 |Standard deviation|78.26|nm|
 
-PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*pi\*na/lambda. 
+PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*pi\*na/lambda [1]. 
 
 ### Definitions
 |Parameter |Definition| Unit|
