@@ -1,7 +1,7 @@
-# MESF2DGauss: Multiple Emitter Single Frame 2D Gaussian PSF
+# MEMF2DGauss: Multiple Emitter Multiple Frame 2D Gaussian PSF
 
 ## Purpose
-Evaluate and benchmark performance of localization algorithms in localization of multiple emitters with overlapped PSFs from a data movie. 
+Evaluate and benchmark performance of localization algorithms in localization of multiple emitters from a data movie of multiple frames. 
 
 ## Method
 ### Three data movies 
