@@ -43,16 +43,43 @@ The file names in submission shall be in the format:
 ## Parameters
 The three data movies are synthesized by using the following parameters. 
 
-### Emitter distribution and intensity (mean number of emitted photons)
+### Emitter 
+
+**Emitter distribution**
+
+Emitters are located on a helix with different adjacent-emitter distance in three data movies.
+
+|Movie file name |Emitter distance| Unit|
+|:-----|:-----|:-----|
+|MEMF2DGauss_eD40nm_movie.zip |40|nm|
+|MEMF2DGauss_eD30nm_movie.zip |30|nm|
+|MEMF2DGauss_eD20nm_movie.zip |20|nm|
+
+**Emitter intensity (mean number of emitted photons)**
+
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Emitter intensity |I=300000|photons/sec/emitter|
 
-XXX STOP HERE XXX
+**Emitter activation**
 
-Emitters are randomly and uniformly distributed in the region of view. 
+Each emitter is independently activated by following a Markov chain. The matrix of state transition probabilities is 
 
-### Data frame 
+R=(r00 r01 r02 r03 r04 
+   r10 0   0   0   0
+   0   r21 0   0   0
+   0   0   r32 0   0
+   0   0   0   r43 0)
+
+where rij indicates the transition probability from state j to i. 
+
+r00=0.96, r01=0.5, r02=0.7, r03=0.8, r04=1.0, r10=1-r00, r21=1-r01, r32=1-r02, r43=1-r03.  
+
+|Parameter |Variable and value| Unit|
+|:-----|:-----|:-----|
+|Emitter intensity |I=300000|photons/sec/emitter|
+
+### Data movie 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Region of view|[0,Lx] x [0,Ly] |nm| 
@@ -62,6 +89,7 @@ Emitters are randomly and uniformly distributed in the region of view.
 |Correspondingly | |
 |Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
+|Number of frames |150| |
 
 ### Region of view and frame size for five data frames 
 |Data frame |Parameter |Variable and value| Unit|
