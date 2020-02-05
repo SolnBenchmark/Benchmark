@@ -83,10 +83,12 @@ where rij indicates the transition probability from state j to i, and r00=0.96, 
 |Pixel size |Dx=128, Dy=128|nm|
 |Frame size |Kx=16, Ky=16|pixels|
 |Frame time |Dt=0.01|sec|
+|Number of frames |150| |
 |Correspondingly | |
 |Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
-|Number of frames |150| |
+|Average number of activations per emitter|9.45|frames/emitter|
+|Average number of activated emitters per frame|12.59|emitters/frame|
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
