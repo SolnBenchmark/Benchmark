@@ -65,19 +65,15 @@ Emitters are located on a helix with different adjacent-emitter distance in thre
 
 Each emitter is independently activated by following a Markov chain. The matrix of state transition probabilities is 
 
-R=(r00 r01 r02 r03 r04 
-   r10 0   0   0   0
-   0   r21 0   0   0
-   0   0   r32 0   0
-   0   0   0   r43 0)
+| | | | | |
+|:-----|:-----|:-----|:-----|:-----|
+|r00 |r01 |r02 |r03 |r04 |
+|r10 |0   |0   |0   |0 |
+|0   |r21 |0   |0   |0 |
+|0   |0   |r32 |0   |0 |
+|0   |0   |0   |r43 |0 |
 
-where rij indicates the transition probability from state j to i. 
-
-r00=0.96, r01=0.5, r02=0.7, r03=0.8, r04=1.0, r10=1-r00, r21=1-r01, r32=1-r02, r43=1-r03.  
-
-|Parameter |Variable and value| Unit|
-|:-----|:-----|:-----|
-|Emitter intensity |I=300000|photons/sec/emitter|
+where rij indicates the transition probability from state j to i, and r00=0.96, r01=0.5, r02=0.7, r03=0.8, r04=1.0, r10=1-r00, r21=1-r01, r32=1-r02, r43=1-r03.  
 
 ### Data movie 
 |Parameter |Variable and value| Unit|
