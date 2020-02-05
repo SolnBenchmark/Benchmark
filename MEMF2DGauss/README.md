@@ -87,8 +87,8 @@ where rij indicates the transition probability from state j to i, and r00=0.96, 
 |Correspondingly | |
 |Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
-|Average number of activations per emitter|9.45|frames/emitter|
 |Average number of activated emitters per frame|12.59|emitters/frame|
+|Average number of activations per emitter|9.45|frames/emitter|
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
