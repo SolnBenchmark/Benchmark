@@ -32,7 +32,7 @@ For each data movie, the emitter locations (x,y) shall be estimated and saved ro
 
 4.1254239e+02   6.8510823e+03
 
-The file names in submission shall be in the format: 
+The filenames in submission shall be in the format: 
 
 **MEMF2DGauss_eD40nm_xy_algorithmName.txt** 
 
@@ -49,7 +49,7 @@ The three data movies are synthesized by using the following parameters.
 
 Emitters are located on a helix with different adjacent-emitter distance in three data movies.
 
-|Movie file name |Emitter distance| Unit|
+|Data movie filename |Emitter distance| Unit|
 |:-----|:-----|:-----|
 |MEMF2DGauss_eD40nm_movie.zip |40|nm|
 |MEMF2DGauss_eD30nm_movie.zip |30|nm|
