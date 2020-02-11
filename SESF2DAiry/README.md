@@ -104,7 +104,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 |Fluorescence wavelength |lambda=520|nm|
 |Standard deviation|78.26|nm|
 
-PSF is 2D Gaussian PSF and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*pi\*na/lambda [1]. 
+PSF is 2D Airy and its standard deviation is estimated by sigma=1.3238/a where a=2\*pi\*na/lambda [1]. 
 
 ### Definitions
 |Parameter |Definition| Unit|
