@@ -5,10 +5,10 @@ The UGIA-F estimator achieves the Fisher information and CRLB of a data frame [1
 
 The UGIA-M estimator achieves the Fisher information and CRLB of a data movie [3].
 
-# Leaderboards: 2D
+# Leaderboards
 The leaderboards will be updated after a submission. 
 
-## Single emitter single frame
+## 2D: Single emitter single frame
 
 **SESF_2DGauss - Single Emitter Single Frame 2D Gaussian PSF: RMSMD (nm) vs SNR**
 
@@ -24,7 +24,7 @@ The leaderboards will be updated after a submission.
 |UGIA-F     |3.05|9.34|13.07|8.49|
 |SIC      |56.96|65.34|78.15|66.82|
 
-## Multiple emitters single frame
+## 2D: Multiple emitters single frame
 
 **MESF_2DGauss - Multiple Emitter Single Frame 2D Gaussian PSF: RMSMD (nm) vs emitter density**
 
@@ -33,7 +33,7 @@ The leaderboards will be updated after a submission.
 |UGIA-F     |9.39   |10.06     |12.09 |19.26  |29.02 |15.96|
 |SIC        |44.45  |45.49     |46.57 |48.63  |50.56 |47.14|
 
-## Multiple emitters multiple frames
+## 2D: Multiple emitters multiple frames
 
 **MEMF_2DGauss - Multiple Emitter Multiple Frames 2D Gaussian PSF: RMSMD (nm) vs emitter distance**
 
