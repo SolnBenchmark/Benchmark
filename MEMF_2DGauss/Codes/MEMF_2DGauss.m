@@ -1,5 +1,5 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% SolnBenchmark: MESM_2DGauss 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SolnBenchmark: MEMF_2DGauss 
 % (1) ME - Multiple Emitter localization 
 % (2) MF - from a data movie of multiple frame
 % (3) 2D - emitter locations 
