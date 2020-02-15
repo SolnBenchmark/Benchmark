@@ -1,4 +1,4 @@
-% [SDV,SDVavg,FWHM,FWHMavg,F_]=CRLB_2DGauss(sigma,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy) 
+% [SDV,SDVavg,FWHM,FWHMavg,F,F_]=CRLB_2DGauss(sigma,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy) 
 %
 % Calculate Cramer-Rao lower bound (CRLB) of 2D emitter locations from a 
 % data frame with a Gaussian PSF. 
