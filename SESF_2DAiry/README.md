@@ -64,12 +64,12 @@ Within the region of view, each emitter is randomly distributed in a square of s
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
-![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/SESF2DGauss/FrameCoordinates.png)
+![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/SESF_2DGauss/FrameCoordinates.png)
 
 ### Noise and signal to noise ratio in three data frames  
 |Data frame |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|:-----|
-|**SESF2DGauss_highSNR_Frame.tif**|Mean of Poisson noise |b=0.5|photons/s/nm<sup>2</sup>|
+|**SESF_2DAiry_highSNR_Frame.tif**|Mean of Poisson noise |b=0.5|photons/s/nm<sup>2</sup>|
 | |Variance of Gaussian noise |G=0.5|photons/s/nm<sup>2</sup>| 
 | |Mean of Gaussian noise |mu=0.5|photons/s/nm<sup>2</sup>|
 |Corresponding SNRs |Signal to Poisson noise ratio |rp=600000|nm<sup>2</sup>/emitter|
@@ -78,7 +78,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 | |                             |SGNR=57.78|dB|
 | |Total signal to noise ratio |r=300000|nm<sup>2</sup>/emitter|
 | |                           |SNR=54.77|dB|
-|**SESF2DGauss_mediumSNR_Frame.tif**|Mean of Poisson noise |b=15|photons/s/nm<sup>2</sup>|
+|**SESF_2DAiry_mediumSNR_Frame.tif**|Mean of Poisson noise |b=15|photons/s/nm<sup>2</sup>|
 | |Variance of Gaussian noise |G=10|photons/s/nm<sup>2</sup>| 
 | |Mean of Gaussian noise |mu=0.5|photons/s/nm<sup>2</sup>|
 |Corresponding SNRs |Signal to Poisson noise ratio |rp=20000|nm<sup>2</sup>/emitter|
@@ -87,7 +87,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 | |                             |SGNR=44.77|dB|
 | |Total signal to noise ratio |r=12000|nm<sup>2</sup>/emitter|
 | |                           |SNR=40.79|dB|
-|**SESF2DGauss_lowSNR_Frame.tif**|Mean of Poisson noise |b=30|photons/s/nm<sup>2</sup>|
+|**SESF_2DAiry_lowSNR_Frame.tif**|Mean of Poisson noise |b=30|photons/s/nm<sup>2</sup>|
 | |Variance of Gaussian noise |G=20|photons/s/nm<sup>2</sup>| 
 | |Mean of Gaussian noise |mu=0.5|photons/s/nm<sup>2</sup>|
 |Corresponding SNRs |Signal to Poisson noise ratio |rp=10000|nm<sup>2</sup>/emitter|
