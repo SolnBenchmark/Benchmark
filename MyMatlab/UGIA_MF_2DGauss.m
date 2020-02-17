@@ -1,4 +1,4 @@
-% [xyM,xyF,FF,FF_]=UGIA_2DGauss(sigma,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy,a) 
+% [xyM,xyF,FF,FF_]=UGIA_MF_2DGauss(sigma,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy,a) 
 %
 % SOLN images produced by the UGIA-M and UGIA-F estimators and their covariance
 % matrices from a data movie with 2D emitters and a Gaussian PSF. 
@@ -43,7 +43,7 @@
 % Yi Sun
 % 01/19/2020
 
-function [xyM,xyF,FF,FF_]=UGIA_2DGauss(sigma,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy,a) 
+function [xyM,xyF,FF,FF_]=UGIA_MF_2DGauss(sigma,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy,a) 
 
 [M,N]=size(a) ; 
 Na=sum(a) ;             % number of activated emitters in nth frame
