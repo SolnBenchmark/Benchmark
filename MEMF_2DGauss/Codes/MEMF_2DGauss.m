@@ -167,7 +167,7 @@ imwrite(U88,filename_Frame) ; % save data frame
 
 %% Localization by the UGIA-M and UGIA-F estimators 
 fprintf(1,'IAUG localization: \n') ; 
-[xyM,xyF,FF,FF_]=UGIA_2DGauss(sigma,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy,a) ;
+[xyM,xyF,FF,FF_]=UGIA_MF_2DGauss(sigma,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy,a) ;
 
 %% show sequence
 Fig=figure('Position',[400 50 600 600],'Color',[1 1 1]) ;
