@@ -8,40 +8,38 @@ The UGIA-M estimator achieves the Fisher information and CRLB of a data movie [3
 # Leaderboards
 The leaderboards will be updated after a submission. 
 
-## 2D: Single emitter single frame
+## 2D Gauss
 
-**SESF_2DGauss: RMSMD (nm) vs SNR**
+**SESF_2DGauss (single emitter single frame): RMSMD (nm) vs SNR**
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
 |UGIA-F     |3.05   |8.86     |12.41 |8.10  |
 |SIC      |44.37  |44.10    |50.45 |46.31|
 
-**SESF_2DAiry: RMSMD (nm) vs SNR**
-
-| Algorithm |High SNR |Medium SNR |Low SNR |Average|
-|:-------:|:------:|:--------:|:-----:|:-----:|
-|UGIA-F     |3.05|9.34|13.07|8.49|
-|SIC      |56.96|65.34|78.15|66.82|
-
-## 2D: Multiple emitters single frame
-
-**MESF_2DGauss: RMSMD (nm) vs emitter density**
+**MESF_2DGauss (multiple emitters single frame): RMSMD (nm) vs emitter density**
 
 | Algorithm |1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|6 emt/um<sup>2</sup>|10 emt/um<sup>2</sup>|15 emt/um<sup>2</sup>|Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|:-----:|:-----:|
 |UGIA-F     |9.39   |10.06     |12.09 |19.26  |29.02 |15.96|
 |SIC        |44.45  |45.49     |46.57 |48.63  |50.56 |47.14|
 
-## 2D: Multiple emitters multiple frames
-
-**MEMF_2DGauss: RMSMD (nm) vs emitter distance**
+**MEMF_2DGauss (multiple emitters multiple frames): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
 |:-------:|:-----:|:-----:|:-----:|:-----:|
 |UGIA-M   |3.96   |4.08   | 3.82  |3.95|
 |UGIA-F   |15.97  |26.11  | 75.28 |39.12|
 |SIC      |41.40  |38.66  | 38.92 |39.66|
+
+## 2D Airy
+
+**SESF_2DAiry (single emitter single frame): RMSMD (nm) vs SNR**
+
+| Algorithm |High SNR |Medium SNR |Low SNR |Average|
+|:-------:|:------:|:--------:|:-----:|:-----:|
+|UGIA-F     |3.05|9.34|13.07|8.49|
+|SIC      |56.96|65.34|78.15|66.82|
 
 # Method
 A variety of data frames and data movies that simulate experiments are synthesized. 
