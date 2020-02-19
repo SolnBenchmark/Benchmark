@@ -41,6 +41,14 @@ The leaderboards will be updated after a submission.
 |UGIA-F     |3.05|9.34|13.07|8.49|
 |SIC      |56.96|65.34|78.15|66.82|
 
+## 3D Astigmatic
+
+**SESF_3DAS (single emitter single frame): RMSMD (nm) vs SNR**
+
+| Algorithm |High SNR |Medium SNR |Low SNR |Average|
+|:-------:|:------:|:--------:|:-----:|:-----:|
+|UGIA-F     |11.80|29.53|39.36|26.90|
+
 # Method
 A variety of data frames and data movies that simulate experiments are synthesized. 
 
