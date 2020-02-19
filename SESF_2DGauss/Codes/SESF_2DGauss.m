@@ -21,7 +21,7 @@
 % Electrical Engineering Department
 % The City College of City University of New York
 % E-mail: ysun@ccny.cuny.edu
-% 11/14/2019
+% 11/14/2019, 02/18/2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear
@@ -92,12 +92,14 @@ fprintf(1,'Generate a data frame: \n') ;
 U=Frame_2DGauss(sigma,Kx,Ky,Dx,Dy,Dt,Ih,b,G,mu,xy) ; 
 U16=uint16(U) ; 
 filename_Frame=strcat('SESF_2DGauss_',SNRr,'_Frame','.tif') ; 
+figure
 imwrite(U16,filename_Frame) ; % save data frame 
 imshow(U,[]) ;        % show data frame 
-  %% Read a data frame
-  % U16_=imread(filename_Frame); % read data frame 
-  % imshow(U16_,[]) ; 
-  % U=double(U16_) ; 
+%% Read a data frame
+U16_=imread(filename_Frame); % read data frame 
+figure
+imshow(U16_,[]) ; 
+U=double(U16_) ; 
 %% Save a 8-bit PNG image for show
 Umax=max(max(U)) ; Umin=min(min(U)) ; 
 U8=uint8(255*(U-Umin)/(Umax-Umin)) ;
@@ -105,19 +107,12 @@ filename_Frame=strcat('SESF_2DGauss_',SNRr,'_Frame','.png') ;
 imwrite(U8,filename_Frame) ; % save data frame 
 %% Localization by the UGIA-F estimator 
 fprintf(1,'UGIA-F localization: \n') ; 
-xyIAUG=zeros(2,M) ;       % locations estimated by UGIA-F estimator 
-[SDV,SDVavg,SDV_FWHM,SDV_FWHMavg,F,F_]=CRLB_2DGauss(sigma,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy) ;
-[V,L,V1]=svd(F_) ;        % SVD of inverse of Fisher information matrix
-W=V*L.^0.5*randn(2*M,1) ; % an error vector achieving Fisher information
-for i=1:M
-  error=W(2*(i-1)+1:2*(i-1)+2) ;  % error vector for ith emitter
-  xyIAUG(:,i)=xy(:,i)+error ;     % location estimated by UGIA-F
-end
+[xyF,F,F_]=UGIA_F_2DGauss(sigma,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy) ;
 %% load emitter locations
 xy1=load(filename_xy0,'-ascii') ;
 xy_=xy1' ; 
 %% Calculate RMSMD
-[RMSMD1,RMSMD2]=RMSMD(xy_,xyIAUG) ;
+[RMSMD1,RMSMD2]=RMSMD(xy_,xyF) ;
 fprintf(1,SNRr) ; 
 fprintf(1,': SNR=%5.2f (dB) M=%d RMSMD=%6.3f (nm) \n',SNR,M,RMSMD1) ; 
 
