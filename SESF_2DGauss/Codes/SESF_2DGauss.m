@@ -42,7 +42,7 @@ switch SNRr
     b=15 ;          % rp=Ih/b, 10*log10(rp)=43.01 (dB)
     G=10 ;          % rg=Ih/G, 10*log10(rg)=44.77 (dB)
     key=key+1 ; 
-  case 'lowSNR'     % r=1/(1/rp+1/rg), 10*log10(r)=37.78 (dB)
+  case 'lowSNR'     % r=1/(1/rp+1/rg), 1  0*log10(r)=37.78 (dB)
     b=30 ;          % rp=Ih/b, 10*log10(rp)=40.00 (dB)
     G=20 ;          % rg=Ih/G, 10*log10(rg)=41.76 (dB)
     key=key+2 ; 
@@ -81,7 +81,7 @@ M=Mx*My ;             % number of emitters
 xy=zeros(2,M) ;       % 2D emitter locations 
 for ix=1:Mx
   for iy=1:My
-    xy(:,My*(ix-1)+iy)=[eLx*(ix-1+0.5)+sigma*rand ; eLy*(iy-1+0.5)+sigma*randn] ; 
+    xy(:,My*(ix-1)+iy)=[eLx*(ix-1+0.5)+sigma*randn ; eLy*(iy-1+0.5)+sigma*randn] ; 
   end
 end
 xy0=xy' ;             % ground truth emitter locaitons 
@@ -117,7 +117,7 @@ fprintf(1,SNRr) ;
 fprintf(1,': SNR=%5.2f (dB) M=%d RMSMD=%6.3f (nm) \n',SNR,M,RMSMD1) ; 
 
 %% Results: UGIA-F estimator
-% highSNR:   SNR=54.77 (dB) M=961 RMSMD= 3.05 (nm)
-% mediumSNR: SNR=40.79 (dB) M=961 RMSMD= 8.86 (nm)
-% lowSNR:    SNR=37.78 (dB) M=961 RMSMD=12.41 (nm) 
-% Average: mean([3.05 8.86 12.41])=8.10 (nm)
+% highSNR:   SNR=54.77 (dB) M=961 RMSMD= 3.03 (nm)
+% mediumSNR: SNR=40.79 (dB) M=961 RMSMD= 8.88 (nm)
+% lowSNR:    SNR=37.78 (dB) M=961 RMSMD=12.38 (nm) 
+% Average: mean([3.03 8.88 12.38])=8.10 (nm)
