@@ -106,7 +106,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 |       |sigmay0=135|nm |
 |       |Ay=-0.01, By=0.02| |
 
-PSF is 3D astigmatic [1]. The standard deviations in x and y as functions of z is shown below. 
+PSF is 3D astigmatic [1]. The corresponding standard deviations in x and y as functions of z are shown below. 
 
 ![Alt text](sigmaxy.png)
 
