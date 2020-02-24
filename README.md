@@ -10,7 +10,7 @@ The leaderboards will be updated after a submission.
 
 ## 2D Airy
 
-** 2DAiry_SESF (single emitter single frame): RMSMD (nm) vs SNR**
+**2DAiry_SESF (single emitter single frame): RMSMD (nm) vs SNR**
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
@@ -19,21 +19,21 @@ The leaderboards will be updated after a submission.
 
 ## 2D Gauss
 
-** 2DGauss_SESF (single emitter single frame): RMSMD (nm) vs SNR**
+**2DGauss_SESF (single emitter single frame): RMSMD (nm) vs SNR**
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
 |UGIA-F     | 3.01|8.74|12.03 |7.93|
 |SIC      | 44.00|43.37|46.62| 44.66|
 
-** 2DGauss_MESF (multiple emitters single frame): RMSMD (nm) vs emitter density**
+**2DGauss_MESF (multiple emitters single frame): RMSMD (nm) vs emitter density**
 
 | Algorithm |1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|6 emt/um<sup>2</sup>|10 emt/um<sup>2</sup>|15 emt/um<sup>2</sup>|Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|:-----:|:-----:|
 |UGIA-F     | 9.39 |10.07 |12.16 |18.96 |28.35|15.79|
 |SIC        | 44.45 |45.49 |46.57 |48.63 |50.57 |47.14|
 
-** 2DGauss_MEMF (multiple emitters multiple frames): RMSMD (nm) vs emitter distance**
+**2DGauss_MEMF (multiple emitters multiple frames): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
 |:-------:|:-----:|:-----:|:-----:|:-----:|
@@ -43,7 +43,7 @@ The leaderboards will be updated after a submission.
 
 ## 3D Astigmatic
 
-** 3DAS_SESF (single emitter single frame): RMSMD (nm) vs SNR**
+**3DAS_SESF (single emitter single frame): RMSMD (nm) vs SNR**
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
