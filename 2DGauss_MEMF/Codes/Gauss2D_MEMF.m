@@ -35,7 +35,7 @@ clear
 % eD=20 ;     % nm 
 %% Intialization 
 rng('default') ; 
-key=432400 ;  % key for random number generators
+key=0 ;       % key for random number generators
 switch eD
   case 40
     key=key+0 ; 
