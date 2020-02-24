@@ -47,7 +47,7 @@ The leaderboards will be updated after a submission.
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
-|UGIA-F     |11.80 |29.53 |39.36|26.90|
+|UGIA-F   |11.80 |29.54 |39.36|26.90|
 
 # Method
 A variety of data frames and data movies that simulate experiments are synthesized. 
