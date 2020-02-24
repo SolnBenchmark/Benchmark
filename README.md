@@ -8,46 +8,46 @@ The UGIA-M estimator achieves the Fisher information and CRLB of a data movie [3
 # Leaderboards
 The leaderboards will be updated after a submission. 
 
-## 2D Gauss
+## 2D Airy
 
-**SESF_2DGauss (single emitter single frame): RMSMD (nm) vs SNR**
+** 2DAiry_SESF (single emitter single frame): RMSMD (nm) vs SNR**
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
-|UGIA-F     |3.03   |8.88     |12.38 |8.10  |
-|SIC      |44.37  |44.10    |50.45 |46.31|
+|UGIA-F   |3.08 | 9.48 |12.98|8.51|
+|SIC      | 56.67 |66.91| 77.53|67.04|
 
-**MESF_2DGauss (multiple emitters single frame): RMSMD (nm) vs emitter density**
+## 2D Gauss
+
+** 2DGauss_SESF (single emitter single frame): RMSMD (nm) vs SNR**
+
+| Algorithm |High SNR |Medium SNR |Low SNR |Average|
+|:-------:|:------:|:--------:|:-----:|:-----:|
+|UGIA-F     | 3.01|8.74|12.03 |7.93|
+|SIC      | 44.00|43.37|46.62| 44.66|
+
+** 2DGauss_MESF (multiple emitters single frame): RMSMD (nm) vs emitter density**
 
 | Algorithm |1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|6 emt/um<sup>2</sup>|10 emt/um<sup>2</sup>|15 emt/um<sup>2</sup>|Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|:-----:|:-----:|
-|UGIA-F     |9.39   |10.06     |12.09 |19.26  |29.02 |15.96|
-|SIC        |44.45  |45.47     |46.57 |48.63  |50.57 |47.13|
+|UGIA-F     | 9.39 |10.07 |12.16 |18.96 |28.35|15.79|
+|SIC        | 44.45 |45.49 |46.57 |48.63 |50.57 |47.14|
 
-**MEMF_2DGauss (multiple emitters multiple frames): RMSMD (nm) vs emitter distance**
+** 2DGauss_MEMF (multiple emitters multiple frames): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
 |:-------:|:-----:|:-----:|:-----:|:-----:|
-|UGIA-M   |3.96   |4.08   | 3.82  |3.95|
-|UGIA-F   |15.97  |26.11  | 75.28 |39.12|
-|SIC      |41.40  |38.66  | 38.92 |39.66|
-
-## 2D Airy
-
-**SESF_2DAiry (single emitter single frame): RMSMD (nm) vs SNR**
-
-| Algorithm |High SNR |Medium SNR |Low SNR |Average|
-|:-------:|:------:|:--------:|:-----:|:-----:|
-|UGIA-F     |3.05|9.34|13.07|8.49|
-|SIC      |56.96|65.34|78.15|66.82|
+|UGIA-M   | 4.01    |4.05    |3.79    |3.95|
+|UGIA-F   | 15.97   |26.11   |75.16   |39.12|
+|SIC      | 41.41   |38.64   |38.92   |39.66 |
 
 ## 3D Astigmatic
 
-**SESF_3DAS (single emitter single frame): RMSMD (nm) vs SNR**
+** 3DAS_SESF (single emitter single frame): RMSMD (nm) vs SNR**
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
-|UGIA-F     |11.80|29.53|39.36|26.90|
+|UGIA-F     |11.80 |29.53 |39.36|26.90|
 
 # Method
 A variety of data frames and data movies that simulate experiments are synthesized. 
@@ -72,7 +72,7 @@ Join the group discussion and receive announcements: [Soln Benchmark](https://gr
 |SIC      |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
 
 # Matlab Codes
-The data movies, data frames, UGIA-F estimator, and UGIA-M estimators all are generated and simulated by Matlab codes. The codes for a particular evaluation and benchmark are included in the corresponding subfolder, e.g. MEMF2DGauss/Codes. The functions that are called by these codes are included in the folder /MyMatlab. 
+The data movies, data frames, UGIA-F estimator, and UGIA-M estimators all are generated and simulated by Matlab codes. The codes for a particular evaluation and benchmark are included in the corresponding subfolder, e.g. 2DGauss_ MEMF/Codes. The functions that are called by these codes are included in the folder /MyMatlab. 
 
 # Reference and citation
 [1] Y. Sun, "Localization precision of stochastic optical localization nanoscopy using single frames," J. Biomed. Optics, vol. 18, no. 11, pp. 111418-14, Oct. 2013.
