@@ -32,7 +32,7 @@ clear
 fprintf(1,'%s: \n',SNRr) ; 
 %% Intialization 
 rng('default') ; 
-key=432100 ;        % key for random number generators
+key=0 ;             % key for random number generators
 switch SNRr
   case 'highSNR'    % r=1/(1/rp+1/rg), 10*log10(r)=54.77 (dB)
     b=0.5 ;         % rp=Ih/b, 10*log10(rp)=57.78 (dB)
