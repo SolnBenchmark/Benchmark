@@ -115,8 +115,8 @@ xy_=xy1' ;
 fprintf(1,SNRr) ; 
 fprintf(1,': SNR=%5.2f (dB) M=%d RMSMD=%6.3f (nm) \n',SNR,M,RMSMD1) ; 
 
-%% Results: UGIA-F estimator
-% highSNR:   SNR=54.77 (dB) M=961 RMSMD= 3.08 (nm)
-% mediumSNR: SNR=40.79 (dB) M=961 RMSMD= 9.48 (nm)
-% lowSNR:    SNR=37.78 (dB) M=961 RMSMD=12.98 (nm) 
+%% Results, M=961: UGIA-F estimator
+%           highSNR   mediumSNR   lowSNR    Average 
+% SNR:      54.77     40.79       37.78 (dB) 
+% RMSMD:    3.08      9.48        12.98     8.51 (nm) 
 % Average: mean([3.08 9.48 12.98])=8.51 (nm)
