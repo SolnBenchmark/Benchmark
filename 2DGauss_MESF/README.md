@@ -94,7 +94,7 @@ Emitters are randomly and uniformly distributed in the region of view.
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
-![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/ 2DGauss_SESF_/FrameCoordinates.png)
+![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF_/FrameCoordinates.png)
 
 ### Noise 
 |Parameter |Variable and value| Unit|
