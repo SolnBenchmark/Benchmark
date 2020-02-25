@@ -17,6 +17,12 @@ The leaderboards will be updated after a submission.
 |UGIA-F   |3.08 | 9.48 |12.98|8.51|
 |SIC      | 56.67 |66.91| 77.53|67.04|
 
+**2DAiry_MESF (multiple emitters single frame): RMSMD (nm) vs emitter density**
+
+| Algorithm |1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|6 emt/um<sup>2</sup>|10 emt/um<sup>2</sup>|15 emt/um<sup>2</sup>|Average|
+|:-------:|:------:|:--------:|:-----:|:-----:|:-----:|:-----:|
+|UGIA-F   |9.70 |10.74 |17.01 |22.33 |29.13 |17.78|
+
 ## 2D Gauss
 
 **2DGauss_SESF (single emitter single frame): RMSMD (nm) vs SNR**
