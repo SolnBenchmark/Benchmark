@@ -22,6 +22,7 @@ The leaderboards will be updated after a submission.
 | Algorithm |1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|6 emt/um<sup>2</sup>|10 emt/um<sup>2</sup>|15 emt/um<sup>2</sup>|Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|:-----:|:-----:|
 |UGIA-F   |9.70 |10.74 |17.01 |22.33 |29.13 |17.78|
+|SIC      |48.28 |48.92 |51.79 |53.21 |52.46 |50.93 |
 
 ## 2D Gauss
 
