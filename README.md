@@ -15,7 +15,7 @@ The leaderboards will be updated after a submission.
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
 |:-------:|:------:|:--------:|:-----:|:-----:|
 |UGIA-F   |3.08 | 9.48 |12.98|8.51|
-|SIC      | 56.67 |66.91| 77.53|67.04|
+|SIC      | 56.67 |66.91| 77.53|67.70|
 
 **2DAiry_MESF (multiple emitters single frame): RMSMD (nm) vs emitter density**
 
