@@ -122,7 +122,7 @@ den=1+r10+r10*r21+r10*r21*r32+r10*r21*r32*r43 ;
 p0=1/den ;      % =0.9016, probability of de-activation
 Naae=(1-p0)*M ; % =24.6123, average # of activated emitters/frame
 % N=fix(Nape/(1-p0))  % =101, # of frames in data movie
-N=100 ;     
+N=100 ;         % corresponding Nape=N*(1-p0)=9.84
 c0=zeros(M,N+1) ; % states of Markov chains in data movie
 for n=2:N+1
   for m=1:M
