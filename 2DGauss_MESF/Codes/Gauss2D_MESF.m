@@ -111,10 +111,8 @@ xy_=xy1' ;
 [RMSMD1,RMSMD2]=RMSMD(xy_,xyF) ;
 fprintf(1,'Density=%2d Lx=%d Ly=%d M=%d RMSMD=%6.3f (nm) \n',eDen,Lx,Ly,M,RMSMD1) ; 
 
-%% Results: UGIA-F estimator
-% eDen=1:   M=1000 RMSMD= 9.39 (nm)
-% eDen=2:   M=1000 RMSMD=10.07 (nm)
-% eDen=6:   M=1000 RMSMD=12.16 (nm)
-% eDen=10:  M=1000 RMSMD=18.96 (nm) 
-% eDen=15:  M=1000 RMSMD=28.35 (nm) 
-% Average: mean([9.39 10.07 12.16 18.96 28.35])=15.79 (nm)
+%% Results, M=1000: UGIA-F estimator
+% eDen      1     2     6     10    15    Average 
+% RMSMD     9.39  10.07 12.16 18.96 28.35 15.79 (nm) 
+% mean([9.39  10.07 12.16 18.96 28.35])=15.79 
+
