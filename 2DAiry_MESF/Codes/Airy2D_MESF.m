@@ -27,15 +27,15 @@
 
 clear
 %% Range emitter density: choose one of them
-% eDen=1 ;            % emitter density (emitters/um^2)
- eDen=2 ;          % emitter density (emitters/um^2)
+ eDen=1 ;            % emitter density (emitters/um^2)
+% eDen=2 ;          % emitter density (emitters/um^2)
 % eDen=6 ;          % emitter density (emitters/um^2)
 % eDen=10 ;         % emitter density (emitters/um^2)
 % eDen=15 ;         % emitter density (emitters/um^2)
 fprintf(1,'Density=%2d (emitters/um^2): \n',eDen) ; 
 %% Intialization 
 rng('default') ; 
-key=432600 ;        % key for random number generators
+key=0 ;             % key for random number generators
 switch eDen
   case 1
     key=key+0 ;  
