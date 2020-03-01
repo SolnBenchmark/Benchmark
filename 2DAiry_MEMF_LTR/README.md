@@ -94,7 +94,7 @@ where rij indicates the transition probability from state j to i, and r00=0.988,
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
-![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DAiry_SESF/FrameCoordinates.png)
+![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/FrameCoordinates.png)
 
 ### Noise 
 |Parameter |Variable and value| Unit|
