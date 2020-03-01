@@ -64,6 +64,14 @@ The leaderboards will be updated after a submission.
 |UGIA-F    | 10.36  |11.13   |13.80   |11.76|
 |SIC      | 44.79 |43.69 |44.17 |44.22 |
 
+**2DAiry_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm) vs emitter distance**
+
+|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
+|:-------:|:-----:|:-----:|:-----:|:-----:|
+|UGIA-M   |3.75    |4.01    |3.81    |3.86|
+|SIC      |45.52 |45.04 |44.83 |45.13|
+|UGIA-F   |35.76   |136.46  |523.73  |231.98|
+
 ## 3D Astigmatic
 
 **3DAS_SESF (single emitter single frame): RMSMD (nm) vs SNR**
