@@ -58,6 +58,7 @@ The three data frames are synthesized by using the following parameters.
 ### Emitter distribution and intensity (mean number of emitted photons)
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
+|Number of emitters |M=1000|  |
 |Emitter intensity |I=300000|photons/s/emitter|
 
 Emitters are randomly and uniformly distributed in the region of view. 
