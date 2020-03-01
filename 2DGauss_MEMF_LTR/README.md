@@ -1,4 +1,4 @@
-# 2DGauss_MEMF_LTR: 2D Gaussian PSF Multiple Emitter Multiple Frame High Temporal Resolution 
+# 2DGauss_MEMF_LTR: 2D Gaussian PSF Multiple Emitter Multiple Frame Low Temporal Resolution 
 
 ## Purpose
 Evaluate and benchmark performance of localization algorithms in localization of multiple emitters from a data movie of multiple frames with high temporal resolution. 
