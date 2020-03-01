@@ -47,7 +47,7 @@ The three data movies are synthesized by using the following parameters.
 
 **Emitter distribution**
 
-M=250 emitters are located on a helix with different adjacent-emitter distance in three data movies.
+Emitters are located on a helix with different adjacent-emitter distance in three data movies.
 
 |Data movie filename |Emitter distance| Unit|
 |:-----|:-----|:-----|
@@ -55,10 +55,11 @@ M=250 emitters are located on a helix with different adjacent-emitter distance i
 |2DGauss_MEMF_LTR_eD30nm_movie.zip |30|nm|
 |2DGauss_MEMF_LTR_eD20nm_movie.zip |20|nm|
 
-**Emitter intensity (mean number of emitted photons)**
+**Number of emitters and emitter intensity (mean number of emitted photons)**
 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
+|Number of emitters |M=250|  |
 |Emitter intensity |I=300000|photons/sec/emitter|
 
 **Emitter activation**
