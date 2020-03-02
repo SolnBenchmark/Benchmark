@@ -31,26 +31,23 @@
 function U=Gauss2D_Frame(sigma,Kx,Ky,Dx,Dy,Dt,Ih,b,mu,G,xy)
 
 [~,M]=size(xy) ; 
-if M<1
-  fprintf(1,'# of emitters is zero. \n') ;
-  return ;
-end
-rp=Ih/b ; 
 Q=zeros(Ky,Kx) ;
-qx=zeros(M,Kx) ; qy=zeros(M,Ky) ;
-kx=0:Kx-1 ; ky=0:Ky-1 ;
-for i=1:M
-  if mod(i,100)==0
-    fprintf(1,'M=%3d  m=%3d\n',M,i) ;
+if M>=1   % at least one activated emitter
+  qx=zeros(M,Kx) ; qy=zeros(M,Ky) ;
+  kx=0:Kx-1 ; ky=0:Ky-1 ;
+  for i=1:M
+    if mod(i,100)==0
+      fprintf(1,'M=%3d  m=%3d\n',M,i) ;
+    end
+    Dxk1=(Dx*(kx+1)-xy(1,i))/sigma ; Dxk0=(Dx*kx-xy(1,i))/sigma ;
+    Dyk1=(Dy*(ky+1)-xy(2,i))/sigma ; Dyk0=(Dy*ky-xy(2,i))/sigma ;
+    qx(i,:)=(Qfunc(-Dxk1)-Qfunc(-Dxk0)) ;
+    qy(i,:)=(Qfunc(-Dyk1)-Qfunc(-Dyk0)) ;
+    Q=Q+qy(i,:)'*qx(i,:) ;
   end
-  Dxk1=(Dx*(kx+1)-xy(1,i))/sigma ; Dxk0=(Dx*kx-xy(1,i))/sigma ;
-  Dyk1=(Dy*(ky+1)-xy(2,i))/sigma ; Dyk0=(Dy*ky-xy(2,i))/sigma ;
-  qx(i,:)=(Qfunc(-Dxk1)-Qfunc(-Dxk0)) ;
-  qy(i,:)=(Qfunc(-Dyk1)-Qfunc(-Dyk0)) ;
-  Q=Q+qy(i,:)'*qx(i,:) ;
+  Q=(Dx*Dy)^(-1)*Q ;
 end
-Q=(Dx*Dy)^(-1)*Q ;
-v=Ih*Dt*Dx*Dy*(Q+1/rp) ;
+v=Dt*Dx*Dy*(Ih*Q+b) ;
 V=poissrnd(v) ;
 U=V+sqrt(Dt*Dx*Dy*G)*randn(size(V)) ;
 U=U+Dt*Dx*Dy*mu ; 

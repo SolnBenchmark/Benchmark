@@ -55,7 +55,12 @@ FM=zeros(2*M,2*M) ;     % Fisher information matrix up to nth frame
 xyA=zeros(2,max(Na)) ;  % activated emitter locations in nth frame
 ma=zeros(1,M) ;         % index of activated emitters in a frame 
 for n=1:N
-  if Na(n)>0           % no activated emitter in frame n
+  if mod(n,10)==0||n==1
+    fprintf(1,'N=%3d n=%3d Na=%d \n',N,n,Na(n)) ;
+  end
+  if Na(n)==0           % no activated emitter in frame n
+    xyM(:,:,n)=xyM(:,:,n-1) ; % xyM(:,:,n) keep same
+  else                  % Na(n)>=1, at least one emitter is activated
     p=0 ;
     for m=1:M
       if a(m,n)
@@ -106,9 +111,6 @@ for n=1:N
       error=W(i1:i2) ;              % error vector for ith emitter
       xyF(:,i,n)=xyA(:,i)+error ;   % location estimated by UGIA_F estimator
     end
-  end
-  if mod(n,10)==0
-    fprintf(1,'N=%d n=%3d p=%2d \n',N,n,p) ;
   end
 end
 
