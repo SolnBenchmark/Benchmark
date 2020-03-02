@@ -79,7 +79,7 @@ r=rp*rg/(rp+rg) ;     % total SNR (nm^2/emitter)
 SNR=10*log10(r) ;     % total SNR (dB)
 mu=0.5 ;              % mean of Gaussian noise (photons/s/nm^2)
 %% Emitter locations - ground truth
-xy=[Lx*rand(1,M) ; Lx*rand(1,M)] ;  % randomly uniformly distributed 
+xy=[Lx*rand(1,M) ; Ly*rand(1,M)] ;  % randomly uniformly distributed 
 xy0=xy' ;             % ground truth emitter locaitons 
 filename_xy0=strcat('2DGauss_MESF_density',num2str(eDen),'_xy0','.txt') ; 
 save(filename_xy0,'-ascii','xy0') ;
