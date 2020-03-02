@@ -24,13 +24,13 @@ The leaderboards will be updated after a submission.
 |UGIA-F     | 9.39 |10.07 |12.16 |18.96 |28.35|15.79|
 |SIC        | 44.45 |45.49 |46.57 |48.63 |50.57 |47.14|
 
-**2DGauss_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm) vs emitter distance**
+**2DGauss_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
 |:-------:|:-----:|:-----:|:-----:|:-----:|
-|UGIA-M   | 3.39  |3.41  |3.63  |3.48|
-|UGIA-F   | 10.69 |11.78 |13.99 |12.15|
-|SIC      | 41.99 |41.67 |42.15 |41.94|
+|UGIA-M   |3.75   |3.50    |3.25  |3.50 |
+|UGIA-F    |10.92   |12.21   |54.92 |26.02|
+|SIC           |43.93 |45.11 |42.54 |43.86|
 
 **2DGauss_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm) vs emitter distance**
 
