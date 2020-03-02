@@ -38,7 +38,8 @@ function [xyF,F,F_]=Airy2D_UGIA_F(na,lambda,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy)
 
 [~,M]=size(xy) ;
 if M<1
-  fprintf(1,'# of dyes is zero. \n') ;
+  xyF=[] ; F=[] ; F_=[] ; 
+  fprintf(1,'# of emitter is zero. \n') ;
   return ;
 end
 F=Airy2D_Fisher(na,lambda,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy) ; 

@@ -32,32 +32,29 @@
 function U=Airy2D_Frame(na,lambda,Kx,Ky,Dx,Dy,Dt,Ih,b,mu,G,xy) 
 
 [~,M]=size(xy) ;
-if M<1
-  fprintf(1,'# of emitters is zero. \n') ;
-  return ;
-end
-rp=Ih/b ; 
-a=2*pi*na/lambda ; 
-d=20 ;	% nm, As d increase, computation time decreases but error increases
-xx=0.01+0:d:Dx-1 ; yy=(0.01+0:d:Dy-1)' ;	% start with 0.01 to avoid NaN
-Q=zeros(Ky,Kx) ; 
-for i=1:M
-  if mod(i,10)==0||i==1
-    fprintf(1,'M=%3d m=%3d \n',M,i) ; 
+Q=zeros(Ky,Kx) ;
+if M>=1   % at least one activated emitter 
+  a=2*pi*na/lambda ;
+  d=20 ;	% nm, As d increase, computation time decreases but error increases
+  xx=0.01+0:d:Dx-1 ; yy=(0.01+0:d:Dy-1)' ;	% start with 0.01 to avoid NaN
+  for i=1:M
+    if (M>400)&&(mod(i,10)==0||i==1)
+      fprintf(1,'M=%3d m=%3d \n',M,i) ;
+    end
+    xi=xy(1,i) ; yi=xy(2,i) ;
+    for ky=0:Ky-1
+      yyi=(yy+(ky*Dy-yi))*ones(1,length(yy)) ;
+      for kx=0:Kx-1
+        xxi=ones(length(xx),1)*(xx+(kx*Dx-xi)) ;
+        r2=xxi.^2+yyi.^2 ; r2q=r2.^0.5 ;
+        tmp=besselj(1,a*r2q).^2./(pi*r2) ;
+        Q(ky+1,kx+1)=Q(ky+1,kx+1)+sum(sum(tmp)) ;
+      end
+    end
   end
-  xi=xy(1,i) ; yi=xy(2,i) ; 
-	for ky=0:Ky-1
-		yyi=(yy+(ky*Dy-yi))*ones(1,length(yy)) ;
-		for kx=0:Kx-1
-			xxi=ones(length(xx),1)*(xx+(kx*Dx-xi)) ; 
-			r2=xxi.^2+yyi.^2 ; r2q=r2.^0.5 ;
-			tmp=besselj(1,a*r2q).^2./(pi*r2) ;
-      Q(ky+1,kx+1)=Q(ky+1,kx+1)+sum(sum(tmp)) ;
-		end
-	end
+  Q=(Dx*Dy)^(-1)*d^2*Q ;
 end
-Q=(Dx*Dy)^(-1)*d^2*Q ;
-v=Ih*Dt*Dx*Dy*(Q+1/rp) ;
+v=Dt*Dx*Dy*(Ih*Q+b) ;
 V=poissrnd(v) ;
 U=V+sqrt(Dt*Dx*Dy*G)*randn(size(V)) ;
 U=U+Dt*Dx*Dy*mu ; 

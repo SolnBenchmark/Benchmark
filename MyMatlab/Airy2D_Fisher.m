@@ -36,7 +36,8 @@ function F=Airy2D_Fisher(na,lambda,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy)
 
 [~,M]=size(xy) ;
 if M<1
-  fprintf(1,'The number of emitter is zero. \n') ;
+  F=[] ; 
+  fprintf(1,'# of emitter is zero. \n') ;
   return ;
 end
 r=Ih/(b+G) ;  % total SNR (nm^2/emitter) 
@@ -44,7 +45,9 @@ a=2*pi*na/lambda ;
 d=20 ;	% As d increases, computation time decreases but error increases
 xx=0.01+0:d:Dx-1 ; yy=(0.01+0:d:Dy-1)' ;	% start with 0.01 to avoid NaN
 Q=zeros(1,Ky,Kx) ; 
-fprintf(1,'Step 1 ... \r') ;
+if M>200
+  fprintf(1,'Step 1 ... \n') ;
+end
 for i=1:M
   xi=xy(1,i) ; yi=xy(2,i) ; 
 	for ky=0:Ky-1
@@ -63,7 +66,9 @@ if r==inf
   Qu=Qu+1e-10 ; % add 1e-10 to avoid 0/0=NaN 
 end
 DqDy=zeros(M,Ky,Kx) ; DqDx=zeros(M,Ky,Kx) ; 
-fprintf(1,'Step 2 ... \r') ;
+if M>200
+  fprintf(1,'Step 2 ... \n') ;
+end
 for i=1:M
   xi=xy(1,i) ; yi=xy(2,i) ; 
 	for ky=0:Ky-1
