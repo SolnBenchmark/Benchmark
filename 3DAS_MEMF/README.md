@@ -74,7 +74,7 @@ Emitters are randomly and uniformly distributed in the cuboid [0,Lx] x [0,Ly] x 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Region of view|[0,Lx] x [0,Ly] x [-Lz,Lz] |nm| 
-|Size of axial view |Lz=400] |nm| 
+|Size of axial view |Lz=400 |nm| 
 |Pixel size |Dx=100, Dy=100|nm|
 |Frame size |Kx=Lx/Dx, Ky=Ly/Dy|pixels|
 |Frame time |Dt=0.01|s|
