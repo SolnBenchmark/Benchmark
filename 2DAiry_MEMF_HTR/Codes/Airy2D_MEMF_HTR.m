@@ -32,21 +32,12 @@
 clear
 %% Emitter distance: choose one of three
  eD=40 ;       % nm 
-% eD=30 ;     % nm 
+% eD=30 ;       % nm 
 % eD=20 ;     % nm 
 %% Intialization 
 rng('default') ; 
-key=0 ;               % key for random number generators
-switch eD
-  case 40
-    key=key+0 ; 
-  case 30
-    key=key+1 ; 
-  case 20
-    key=key+2 ; 
-  otherwise
-    return ;
-end
+key=432800 ;  % key for random number generators
+key=key+eD ; 
 rng(key) ; 
 fprintf(1,'Emitter distance: %d (nm) \n',eD) ; 
 %% Optical system 
@@ -108,7 +99,7 @@ save(filename_xy0,'-ascii','xy0') ;
 % xy=[rd.*cos(theta)+Lx/2 ; rd.*sin(theta)+Ly/2] ; 
 
 %% Emitter activations
-Nape=10 ;   % average number of activations per emitter in data movie
+N=100 ;     
 J=4 ;       % Maximum state
 r00=0.935 ; 
 r01=0.5 ;   r02=0.7 ;   r03=0.8 ;   r04=1.0 ; 
@@ -120,9 +111,9 @@ R=[r00 r01 r02 r03 r04 % matrix of state transition probabilities
    0   0   0   r43 0] ;
 den=1+r10+r10*r21+r10*r21*r32+r10*r21*r32*r43 ; 
 p0=1/den ;      % =0.9016, probability of de-activation
-Naae=(1-p0)*M ; % =24.6123, average # of activated emitters/frame
-% N=fix(Nape/(1-p0))  % =101, # of frames in data movie
-N=100 ;     
+Nape=(1-p0)*N ; % =9.8449~=10!, average number of activations per emitter in data movie
+                % ensure each emitter is activated at least once 
+Naae=(1-p0)*M ; % =24.61, average # of activated emitters/frame
 c0=zeros(M,N+1) ; % states of Markov chains in data movie
 for n=2:N+1
   for m=1:M
@@ -248,9 +239,11 @@ ylabel('RMSMD (nm)') ;
 xlabel('Temporal resolution (s)') ; 
 
 %% Results: RMSMD vs emitter distance 
-% M=250; N=100; TR=1 s
-% Distance: 40      30      20      Average (nm)
-% UGIA-M:   3.75    4.01    3.81    3.86
-% UGIA-F:   35.76   136.46  523.73  231.98
-% Average RMSMD-M: mean([3.75 4.01 3.81])=3.86 (nm) 
-% Average RMSMD-F: mean([35.76 136.46 523.73])=231.98 (nm)
+% M=250; N=100; TR=1 sec
+% pM: # emitters activated at least once in a movie
+% Distance: 40    30      20      Average (nm)
+% pM:       250   249     250   
+% UGIA-M:   3.46  3.71    3.83    3.67    (nm)
+% UGIA-F:   58.37 420.70  877.50  452.19  (nm)
+% Average RMSMD-M: mean([3.46  3.71    3.83]) 
+% Average RMSMD-F: mean([58.37 420.70  877.50])
