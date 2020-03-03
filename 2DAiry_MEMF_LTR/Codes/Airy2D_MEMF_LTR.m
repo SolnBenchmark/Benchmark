@@ -31,22 +31,13 @@
 
 clear
 %% Emitter distance: choose one of three
- eD=40 ;       % nm 
-% eD=30 ;     % nm 
-% eD=20 ;     % nm 
+ eD=40 ;           % nm 
+% eD=30 ;           % nm 
+% eD=20 ;           % nm 
 %% Intialization 
 rng('default') ; 
-key=0 ;               % key for random number generators
-switch eD
-  case 40
-    key=key+0 ; 
-  case 30
-    key=key+1 ; 
-  case 20
-    key=key+2 ; 
-  otherwise
-    return ;
-end
+key=0 ;             % key for random number generators
+key=key+eD ; 
 rng(key) ; 
 fprintf(1,'Emitter distance: %d (nm) \n',eD) ; 
 %% Optical system 
@@ -108,9 +99,9 @@ save(filename_xy0,'-ascii','xy0') ;
 % xy=[rd.*cos(theta)+Lx/2 ; rd.*sin(theta)+Ly/2] ; 
 
 %% Emitter activations
-Nape=10 ;   % average number of activations per emitter in data movie
+N=1000 ;    % Temporal resolution (TR): N*Dt=10 sec
 J=4 ;       % Maximum state
-r00=0.988 ; 
+r00=0.9935 ; 
 r01=0.5 ;   r02=0.7 ;   r03=0.8 ;   r04=1.0 ; 
 r10=1-r00 ; r21=1-r01 ; r32=1-r02 ; r43=1-r03 ;  
 R=[r00 r01 r02 r03 r04 % matrix of state transition probabilities
@@ -119,10 +110,10 @@ R=[r00 r01 r02 r03 r04 % matrix of state transition probabilities
    0   0   r32 0   0
    0   0   0   r43 0] ;
 den=1+r10+r10*r21+r10*r21*r32+r10*r21*r32*r43 ; 
-p0=1/den ;      % =0.9802, probability of de-activation
-Naae=(1-p0)*M ; % =4.94, average # of activated emitters/frame
-% N=fix(Nape/(1-p0))  % =506, # of frames in data movie
-N=500 ;     % corresponding Nape=9.45
+p0=1/den       % =0.9892, probability of de-activation
+Nape=(1-p0)*N  % =10.80>~=10!, average number of activations per emitter in data movie
+               % ensure each emitter is activated at least once 
+Naae=(1-p0)*M  % =2.70, average # of activated emitters/frame
 c0=zeros(M,N+1) ; % states of Markov chains in data movie
 for n=2:N+1
   for m=1:M
@@ -248,9 +239,11 @@ ylabel('RMSMD (nm)') ;
 xlabel('Temporal resolution (s)') ; 
 
 %% Results: RMSMD vs emitter distance 
-% M=250; N=500; TR=5 s
-% Distance: 40      30      20      Average (nm)
-% UGIA-M:   3.49    3.57    3.54    3.53
-% UGIA-F:   10.36   11.13   13.80   11.76
-% Average RMSMD-M: mean([3.49 3.57 3.54])=3.57 (nm) 
-% Average RMSMD-F: mean([10.36 11.13 13.80])=11.76 (nm)
+% M=250; N=1000; TR=10 sec
+% pM: # emitters activated at least once in a movie
+% Distance: 40    30    20    Average (nm)
+% pM:       249   250   250
+% UGIA-M:   3.50  3.27  3.45  3.41  (nm)
+% UGIA-F:   10.14 9.83  11.39 10.45 (nm)
+% Average RMSMD-M: mean([3.50  3.27  3.45])=3.41 (nm) 
+% Average RMSMD-F: mean([10.14 9.83  11.39])=10.45 (nm)
