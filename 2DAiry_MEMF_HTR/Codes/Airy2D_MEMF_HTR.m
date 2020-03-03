@@ -33,10 +33,10 @@ clear
 %% Emitter distance: choose one of three
  eD=40 ;       % nm 
 % eD=30 ;       % nm 
-% eD=20 ;     % nm 
+% eD=20 ;       % nm 
 %% Intialization 
 rng('default') ; 
-key=432800 ;  % key for random number generators
+key=0 ;         % key for random number generators
 key=key+eD ; 
 rng(key) ; 
 fprintf(1,'Emitter distance: %d (nm) \n',eD) ; 
