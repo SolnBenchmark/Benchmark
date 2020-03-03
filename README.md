@@ -8,30 +8,6 @@ The UGIA-M estimator achieves the Fisher information and CRLB of a data movie [3
 # Leaderboards
 The leaderboards will be updated after a submission. 
 
-## 2D Gauss
-
-**2DGauss_SESF (single emitter single frame): RMSMD (nm) vs SNR**
-
-| Algorithm |High SNR |Medium SNR |Low SNR |Average|
-|:-------:|:------:|:--------:|:-----:|:-----:|
-|UGIA-F     | 3.01|8.74|12.03 |7.93|
-|SIC      | 44.00|43.37|46.62| 44.66|
-
-**2DGauss_MESF (multiple emitters single frame): RMSMD (nm) vs emitter density**
-
-| Algorithm |1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|6 emt/um<sup>2</sup>|10 emt/um<sup>2</sup>|15 emt/um<sup>2</sup>|Average|
-|:-------:|:------:|:--------:|:-----:|:-----:|:-----:|:-----:|
-|UGIA-F     | 9.39 |10.07 |12.16 |18.96 |28.35|15.79|
-|SIC        | 44.45 |45.49 |46.57 |48.63 |50.57 |47.14|
-
-**2DGauss_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm) vs emitter distance**
-
-|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
-|:-------:|:-----:|:-----:|:-----:|:-----:|
-|UGIA-M   |4.26  |3.51    |3.74    |3.84|
-|SIC      |42.99 |42.59 |43.50 |43.03|
-|UGIA-F   | 23.40 |339.31  |2407.74 |923.48|
-
 ## 2D Airy
 
 **2DAiry_SESF (single emitter single frame): RMSMD (nm) vs SNR**
@@ -48,13 +24,13 @@ The leaderboards will be updated after a submission.
 |UGIA-F   |9.70 |10.74 |17.01 |22.33 |29.13 |17.78|
 |SIC      |48.28 |48.92 |51.79 |53.21 |52.46 |50.93 |
 
-**2DAiry_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm) vs emitter distance**
+**2DAiry_MEMF _LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
 |:-------:|:-----:|:-----:|:-----:|:-----:|
-|UGIA-M   |3.49    |3.57    |3.54    |3.53|
-|UGIA-F   | 10.36  |11.13   |13.80   |11.76|
-|SIC      | 44.79 |43.69 |44.17 |44.22 |
+|UGIA-M   |3.50  |3.27  |3.45  |3.41|
+|UGIA-F    |10.14 |9.83  |11.39 |10.45|
+|SIC      |47.04 |47.55 |53.68 |49.42|
 
 **2DAiry_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm) vs emitter distance**
 
@@ -68,9 +44,41 @@ The leaderboards will be updated after a submission.
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
 |:-------:|:-----:|:-----:|:-----:|:-----:|
-|UGIA-M   |3.75    |4.01    |3.81    |3.86|
-|SIC      |45.52 |45.04 |44.83 |45.13|
-|UGIA-F   |35.76   |136.46  |523.73  |231.98|
+|UGIA-M   |3.46  |3.71    |3.83    |3.67|
+|SIC           |44.79 |45.52 |44.70 |45.00|
+|UGIA-F   |58.37 |420.70  |877.50  |452.19|
+
+## 2D Gauss
+
+**2DGauss_SESF (single emitter single frame): RMSMD (nm) vs SNR**
+
+| Algorithm |High SNR |Medium SNR |Low SNR |Average|
+|:-------:|:------:|:--------:|:-----:|:-----:|
+|UGIA-F     | 3.01|8.74|12.03 |7.93|
+|SIC      | 44.00|43.37|46.62| 44.66|
+
+**2DGauss_MESF (multiple emitters single frame): RMSMD (nm) vs emitter density**
+
+| Algorithm |1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|6 emt/um<sup>2</sup>|10 emt/um<sup>2</sup>|15 emt/um<sup>2</sup>|Average|
+|:-------:|:------:|:--------:|:-----:|:-----:|:-----:|:-----:|
+|UGIA-F     | 9.39 |10.07 |12.16 |18.96 |28.35|15.79|
+|SIC        | 44.45 |45.49 |46.57 |48.63 |50.57 |47.14|
+
+**2DGauss_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm) vs emitter distance**
+
+|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
+|:-------:|:-----:|:-----:|:-----:|:-----:|
+|UGIA-M   |3.75   |3.50    |3.25  |3.50 |
+|UGIA-F    |10.92   |12.21   |54.92 |26.02|
+|SIC           |43.93 |45.11 |42.54 |43.86|
+
+**2DGauss_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm) vs emitter distance**
+
+|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
+|:-------:|:-----:|:-----:|:-----:|:-----:|
+|UGIA-M   |4.26  |3.51    |3.74    |3.84|
+|SIC      |42.99 |42.59 |43.50 |43.03|
+|UGIA-F   | 23.40 |339.31  |2407.74 |923.48|
 
 ## 3D Astigmatic
 
