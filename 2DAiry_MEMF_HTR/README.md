@@ -68,13 +68,13 @@ Each emitter is independently activated by following a Markov chain [2]. The mat
 
 | |0 |1 |2 |3 |4 |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|0 |r00 |r01 |r02 |r03 |r04 |
-|1 |r10 |0   |0   |0   |0 |
-|2 |0   |r21 |0   |0   |0 |
-|3 |0   |0   |r32 |0   |0 |
-|4 |0   |0   |0   |r43 |0 |
+|0 |r00=0.9188 |r01=0.5 |r02=0.7 |r03=0.8 |r04=1.0 |
+|1 |r10=1-r00 |0   |0   |0   |0 |
+|2 |0   |r21=1-r01 |0   |0   |0 |
+|3 |0   |0   |r32=1-r02 |0   |0 |
+|4 |0   |0   |0   |r43=1-r03 |0 |
 
-where rij indicates the transition probability from state j to i, and r00=0.935, r01=0.5, r02=0.7, r03=0.8, r04=1.0, r10=1-r00, r21=1-r01, r32=1-r02, r43=1-r03.  
+rij indicates the transition probability from state j to i.  
 
 ### Data movie 
 |Parameter |Variable and value| Unit|
@@ -84,13 +84,13 @@ where rij indicates the transition probability from state j to i, and r00=0.935,
 |Pixel size |Dx=128, Dy=128|nm|
 |Frame size |Kx=16, Ky=16|pixels|
 |Frame time |Dt=0.01|sec|
-|Number of frames |100| |
+|Movie length |N=100|frames |
 |Correspondingly | |
 |Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
-|Average number of activated emitters per frame|24.61|emitters/frame|
-|Average number of activations per emitter|9.84|frames/emitter|
 |Temporal resolution |TR=N\*Dt=1 |sec|
+|Average number of activations per emitter|12|frames/emitter|
+|Average number of activated emitters per frame|30|emitters/frame|
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
