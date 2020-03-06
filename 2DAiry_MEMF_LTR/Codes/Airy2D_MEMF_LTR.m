@@ -100,20 +100,23 @@ save(filename_xy0,'-ascii','xy0') ;
 
 %% Emitter activations
 N=1000 ;    % Temporal resolution (TR): N*Dt=10 sec
+Nape=12 ;   % Average # of activations per emitter in data movie
+            % =(1-p0)*N ; ensure each emitter is activated at least once 
 J=4 ;       % Maximum state
-r00=0.9935 ; 
 r01=0.5 ;   r02=0.7 ;   r03=0.8 ;   r04=1.0 ; 
-r10=1-r00 ; r21=1-r01 ; r32=1-r02 ; r43=1-r03 ;  
+r21=1-r01 ; r32=1-r02 ; r43=1-r03 ;  
+r00=1-Nape/((N-Nape)*(1+r21+r21*r32+r21*r32*r43)) ; % =0.9928
+r10=1-r00 ; 
 R=[r00 r01 r02 r03 r04 % matrix of state transition probabilities
    r10 0   0   0   0
    0   r21 0   0   0
    0   0   r32 0   0
    0   0   0   r43 0] ;
 den=1+r10+r10*r21+r10*r21*r32+r10*r21*r32*r43 ; 
-p0=1/den       % =0.9892, probability of de-activation
-Nape=(1-p0)*N  % =10.80>~=10!, average number of activations per emitter in data movie
-               % ensure each emitter is activated at least once 
-Naae=(1-p0)*M  % =2.70, average # of activated emitters/frame
+p0=1/den ;        % =0.9880, probability of de-activation
+Naae=(1-p0)*M ;   % =Nape*M/N=3, average # of activated emitters/frame
+pd=1-(1-p0^N)^M ; % =1.4275e-03, probability that at least one emitter 
+                  % is not activated in data movie
 c0=zeros(M,N+1) ; % states of Markov chains in data movie
 for n=2:N+1
   for m=1:M
@@ -128,6 +131,7 @@ end
 %% Generate and save a data movie
 fprintf(1,'Generate a data movie: \n') ; 
 a=(c~=0) ;      % a(m,n)=1 if activated; a(m,n)=0 otherwise  
+                % sum(sum(a')==0): # of emitters never activated 
 Na=sum(a) ;     % number of activated emitters in nth frame
 xyActive=zeros(2,M,N) ; % activated emitter locations in nth frame
 ma=zeros(M,N) ; % index of activated emitters in a frame 
@@ -242,8 +246,8 @@ xlabel('Temporal resolution (s)') ;
 % M=250; N=1000; TR=10 sec
 % pM: # emitters activated at least once in a movie
 % Distance: 40    30    20    Average (nm)
-% pM:       249   250   250
-% UGIA-M:   3.50  3.27  3.45  3.41  (nm)
-% UGIA-F:   10.14 9.83  11.39 10.45 (nm)
-% Average RMSMD-M: mean([3.50  3.27  3.45])=3.41 (nm) 
-% Average RMSMD-F: mean([10.14 9.83  11.39])=10.45 (nm)
+% pM:       250   250   250
+% UGIA-M:   3.00  3.14  2.96  3.03
+% UGIA-F:   9.91  10.12 12.15 10.73
+% Average RMSMD-M: mean([3.00  3.14  2.96])
+% Average RMSMD-F: mean([9.91  10.12 12.15])
