@@ -24,29 +24,29 @@ The leaderboards will be updated after a submission.
 |UGIA-F   |9.70 |10.74 |17.01 |22.33 |29.13 |17.78|
 |SIC      |48.28 |48.92 |51.79 |53.21 |52.46 |50.93 |
 
-**2DAiry_MEMF _LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm) vs emitter distance**
+**2DAiry_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
 |:-------:|:-----:|:-----:|:-----:|:-----:|
-|UGIA-M   |3.50  |3.27  |3.45  |3.41|
-|UGIA-F    |10.14 |9.83  |11.39 |10.45|
-|SIC      |47.04 |47.55 |53.68 |49.42|
+|UGIA-M   |3.00  |3.14  |2.96  |3.03|
+|UGIA-F    |9.91  |10.12 |12.15 |10.73|
+|SIC           |44.81 |48.51 |47.59 |46.97|
 
 **2DAiry_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
 |:-------:|:-----:|:-----:|:-----:|:-----:|
-|UGIA-M   |3.75   |3.50    |3.25  |3.50 |
-|UGIA-F   |10.92   |12.21   |54.92 |26.02|
-|SIC      |43.93 |45.11 |42.54 |43.86|
+|UGIA-M   |3.29  |2.97  |3.51  |3.26|
+|UGIA-F   |11.10 |11.61 |17.62 |13.44|
+|SIC      |43.99 |43.71 |44.10 |43.93|
 
 **2DAiry_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
 |:-------:|:-----:|:-----:|:-----:|:-----:|
-|UGIA-M   |3.46  |3.71    |3.83    |3.67|
+|UGIA-M   |3.20  |3.09    |3.44    |3.24|
 |SIC           |44.79 |45.52 |44.70 |45.00|
-|UGIA-F   |58.37 |420.70  |877.50  |452.19|
+|UGIA-F   |50.42 |2426.96 |7178.73 |3218.70|
 
 ## 2D Gauss
 
@@ -64,21 +64,29 @@ The leaderboards will be updated after a submission.
 |UGIA-F     | 9.39 |10.07 |12.16 |18.96 |28.35|15.79|
 |SIC        | 44.45 |45.49 |46.57 |48.63 |50.57 |47.14|
 
+**2DGauss_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm) vs emitter distance**
+
+|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
+|:-------:|:-----:|:-----:|:-----:|:-----:|
+|UGIA-M   |3.06  |2.89  |2.85  |2.93 |
+|UGIA-F    |10.53 |12.87 |13.46 |12.29|
+|SIC           |43.25 |39.78 |39.75 |40.93|
+
 **2DGauss_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
 |:-------:|:-----:|:-----:|:-----:|:-----:|
-|UGIA-M   |3.75   |3.50    |3.25  |3.50 |
-|UGIA-F    |10.92   |12.21   |54.92 |26.02|
-|SIC           |43.93 |45.11 |42.54 |43.86|
+|UGIA-M   |3.24  |3.16  |3.10  |3.17|
+|UGIA-F    |11.22 |12.30 |18.66 |14.06|
+|SIC           |40.91 |40.05 |40.37 |40.44|
 
 **2DGauss_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
 |:-------:|:-----:|:-----:|:-----:|:-----:|
-|UGIA-M   |4.26  |3.51    |3.74    |3.84|
-|SIC      |42.99 |42.59 |43.50 |43.03|
-|UGIA-F   | 23.40 |339.31  |2407.74 |923.48|
+|UGIA-M   |3.08  |3.06    |3.36      |3.17|
+|SIC            |42.99 |42.59 |43.50 |43.03|
+|UGIA-F    | 34.09 |112.28  |13950.89  |4699.10|
 
 ## 3D Astigmatic
 
