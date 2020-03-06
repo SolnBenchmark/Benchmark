@@ -31,22 +31,13 @@
 
 clear
 %% Emitter distance: choose one of three
- eD=40 ;     % nm 
-% eD=30 ;     % nm 
-% eD=20 ;     % nm 
+ eD=40 ;             % nm 
+% eD=30 ;             % nm 
+% eD=20 ;             % nm 
 %% Intialization 
 rng('default') ; 
 key=0 ;               % key for random number generators
-switch eD
-  case 40
-    key=key+0 ; 
-  case 30
-    key=key+1 ; 
-  case 20
-    key=key+2 ; 
-  otherwise
-    return ;
-end
+key=key+eD ; 
 rng(key) ; 
 fprintf(1,'Emitter distance: %d (nm) \n',eD) ; 
 %% Optical system 
@@ -108,21 +99,24 @@ save(filename_xy0,'-ascii','xy0') ;
 % xy=[rd.*cos(theta)+Lx/2 ; rd.*sin(theta)+Ly/2] ; 
 
 %% Emitter activations
-Nape=10 ;   % average number of activations per emitter in data movie
+N=100 ;     % Temporal resolution (TR): N*Dt=1 sec
+Nape=12 ;   % Average # of activations per emitter in data movie
+            % =(1-p0)*N ; ensure each emitter is activated at least once 
 J=4 ;       % Maximum state
-r00=0.935 ; 
 r01=0.5 ;   r02=0.7 ;   r03=0.8 ;   r04=1.0 ; 
-r10=1-r00 ; r21=1-r01 ; r32=1-r02 ; r43=1-r03 ;  
+r21=1-r01 ; r32=1-r02 ; r43=1-r03 ;  
+r00=1-Nape/((N-Nape)*(1+r21+r21*r32+r21*r32*r43)) ; % =0.9188
+r10=1-r00 ; 
 R=[r00 r01 r02 r03 r04 % matrix of state transition probabilities
    r10 0   0   0   0
    0   r21 0   0   0
    0   0   r32 0   0
    0   0   0   r43 0] ;
 den=1+r10+r10*r21+r10*r21*r32+r10*r21*r32*r43 ; 
-p0=1/den ;      % =0.9016, probability of de-activation
-Naae=(1-p0)*M ; % =24.6123, average # of activated emitters/frame
-% N=fix(Nape/(1-p0))  % =101, # of frames in data movie
-N=100 ;         % corresponding Nape=N*(1-p0)=9.84
+p0=1/den ;        % =0.88, probability of de-activation
+Naae=(1-p0)*M ;   % =Nape*M/N=30, average # of activated emitters/frame
+pd=1-(1-p0^N)^M ; % =7.0154e-04, probability that at least one emitter 
+                  % is not activated in data movie
 c0=zeros(M,N+1) ; % states of Markov chains in data movie
 for n=2:N+1
   for m=1:M
@@ -137,6 +131,7 @@ end
 %% Generate and save a data movie
 fprintf(1,'Generate a data movie: \n') ; 
 a=(c~=0) ;      % a(m,n)=1 if activated; a(m,n)=0 otherwise  
+                % sum(sum(a')==0): # of emitters never activated 
 Na=sum(a) ;     % number of activated emitters in nth frame
 xyActive=zeros(2,M,N) ; % activated emitter locations in nth frame
 ma=zeros(M,N) ; % index of activated emitters in a frame 
@@ -248,9 +243,11 @@ ylabel('RMSMD (nm)') ;
 xlabel('Temporal resolution (s)') ; 
 
 %% Results: RMSMD vs emitter distance 
-% M=250; N=100; TR=1 s
-% Distance: 40    30      20      Average (nm)
-% UGIA-M:   4.26  3.51    3.74    3.84
-% UGIA-F:   23.40 339.31  2407.74 923.48
-% Average RMSMD-M: mean([4.26 3.51 3.74])=3.84 (nm) 
-% Average RMSMD-F: mean([23.40 339.31  2407.74])=923.48 (nm)
+% M=250; N=100; TR=1 sec
+% pM: # emitters activated at least once in a movie
+% Distance: 40    30      20        Average (nm)
+% pM:       250   250     250   
+% UGIA-M:   3.08  3.06    3.36      3.17
+% UGIA-F:   34.09 112.28  13950.89  4699.10
+% Average RMSMD-M: mean([3.08  3.06    3.36]) 
+% Average RMSMD-F: mean([34.09 112.28  13950.89])
