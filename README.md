@@ -46,7 +46,7 @@ The leaderboards will be updated after a submission.
 |:-------:|:-----:|:-----:|:-----:|:-----:|
 |UGIA-M   |3.20  |3.09    |3.44    |3.24|
 |SIC           |44.79 |45.52 |44.70 |45.00|
-|UGIA-F   |50.42 |2426.96 |7178.73 |3218.70|
+|UGIA-F   |28.10 |50.63 |101.16  |59.96
 
 ## 2D Gauss
 
@@ -69,7 +69,7 @@ The leaderboards will be updated after a submission.
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
 |:-------:|:-----:|:-----:|:-----:|:-----:|
 |UGIA-M   |3.06  |2.89  |2.85  |2.93 |
-|UGIA-F    |10.53 |12.87 |13.46 |12.29|
+|UGIA-F    |10.53 |10.55 |13.46 |11.51|
 |SIC           |43.25 |39.78 |39.75 |40.93|
 
 **2DGauss_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm) vs emitter distance**
@@ -86,7 +86,7 @@ The leaderboards will be updated after a submission.
 |:-------:|:-----:|:-----:|:-----:|:-----:|
 |UGIA-M   |3.08  |3.06    |3.36      |3.17|
 |SIC            |42.99 |42.59 |43.50 |43.03|
-|UGIA-F    | 34.09 |112.28  |13950.89  |4699.10|
+|UGIA-F    |29.68 |49.52 |102.09  |60.43|
 
 ## 3D Astigmatic
 
