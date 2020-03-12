@@ -1,7 +1,7 @@
 # 3DAS_MEMF_HTR: 3D Astigmatic PSF Multiple Emitter Multiple Frame High Temporal Resolution 
 
 ## Purpose
-Evaluate and benchmark performance of localization algorithms in localization of multiple emitters from a data movie of multiple frames with high temporal resolution. 
+Evaluate and benchmark performance of localization algorithms in localization of multiple emitters from a data movie of multiple frames with high temporal resolution (2 seconds). 
 
 ## Method
 ### Three data movies 
