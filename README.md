@@ -102,6 +102,27 @@ The leaderboards will be updated after a submission.
 |:-------:|:------:|:--------:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |UGIA-F   |18.07 |22.65 |22.37 |27.57 |38.61 |69.41 |57.78|
 
+**3DAS_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm) vs emitter distance**
+
+|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
+|:-------:|:-----:|:-----:|:-----:|:-----:|
+|UGIA-M   |6.12  |6.03  |6.45  |6.20|
+|UGIA-F    |38.35 |47.28 |57.15 |47.59|
+
+**3DAS_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm) vs emitter distance**
+
+|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
+|:-------:|:-----:|:-----:|:-----:|:-----:|
+|UGIA-M   |6.83  |6.35  |7.39  |6.86|
+|UGIA-F    |54.20 |67.39 |90.72 |70.77|
+
+**3DAS_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm) vs emitter distance**
+
+|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average (nm)|
+|:-------:|:-----:|:-----:|:-----:|:-----:|
+|UGIA-M   |8.82    |8.69    |9.20    |8.90|
+|UGIA-F    |110.03  |133.76  |178.14  |140.64|
+
 # Method
 A variety of data frames and data movies that simulate experiments are synthesized. 
 
