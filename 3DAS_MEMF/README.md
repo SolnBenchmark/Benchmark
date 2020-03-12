@@ -47,17 +47,17 @@ For each data frame, the emitter locations (x,y,z) shall be estimated and saved 
 
 The filenames in submission shall be in the format: 
 
-**3DAS_MESF_density0.1_xy_algorithmName.txt** 
+**3DAS_MESF_density0.1_xyz_algorithmName.txt** 
 
-**3DAS_MESF_density0.3_xy_algorithmName.txt** 
+**3DAS_MESF_density0.3_xyz_algorithmName.txt** 
 
-**3DAS_MESF_density0.5_xy_algorithmName.txt** 
+**3DAS_MESF_density0.5_xyz_algorithmName.txt** 
 
-**3DAS_MESF_density1_xy_algorithmName.txt** 
+**3DAS_MESF_density1_xyz_algorithmName.txt** 
 
-**3DAS_MESF_density2_xy_algorithmName.txt** 
+**3DAS_MESF_density2_xyz_algorithmName.txt** 
 
-**3DAS_MESF_density3_xy_algorithmName.txt** 
+**3DAS_MESF_density3_xyz_algorithmName.txt** 
 
 ## Parameters
 The six data frames are synthesized by using the following parameters. 
