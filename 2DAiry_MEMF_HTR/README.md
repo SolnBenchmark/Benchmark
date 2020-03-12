@@ -1,7 +1,7 @@
 # 2DAiry_MEMF_HTR: 2D Airy PSF Multiple Emitter Multiple Frame High Temporal Resolution 
 
 ## Purpose
-Evaluate and benchmark performance of localization algorithms in localization of multiple emitters from a data movie of multiple frames with high temporal resolution. 
+Evaluate and benchmark performance of localization algorithms in localization of multiple emitters from a data movie of multiple frames with high temporal resolution (1 second). 
 
 ## Method
 ### Three data movies 
