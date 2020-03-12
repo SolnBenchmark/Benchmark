@@ -36,7 +36,7 @@ clear
 % eD=20 ;             % nm 
 %% Intialization 
 rng('default') ; 
-key=433901 ;          % key for random number generators
+key=0 ;               % key for random number generators
 key=key+eD ; 
 rng(key) ; 
 fprintf(1,'Emitter distance: %d (nm) \n',eD) ; 
@@ -221,7 +221,18 @@ for n=1:N
   Figd=subplot(2,2,4) ; % show all estimated locations
   xyFa(:,pF+1:pF+Na(n))=xyF(:,1:Na(n),n) ;  % No action if Na(n)=0
   pF=pF+Na(n) ;         % # of locations in frames 1 to n
-  [RMSMD_F(n),~]=RMSMD(xyFa(:,1:pF),xy) ;
+  % remove estimated locations outside [0,Lx]x[0,Ly]x[-Lz,Lz] !
+  xyT=zeros(2,pF) ;    
+  p=0 ;                 % # of estimated locations inside [0,Lx]x[0,Ly]x[-Lz,Lz]
+  for i=1:pF
+    if xyFa(1,i)>=0&&xyFa(1,i)<=Lx ...
+       &&xyFa(2,i)>=0&&xyFa(2,i)<=Ly
+      p=p+1 ;
+      xyT(:,p)=xyFa(:,i) ; 
+    end
+  end
+  [RMSMD_F(n),~]=RMSMD(xyT(:,1:p),xy) ;
+  %[RMSMD_F(n),~]=RMSMD(xyFa(:,1:pF),xy) ;
   show8bNanoscopyImage(xyFa(:,1:pF),Lx,Ly,1,1,7,'Yes','gray','No') ;
   text(0.5*Dx,1*Dy,'UGIA-F','Color','white') %,'FontSize',8)
   text(0.5*Dx,15*Dy,compose('RMSMD=%4.2f (nm)',RMSMD_F(n)),'Color','white') %,'FontSize',8)
@@ -230,7 +241,7 @@ for n=1:N
   axis off
   set(Figd,'OuterPosition',[0.5-(1-0.25)*sft+0.0115,-sft+0.01,0.5+1.25*sft,0.5+1.25*sft]);
   getframe(gcf) ;
-  fprintf(1,'eD=%2d N=%3d n=%3d pM=%d pF=%d \n',eD,N,n,pM,pF) ;
+  fprintf(1,'eD=%2d N=%3d n=%3d pM=%d pF=%d p=%d \n',eD,N,n,pM,pF,p) ;
 end
 
 %% Show RMSMDs
