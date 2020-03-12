@@ -34,11 +34,11 @@ For each data frame, the emitter locations (x,y,z) shall be estimated and saved 
 
 The filenames in submission shall be in the format: 
 
-**3DAS_SESF_highSNR_xy_algorithmName.txt** 
+**3DAS_SESF_highSNR_xyz_algorithmName.txt** 
 
-**3DAS_SESF_mediumSNR_xy_algorithmName.txt**
+**3DAS_SESF_mediumSNR_xyz_algorithmName.txt**
 
-**3DAS_SESF_lowSNR_xy_algorithmName.txt**.
+**3DAS_SESF_lowSNR_xyz_algorithmName.txt**.
 
 ## Parameters
 The three data frames are synthesized by using the following parameters. 
