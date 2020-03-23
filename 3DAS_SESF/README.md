@@ -10,15 +10,15 @@ Three data frames with a high, medium, and low SNR are synthesized and saved as 
 
 **3DAS_SESF_highSNR_Frame.tif (For purpose of demonstration, .png images are shown here.)**
 
-![Alt text](3DAS_SESF_highSNR_Frame.png)
+![Alt text](Doc/3DAS_SESF_highSNR_Frame.png)
 
 **3DAS_SESF_mediumSNR_Frame.tif**
 
-![Alt text](3DAS_SESF_mediumSNR_Frame.png)
+![Alt text](Doc/3DAS_SESF_mediumSNR_Frame.png)
 
 **3DAS_SESF_lowSNR_Frame.tif**
 
-![Alt text](3DAS_SESF_lowSNR_Frame.png)
+![Alt text](Doc/3DAS_SESF_lowSNR_Frame.png)
 
 ### Submission 
 
@@ -65,7 +65,7 @@ Within the region of view, each emitter is randomly distributed in a cuboid of l
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
-![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/FrameCoordinates.png)
+![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/Doc/FrameCoordinates.png)
 
 ### Noise and signal to noise ratio in three data frames  
 |Data frame |Parameter |Variable and value| Unit|
@@ -109,7 +109,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 
 PSF is 3D astigmatic [1]. The corresponding standard deviations in x and y as functions of z are shown below. 
 
-![Alt text](sigmaxy.png)
+![Alt text](Doc/sigmaxy.png)
 
 ### Definitions
 |Parameter |Definition| Unit|
