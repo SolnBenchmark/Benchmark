@@ -10,23 +10,23 @@ Five data frames with different emitter densities are synthesized and saved as t
 
 **2DGauss_MESF_density1_Frame.tif  (For purpose of demonstration, .png images are shown here.)**
 
-![Alt text](2DGauss_MESF_density1_Frame.png)
+![Alt text](Doc/2DGauss_MESF_density1_Frame.png)
 
 **2DGauss_MESF_density2_Frame.tif**
 
-![Alt text](2DGauss_MESF_density2_Frame.png)
+![Alt text](Doc/2DGauss_MESF_density2_Frame.png)
 
 **2DGauss_MESF_density6_Frame.tif**
 
-![Alt text](2DGauss_MESF_density6_Frame.png)
+![Alt text](Doc/2DGauss_MESF_density6_Frame.png)
 
 **2DGauss_MESF_density10_Frame.tif**
 
-![Alt text](2DGauss_MESF_density10_Frame.png)
+![Alt text](Doc/2DGauss_MESF_density10_Frame.png)
 
 **2DGauss_MESF_density15_Frame.tif**
 
-![Alt text](2DGauss_MESF_density15_Frame.png)
+![Alt text](Doc/2DGauss_MESF_density15_Frame.png)
 
 ### Submission 
 
@@ -95,7 +95,7 @@ Emitters are randomly and uniformly distributed in the region of view.
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
-![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/FrameCoordinates.png)
+![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/Doc/FrameCoordinates.png)
 
 ### Noise 
 |Parameter |Variable and value| Unit|
