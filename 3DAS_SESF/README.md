@@ -1,6 +1,6 @@
 # 3DAS_SESF: 3D Astigmatic PSF Single Emitter Single Frame
 
-## Purpose
+## Purpose 
 Evaluate and benchmark performance of localization algorithms in estimation of single isolated emitters from a single data frame. 
 
 ## Method
