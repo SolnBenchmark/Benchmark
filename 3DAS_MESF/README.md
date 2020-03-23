@@ -1,6 +1,6 @@
 # 3DAS_MESF: 3D AS PSF Multiple Emitter Single Frame
 
-## Purpose
+## Purpose 
 Evaluate and benchmark performance of localization algorithms in localization of multiple emitters with overlapped PSFs from a single data frame with a 3D astigmatic PSF. 
 
 ## Method
