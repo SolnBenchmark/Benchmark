@@ -1,6 +1,6 @@
 # 2DAiry_MEMF_MTR: 2D Airy PSF Multiple Emitter Multiple Frame Median Temporal Resolution 
 
-## Purpose
+## Purpose 
 Evaluate and benchmark performance of localization algorithms in localization of multiple emitters from a data movie of multiple frames with median temporal resolution (5 seconds). 
 
 ## Method
