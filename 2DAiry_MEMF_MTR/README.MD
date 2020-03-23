@@ -10,15 +10,15 @@ Three data movies with different distances between adjacent emitters are synthes
 
 **2DAiry_MEMF_MTR_eD40nm_movie.zip  (For purpose of demonstration, .png images of the 10th frames are shown here.)**
 
-![Alt text](2DAiry_MEMF_MTR_eD40nm_Frame10.png)
+![Alt text](Doc/2DAiry_MEMF_MTR_eD40nm_Frame10.png)
 
 **2DAiry_MEMF_MTR_eD30nm_movie.zip**
 
-![Alt text](2DAiry_MEMF_MTR_eD30nm_Frame10.png)
+![Alt text](Doc/2DAiry_MEMF_MTR_eD30nm_Frame10.png)
 
 **2DAiry_MEMF_MTR_eD20nm_movie.zip**
 
-![Alt text](2DAiry_MEMF_MTR_eD20nm_Frame10.png)
+![Alt text](Doc/2DAiry_MEMF_MTR_eD20nm_Frame10.png)
 
 ### Submission 
 
@@ -94,7 +94,7 @@ rij indicates the transition probability from state j to i.
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
-![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/FrameCoordinates.png)
+![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/Doc/FrameCoordinates.png)
 
 ### Noise 
 |Parameter |Variable and value| Unit|
