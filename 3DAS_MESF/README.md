@@ -10,28 +10,28 @@ Six data frames with different emitter densities are synthesized and saved as ti
 
 **3DAS_MESF_density0.1_Frame.tif  (For purpose of demonstration, .png images are shown here.)**
 
-![Alt text](3DAS_MESF_density0.1_Frame.png)
+![Alt text](Doc/3DAS_MESF_density0.1_Frame.png)
 
 **3DAS_MESF_density0.3_Frame.tif  (For purpose of demonstration, .png images are shown here.)**
 
-![Alt text](3DAS_MESF_density0.3_Frame.png)
+![Alt text](Doc/3DAS_MESF_density0.3_Frame.png)
 
 
 **3DAS_MESF_density0.5_Frame.tif  (For purpose of demonstration, .png images are shown here.)**
 
-![Alt text](3DAS_MESF_density0.5_Frame.png)
+![Alt text](Doc/3DAS_MESF_density0.5_Frame.png)
 
 **3DAS_MESF_density1_Frame.tif  (For purpose of demonstration, .png images are shown here.)**
 
-![Alt text](3DAS_MESF_density1_Frame.png)
+![Alt text](Doc/3DAS_MESF_density1_Frame.png)
 
 **3DAS_MESF_density2_Frame.tif**
 
-![Alt text](3DAS_MESF_density2_Frame.png)
+![Alt text](Doc/3DAS_MESF_density2_Frame.png)
 
 **3DAS_MESF_density3_Frame.tif**
 
-![Alt text](3DAS_MESF_density3_Frame.png)
+![Alt text](Doc/3DAS_MESF_density3_Frame.png)
 
 ### Submission 
 
@@ -106,7 +106,7 @@ Emitters are randomly and uniformly distributed in the cuboid [0,Lx] x [0,Ly] x 
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
-![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/FrameCoordinates.png)
+![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/Doc/FrameCoordinates.png)
 
 ### Noise 
 |Parameter |Variable and value| Unit|
@@ -137,7 +137,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 
 PSF is 3D astigmatic [1]. The corresponding standard deviations in x and y as functions of z are shown below. 
 
-![Alt text](sigmaxy.png)
+![Alt text](Doc/sigmaxy.png)
 
 ### Definitions
 |Parameter |Definition| Unit|
