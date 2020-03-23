@@ -10,15 +10,15 @@ Three data movies with different distances between adjacent emitters are synthes
 
 **3DAS_MEMF_MTR_eD40nm_movie.zip  (For purpose of demonstration, .png images of the 10th frames are shown here.)**
 
-![Alt text](3DAS_MEMF_MTR_eD40nm_Frame10.png)
+![Alt text](Doc/3DAS_MEMF_MTR_eD40nm_Frame10.png)
 
 **3DAS_MEMF_MTR_eD30nm_movie.zip**
 
-![Alt text](3DAS_MEMF_MTR_eD30nm_Frame10.png)
+![Alt text](Doc/3DAS_MEMF_MTR_eD30nm_Frame10.png)
 
 **3DAS_MEMF_MTR_eD20nm_movie.zip**
 
-![Alt text](3DAS_MEMF_MTR_eD20nm_Frame10.png)
+![Alt text](Doc/3DAS_MEMF_MTR_eD20nm_Frame10.png)
 
 ### Submission 
 
@@ -95,7 +95,7 @@ rij indicates the transition probability from state j to i.
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
-![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/FrameCoordinates.png)
+![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/Doc/FrameCoordinates.png)
 
 ### Noise 
 |Parameter |Variable and value| Unit|
@@ -126,7 +126,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 
 PSF is 3D astigmatic [1]. The corresponding standard deviations in x and y as functions of z are shown below. 
 
-![Alt text](sigmaxy.png)
+![Alt text](Doc/sigmaxy.png)
 
 ### Definitions
 |Parameter |Definition| Unit|
