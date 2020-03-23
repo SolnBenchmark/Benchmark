@@ -1,6 +1,6 @@
 # 2DAiry_MESF: 2D Airy PSF Multiple Emitter Single Frame
 
-## Purpose
+## Purpose 
 Evaluate and benchmark performance of localization algorithms in localization of multiple emitters with overlapped PSFs from a single data frame. 
 
 ## Method
