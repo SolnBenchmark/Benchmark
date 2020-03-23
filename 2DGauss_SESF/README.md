@@ -1,6 +1,6 @@
 # 2DGauss_SESF: 2D Gaussian PSF Single Emitter Single Frame
 
-## Purpose
+## Purpose 
 Evaluate and benchmark performance of localization algorithms in estimation of single isolated emitters from a single data frame. 
 
 ## Method
