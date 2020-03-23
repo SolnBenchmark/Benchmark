@@ -10,15 +10,15 @@ Three data frames with a high, medium, and low SNR are synthesized and saved as 
 
 **2DGauss_SESF_highSNR_Frame.tif (For purpose of demonstration, .png images are shown here.)**
 
-![Alt text](2DGauss_SESF_highSNR_Frame.png)
+![Alt text](Doc/2DGauss_SESF_highSNR_Frame.png)
 
 **2DGauss_SESF_mediumSNR_Frame.tif**
 
-![Alt text](2DGauss_SESF_mediumSNR_Frame.png)
+![Alt text](Doc/2DGauss_SESF_mediumSNR_Frame.png)
 
 **2DGauss_SESF_lowSNR_Frame.tif**
 
-![Alt text](2DGauss_SESF_lowSNR_Frame.png)
+![Alt text](Doc/2DGauss_SESF_lowSNR_Frame.png)
 
 ### Submission 
 
@@ -65,7 +65,7 @@ Within the region of view, each emitter is randomly distributed in a square of s
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
-![Alt text](FrameCoordinates.png)
+![Alt text](Doc/FrameCoordinates.png)
 
 ### Noise and signal to noise ratio in three data frames  
 |Data frame |Parameter |Variable and value| Unit|
