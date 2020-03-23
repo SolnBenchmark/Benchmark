@@ -10,7 +10,7 @@ Three data movies with different distances between adjacent emitters are synthes
 
 **2DAiry_MEMF_HTR_eD40nm_movie.zip  (For purpose of demonstration, .png images of the 10th frames are shown here.)**
 
-![Alt text](2DAiry_MEMF_HTR_eD40nm_Frame10.png)
+![Alt text](Doc/2DAiry_MEMF_HTR_eD40nm_Frame10.png)
 
 **2DAiry_MEMF_HTR_eD30nm_movie.zip**
 
