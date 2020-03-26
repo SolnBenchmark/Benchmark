@@ -53,7 +53,7 @@ The filenames in submission shall be in the format:
 **2DAiry_MESF_density15_xy_algorithmName.txt** 
 
 ## Parameters
-The three data frames are synthesized by using the following parameters. 
+The five data frames are synthesized by using the following parameters. 
 
 ### Emitter distribution and intensity (mean number of emitted photons)
 |Parameter |Variable and value| Unit|
