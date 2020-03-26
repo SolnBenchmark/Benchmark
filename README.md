@@ -143,7 +143,8 @@ Join the group discussion and receive announcements: [Soln Benchmark](https://gr
 |:-------|:------|:--------|:-----|
 |UGIA-M     |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
 |UGIA-F     |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
-|[Cspline]( https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_ZhuangLab_storm-2Danalysis&d=DwID-g&c=4NmamNZG3KTnUCoC6InoLJ6KV1tbVKrkZXHRwtIMGmo&r=j0A6IFQM1sqhJ9JGnpoeSyUsEY4C_j3vAHGUhAHkwqc&m=KyWuibdcanyti6L5Rv5wyAfNPjtPqLpgLow4D7Hfwv0&s=D8QCk3zeetHK2OJqex-T45UyU0qNm8qUSdmB7HeK_gc&e=)|Hazhen Bobcock| Harvard Center for Advanced Imaging|USA |
+|[3D-DAOSTORM]( https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_ZhuangLab_storm-2Danalysis&d=DwID-g&c=4NmamNZG3KTnUCoC6InoLJ6KV1tbVKrkZXHRwtIMGmo&r=j0A6IFQM1sqhJ9JGnpoeSyUsEY4C_j3vAHGUhAHkwqc&m=KyWuibdcanyti6L5Rv5wyAfNPjtPqLpgLow4D7Hfwv0&s=D8QCk3zeetHK2OJqex-T45UyU0qNm8qUSdmB7HeK_gc&e=)|Hazen Bobcock| Harvard Center for Advanced Imaging|USA |
+|[Cspline]( https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_ZhuangLab_storm-2Danalysis&d=DwID-g&c=4NmamNZG3KTnUCoC6InoLJ6KV1tbVKrkZXHRwtIMGmo&r=j0A6IFQM1sqhJ9JGnpoeSyUsEY4C_j3vAHGUhAHkwqc&m=KyWuibdcanyti6L5Rv5wyAfNPjtPqLpgLow4D7Hfwv0&s=D8QCk3zeetHK2OJqex-T45UyU0qNm8qUSdmB7HeK_gc&e=)|Hazen Bobcock| Harvard Center for Advanced Imaging|USA |
 |[FCEG]( https://www.frontiersin.org/articles/10.3389/fbioe.2019.00338/full) |Fabian Hauser|University of Applied Sciences Upper Austria, School of Medical Engineering and Applied Social Sciences |Austria |
 |[LSTR]( https://www.mdpi.com/1422-0067/19/4/1150) |Fabian Hauser|University of Applied Sciences Upper Austria, School of Medical Engineering and Applied Social Sciences |Austria |
 |[PeakFit]( https://gdsc-smlm.readthedocs.io/en/latest) |Alex Herbert|Genome Damage and Stability Centre, University of Sussex |UK |
