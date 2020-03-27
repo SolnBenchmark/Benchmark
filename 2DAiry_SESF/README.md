@@ -48,6 +48,7 @@ The three data frames are synthesized by using the following parameters.
 |:-----|:-----|:-----|
 |Number of emitters |M=961|  |
 |Emitter intensity |I=300000|photons/s/emitter|
+|Analog digital unit |ADU=1|photons/unit|
 
 Within the region of view, each emitter is randomly distributed in a square of sizes 783\*783 (nm<sup>2</sup>) so that their PSFs are well isolated. 
 
