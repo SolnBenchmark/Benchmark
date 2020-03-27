@@ -67,6 +67,7 @@ The six data frames are synthesized by using the following parameters.
 |:-----|:-----|:-----|
 |Number of emitters |M=500|  |
 |Emitter intensity |I=300000|photons/s/emitter|
+|Analog digital unit |ADU=1|photons/unit|
 
 Emitters are randomly and uniformly distributed in the cuboid [0,Lx] x [0,Ly] x [-Lz,Lz]. 
 
