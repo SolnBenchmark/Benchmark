@@ -53,7 +53,7 @@ The leaderboards will be updated after a submission.
 **2DGauss_SESF (single emitter single frame): RMSMD (nm) vs SNR**
 
 | Algorithm |High SNR |Medium SNR |Low SNR |Average|
-|:-------:|:------:|:--------:|:-----:|:-----:|
+|-------:|------:|--------:|-----:|-----:|
 |UGIA-F     | 3.01|8.74|12.03 |7.93|
 |3D-DAOSTORM| 3.18| | |  |
 |SIC      | 44.00|43.37|46.62| 44.66|
