@@ -99,6 +99,8 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 | |Total signal to noise ratio |r=6000|nm<sup>2</sup>/emitter|
 | |                           |SNR=37.78|dB|
 
+The mean of Gaussian noise includes the effect of camera offset. 
+
 ### Optical system
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
