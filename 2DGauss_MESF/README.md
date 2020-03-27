@@ -60,6 +60,7 @@ The five data frames are synthesized by using the following parameters.
 |:-----|:-----|:-----|
 |Number of emitters |M=1000|  |
 |Emitter intensity |I=300000|photons/s/emitter|
+|Analog digital unit |ADU=1|photons/unit|
 
 Emitters are randomly and uniformly distributed in the region of view. 
 
