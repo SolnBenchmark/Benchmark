@@ -28,7 +28,7 @@ For each data movie, the emitter locations (x,y,z) in nm shall be estimated and 
 
 4.2119986e+02   5.8867272e+03   -3.2331955e+02
 
-... ...         ... ...         ... ...
+... ...        
 
 4.1254239e+02   6.8510823e+03   2.3415149e+02
 
