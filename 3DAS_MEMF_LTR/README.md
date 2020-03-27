@@ -105,6 +105,8 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 |Variance of Gaussian noise |G=0.2|photons/sec/nm<sup>2</sup>| 
 |Mean of Gaussian noise |mu=0.5|photons/sec/nm<sup>2</sup>|
 
+The mean of Gaussian noise includes the effect of camera offset. 
+
 **Corresponding signal to noise ratios**
 
 |Parameter |Variable and value| Unit|
