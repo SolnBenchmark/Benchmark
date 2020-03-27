@@ -61,6 +61,7 @@ Emitters are located on a helix with different adjacent-emitter distance in thre
 |:-----|:-----|:-----|
 |Number of emitters |M=250|  |
 |Emitter intensity |I=300000|photons/sec/emitter|
+|Analog digital unit |ADU=1|photons/unit|
 
 **Emitter activation**
 
