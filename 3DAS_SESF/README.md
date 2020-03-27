@@ -22,15 +22,15 @@ Three data frames with a high, medium, and low SNR are synthesized and saved as 
 
 ### Submission 
 
-For each data frame, the emitter locations (x,y,z) shall be estimated and saved  row by row in a .txt file: e.g.
+For each data frame, the emitter locations (x,y,z) in nm shall be estimated and saved  row by row in a .txt file: e.g.
 
-4.4184628e+02   5.0638849e+03
+4.4184628e+02   5.0638849e+03   1.1171183e+02
 
-4.2119986e+02   5.8867272e+03
+4.2119986e+02   5.8867272e+03   -3.2331955e+02
 
-... ...
+... ...         ... ...         ... ...
 
-4.1254239e+02   6.8510823e+03
+4.1254239e+02   6.8510823e+03   2.3415149e+02
 
 The filenames in submission shall be in the format: 
 
