@@ -124,6 +124,9 @@ The leaderboards will be updated after a submission.
 |UGIA-M   |8.82    |8.69    |9.20    |8.90|
 |UGIA-F    |110.03  |133.76  |178.14  |140.64|
 
+# Note
+This evaluation and benchmark is non-blind, that is, all the parameters of an optical system are known a priori and supposed to have been obtained through a calibration. Nevertheless, a blind localization algorithm that estimates by itself the system parameters from a data frame or a data movie can also be evaluated and benchmarked. 
+
 # Method
 A variety of data frames and data movies that simulate experiments are synthesized. 
 
