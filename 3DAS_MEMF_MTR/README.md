@@ -75,7 +75,21 @@ Each emitter is independently activated by following a Markov chain [2]. The mat
 |3 |0   |0   |r32=1-r02 |0   |0 |
 |4 |0   |0   |0   |r43=1-r03 |0 |
 
-rij indicates the transition probability from state j to i.  
+rji indicates the transition probability from state i to j.  
+
+**Stationary probability**
+
+Correspondingly, the stationary probability of state i, i.e. the probability that up to the current frame, an emitter has been activated i frames in a row, is given below. The probability of deactivation is the probability that an emitter is not activated in a frame and the probability of activation is the probability that an emitter is activated in a frame. 
+
+|Probability |Variable and value|
+|:-----|:-----|
+|Probability of state 0 |P0=0.9760|
+|Probability of state 1 |P1=0.0143|
+|Probability of state 2 |P2=0.0071|
+|Probability of state 3 |P3=0.0022|
+|Probability of state 4 |P4=0.0004|
+|Probability of deactivation |P0=0.9760|
+|Probability of activation |Pa=1-P0=0.0240|
 
 ### Data movie 
 |Parameter |Variable and value| Unit|
@@ -91,8 +105,8 @@ rij indicates the transition probability from state j to i.
 |Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
 |Temporal resolution |TR=N\*Dt=5 |sec|
-|Average number of activations per emitter|12|frames/emitter|
-|Average number of activated emitters per frame|6|emitters/frame|
+|Average number of activations per emitter|Nape=Pa\*N=12|frames/emitter|
+|Average number of activated emitters per frame|Naae=Pa\*M=6|emitters/frame|
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
