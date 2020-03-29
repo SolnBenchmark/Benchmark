@@ -77,7 +77,7 @@ Each emitter is independently activated by following a Markov chain [2]. The mat
 
 rji indicates the transition probability from state i to j.  
 
-Correspondingly, the stational probability of state i, i.e. the probability that up to the current frame, an emitter has been activated i frames in a row, is given below. The activation probability is the probability that an emitter is activated in a frame and the deactivation probablity is the probability that an emitter is not activated in a frame.
+Correspondingly, the stational probability of state i, i.e. the probability that up to the current frame, an emitter has been activated i frames in a row, is given below. The probability of activation is the probability that an emitter is activated in a frame and the probablity of deactivation is the probability that an emitter is not activated in a frame.
 
 |Probability |Variable and value|
 |:-----|:-----|
@@ -86,8 +86,8 @@ Correspondingly, the stational probability of state i, i.e. the probability that
 |Probability of state 2 |P2=0.0357|
 |Probability of state 3 |P3=0.0107|
 |Probability of state 4 |P4=0.0022|
-|Deactivation probability|P0=0.8800|
-|Activation probability |Pa=1-P0=0.1200|
+|Probability of deactivation |P0=0.8800|
+|Probability of activation |Pa=1-P0=0.1200|
 
 ### Data movie 
 |Parameter |Variable and value| Unit|
