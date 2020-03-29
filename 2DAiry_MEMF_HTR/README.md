@@ -77,6 +77,13 @@ Each emitter is independently activated by following a Markov chain [2]. The mat
 
 rij indicates the transition probability from state j to i.  
 
+The activation probability is the probability that an emitter is activated in a frame and the deactivation probablity is the probability that an emitter is not activated in a frame. Corresponding to the above matrix, 
+
+|Probabilit |Variable and value|
+|:-----|:-----|
+|Activation probability |Pa=1-P0=0.12|
+|Deactivation probability |P0=0.88|
+
 ### Data movie 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
