@@ -102,8 +102,8 @@ Correspondingly, the stational probability of state i, i.e. the probability that
 |Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
 |Temporal resolution |TR=N\*Dt=1 |sec|
-|Average number of activations per emitter|Nape=(1-p0)\*N-12|frames/emitter|
-|Average number of activated emitters per frame|Naae=(1-p0)\*M=30|emitters/frame|
+|Average number of activations per emitter|Nape=pa\*N=12|frames/emitter|
+|Average number of activated emitters per frame|Naae=pa\*M=30|emitters/frame|
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
