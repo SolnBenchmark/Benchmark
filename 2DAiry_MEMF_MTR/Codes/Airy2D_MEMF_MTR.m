@@ -100,20 +100,28 @@ save(filename_xy0,'-ascii','xy0') ;
 
 %% Emitter activations
 N=500 ;     % Temporal resolution (TR): N*Dt=5 sec
+Nape=12 ;   % Average # of activations per emitter in data movie
+            % =(1-p0)*N ; ensure each emitter is activated at least once 
 J=4 ;       % Maximum state
-r00=0.987 ; 
 r01=0.5 ;   r02=0.7 ;   r03=0.8 ;   r04=1.0 ; 
-r10=1-r00 ; r21=1-r01 ; r32=1-r02 ; r43=1-r03 ;  
+r21=1-r01 ; r32=1-r02 ; r43=1-r03 ;  
+r00=1-Nape/((N-Nape)*(1+r21+r21*r32+r21*r32*r43)) ; % =0.9854
+r10=1-r00 ; 
 R=[r00 r01 r02 r03 r04 % matrix of state transition probabilities
    r10 0   0   0   0
    0   r21 0   0   0
    0   0   r32 0   0
    0   0   0   r43 0] ;
 den=1+r10+r10*r21+r10*r21*r32+r10*r21*r32*r43 ; 
-p0=1/den ;      % =0.9802, probability of de-activation
-Nape=(1-p0)*N ; % =10.69>~=10!, average number of activations per emitter in data movie
-                % ensure each emitter is activated at least once 
-Naae=(1-p0)*M ; % =5.34, average # of activated emitters/frame
+p0=1/den ;                % =0.9760, probability of deactivation, i.e. state 0
+p1=r10/den ;              % =0.0143, probability of state 1
+p2=r10*r21/den ;          % =0.0071, probability of state 2
+p3=r10*r21*r32/den ;      % =0.0022, probability of state 3
+p4=r10*r21*r32*r43/den ;  % =0.0004, probability of state 4
+pa=1-p0 ;                 % =0.0240, probability of activation 
+Naae=(1-p0)*M ;           % =Nape*M/N=6, average # of activated emitters/frame
+pd=1-(1-p0^N)^M ;         % =1.3261e-03, probability that at least one emitter 
+                          % is not activated in data movie
 c0=zeros(M,N+1) ; % states of Markov chains in data movie
 for n=2:N+1
   for m=1:M
@@ -128,6 +136,7 @@ end
 %% Generate and save a data movie
 fprintf(1,'Generate a data movie: \n') ; 
 a=(c~=0) ;      % a(m,n)=1 if activated; a(m,n)=0 otherwise  
+                % sum(sum(a')==0): # of emitters never activated 
 Na=sum(a) ;     % number of activated emitters in nth frame
 xyActive=zeros(2,M,N) ; % activated emitter locations in nth frame
 ma=zeros(M,N) ; % index of activated emitters in a frame 
@@ -217,7 +226,18 @@ for n=1:N
   Figd=subplot(2,2,4) ; % show all estimated locations
   xyFa(:,pF+1:pF+Na(n))=xyF(:,1:Na(n),n) ;  % No action if Na(n)=0
   pF=pF+Na(n) ;         % # of locations in frames 1 to n
-  [RMSMD_F(n),~]=RMSMD(xyFa(:,1:pF),xy) ;
+  % remove estimated locations outside [0,Lx]x[0,Ly]x[-Lz,Lz] !
+  xyT=zeros(2,pF) ;    
+  p=0 ;                 % # of estimated locations inside [0,Lx]x[0,Ly]x[-Lz,Lz]
+  for i=1:pF
+    if xyFa(1,i)>=0&&xyFa(1,i)<=Lx ...
+       &&xyFa(2,i)>=0&&xyFa(2,i)<=Ly
+      p=p+1 ;
+      xyT(:,p)=xyFa(:,i) ; 
+    end
+  end
+  [RMSMD_F(n),~]=RMSMD(xyT(:,1:p),xy) ;
+  %[RMSMD_F(n),~]=RMSMD(xyFa(:,1:pF),xy) ;
   show8bNanoscopyImage(xyFa(:,1:pF),Lx,Ly,1,1,7,'Yes','gray','No') ;
   text(0.5*Dx,1*Dy,'UGIA-F','Color','white') %,'FontSize',8)
   text(0.5*Dx,15*Dy,compose('RMSMD=%4.2f (nm)',RMSMD_F(n)),'Color','white') %,'FontSize',8)
@@ -226,7 +246,7 @@ for n=1:N
   axis off
   set(Figd,'OuterPosition',[0.5-(1-0.25)*sft+0.0115,-sft+0.01,0.5+1.25*sft,0.5+1.25*sft]);
   getframe(gcf) ;
-  fprintf(1,'eD=%2d N=%3d n=%3d pM=%d pF=%d \n',eD,N,n,pM,pF) ;
+  fprintf(1,'eD=%2d N=%3d n=%3d pM=%d pF=%d p=%d \n',eD,N,n,pM,pF,p) ;
 end
 
 %% Show RMSMDs
@@ -241,9 +261,9 @@ xlabel('Temporal resolution (s)') ;
 %% Results: RMSMD vs emitter distance 
 % M=250; N=500; TR=5 sec
 % pM: # emitters activated at least once in a movie
-% Distance: 40      30      20    Average (nm)
-% pM:       249     249     500   
-% UGIA-M:   3.75    3.50    3.25  3.50 
-% UGIA-F:   10.92   12.21   54.92 26.02
-% Average RMSMD-M: mean([3.75    3.50    3.25])=3.50 (nm) 
-% Average RMSMD-F: mean([10.92   12.21   54.92])=26.02 (nm)
+% Distance: 40    30    20    Average (nm)
+% pM:       250   250   250 
+% UGIA-M:   3.29  2.97  3.51  3.26
+% UGIA-F:   11.10 11.61 17.62 13.44
+% Average RMSMD-M: mean([3.29  2.97  3.51])
+% Average RMSMD-F: mean([11.10 11.61 17.62])
