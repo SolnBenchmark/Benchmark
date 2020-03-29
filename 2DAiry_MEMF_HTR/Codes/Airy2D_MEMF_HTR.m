@@ -113,8 +113,8 @@ R=[r00 r01 r02 r03 r04 % matrix of state transition probabilities
    0   0   r32 0   0
    0   0   0   r43 0] ;
 den=1+r10+r10*r21+r10*r21*r32+r10*r21*r32*r43 ; 
-p0=1/den ;                % =0.88000, probability of deactivation, i.e. state 0
-p1=r10/den ;              % =0.07143, probability of state 1
+p0=1/den ;                % =0.8800, probability of deactivation, i.e. state 0
+p1=r10/den ;              % =0.0714, probability of state 1
 p2=r10*r21/den ;          % =0.0357, probability of state 2
 p3=r10*r21*r32/den ;      % =0.0107, probability of state 3
 p4=r10*r21*r32*r43/den ;  % =0.0022, probability of state 4
