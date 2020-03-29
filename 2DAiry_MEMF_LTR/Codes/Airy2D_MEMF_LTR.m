@@ -113,10 +113,15 @@ R=[r00 r01 r02 r03 r04 % matrix of state transition probabilities
    0   0   r32 0   0
    0   0   0   r43 0] ;
 den=1+r10+r10*r21+r10*r21*r32+r10*r21*r32*r43 ; 
-p0=1/den ;        % =0.9880, probability of de-activation
-Naae=(1-p0)*M ;   % =Nape*M/N=3, average # of activated emitters/frame
-pd=1-(1-p0^N)^M ; % =1.4275e-03, probability that at least one emitter 
-                  % is not activated in data movie
+p0=1/den ;                % =0.9880, probability of deactivation, i.e. state 0
+p1=r10/den ;              % =0.0071, probability of state 1
+p2=r10*r21/den ;          % =0.0036, probability of state 2
+p3=r10*r21*r32/den ;      % =0.0011, probability of state 3
+p4=r10*r21*r32*r43/den ;  % =0.0002, probability of state 4
+pa=1-p0 ;                 % =0.0120, probability of activation 
+Naae=(1-p0)*M ;           % =Nape*M/N=3, average # of activated emitters/frame
+pd=1-(1-p0^N)^M ;         % =1.4275e-03, probability that at least one emitter 
+                          % is not activated in data movie
 c0=zeros(M,N+1) ; % states of Markov chains in data movie
 for n=2:N+1
   for m=1:M
@@ -221,7 +226,18 @@ for n=1:N
   Figd=subplot(2,2,4) ; % show all estimated locations
   xyFa(:,pF+1:pF+Na(n))=xyF(:,1:Na(n),n) ;  % No action if Na(n)=0
   pF=pF+Na(n) ;         % # of locations in frames 1 to n
-  [RMSMD_F(n),~]=RMSMD(xyFa(:,1:pF),xy) ;
+  % remove estimated locations outside [0,Lx]x[0,Ly]x[-Lz,Lz] !
+  xyT=zeros(2,pF) ;    
+  p=0 ;                 % # of estimated locations inside [0,Lx]x[0,Ly]x[-Lz,Lz]
+  for i=1:pF
+    if xyFa(1,i)>=0&&xyFa(1,i)<=Lx ...
+       &&xyFa(2,i)>=0&&xyFa(2,i)<=Ly
+      p=p+1 ;
+      xyT(:,p)=xyFa(:,i) ; 
+    end
+  end
+  [RMSMD_F(n),~]=RMSMD(xyT(:,1:p),xy) ;
+  %[RMSMD_F(n),~]=RMSMD(xyFa(:,1:pF),xy) ;
   show8bNanoscopyImage(xyFa(:,1:pF),Lx,Ly,1,1,7,'Yes','gray','No') ;
   text(0.5*Dx,1*Dy,'UGIA-F','Color','white') %,'FontSize',8)
   text(0.5*Dx,15*Dy,compose('RMSMD=%4.2f (nm)',RMSMD_F(n)),'Color','white') %,'FontSize',8)
@@ -230,7 +246,7 @@ for n=1:N
   axis off
   set(Figd,'OuterPosition',[0.5-(1-0.25)*sft+0.0115,-sft+0.01,0.5+1.25*sft,0.5+1.25*sft]);
   getframe(gcf) ;
-  fprintf(1,'eD=%2d N=%3d n=%3d pM=%d pF=%d \n',eD,N,n,pM,pF) ;
+  fprintf(1,'eD=%2d N=%3d n=%3d pM=%d pF=%d p=%d \n',eD,N,n,pM,pF,p) ;
 end
 
 %% Show RMSMDs
