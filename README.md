@@ -124,7 +124,7 @@ The leaderboards will be updated after a submission.
 |UGIA-M   |8.82    |8.69    |9.20    |8.90|
 |UGIA-F    |110.03  |133.76  |178.14  |140.64|
 
-# Non-blind localization
+# Non-Blind Localization
 This evaluation and benchmark is non-blind, that is, all the parameters of an optical system are known a priori and supposed to have been obtained through a calibration. Nevertheless, a blind localization algorithm that estimates by itself the system parameters from a data frame or a data movie can also be evaluated and benchmarked. 
 
 # Method
@@ -157,7 +157,7 @@ Join the group discussion and receive announcements: [Soln Benchmark](https://gr
 # Matlab Codes
 The data movies, data frames, UGIA-F estimator, and UGIA-M estimator all are generated and simulated by Matlab codes. The codes for a particular evaluation and benchmark are included in the corresponding subfolder, e.g. 2DGauss_ MEMF/Codes. The functions that are called by these codes are included in the folder /MyMatlab. 
 
-# Reference and citation
+# Reference and Citation
 [1] Y. Sun, "Localization precision of stochastic optical localization nanoscopy using single frames," J. Biomed. Optics, vol. 18, no. 11, pp. 111418-14, Oct. 2013.
 
 [2] Y. Sun, "Root mean square minimum distance as a quality metric for stochastic optical localization nanoscopy images," Sci. Reports, vol. 8, no. 1, pp. 17211, Nov. 2018.
