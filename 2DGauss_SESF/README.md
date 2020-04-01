@@ -107,7 +107,7 @@ The mean of Gaussian noise mu includes the effect of camera offset. When mu is s
 ### Optical system
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Numerical aperture |NA=1.40| |
+|Numerical aperture |na=1.40| |
 |Fluorescence wavelength |lambda=723|nm|
 |Correspondingly| | |
 |Standard deviation |sigma=108.81|nm|
@@ -115,7 +115,7 @@ The mean of Gaussian noise mu includes the effect of camera offset. When mu is s
 
 Dye Alexa700 is considered. 
 
-PSF is 2D Gaussian and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*pi\*NA/lambda [1]. 
+PSF is 2D Gaussian and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*pi\*na/lambda [1]. 
 
 ### Definitions
 |Parameter |Definition| Unit|
