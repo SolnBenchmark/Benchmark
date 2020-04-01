@@ -81,7 +81,6 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 | |Total signal to noise ratio |r=500000|nm<sup>2</sup>/emitter|
 | |                           |SNR=56.99|dB|
 | |Effective camera offset |Coff=500 |photons/pixel|
-
 |**2DGauss_SESF_mediumSNR_Frame.tif**|Mean of Poisson noise |b=5|photons/s/nm<sup>2</sup>|
 | |Variance of Gaussian noise |G=3|photons/s/nm<sup>2</sup>| 
 | |Mean of Gaussian noise |mu=5|photons/s/nm<sup>2</sup>|
