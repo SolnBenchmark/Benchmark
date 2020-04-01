@@ -34,31 +34,32 @@ fprintf(1,'%s: \n',SNRr) ;
 rng('default') ; 
 key=0 ;             % key for random number generators
 switch SNRr
-  case 'highSNR'    % r=1/(1/rp+1/rg), 10*log10(r)=54.77 (dB)
-    b=0.5 ;         % rp=Ih/b, 10*log10(rp)=57.78 (dB)
-    G=0.5 ;         % rg=Ih/G, 10*log10(rg)=57.78 (dB)
+  case 'highSNR'    % r=500000,   SNR=56.99 (dB)
+    b=0.3 ;         % rp=1000000, SPNR=60 (dB)
+    G=0.3 ;         % rg=1000000, SGNR=60 (dB)
     key=key+0 ;  
-  case 'mediumSNR'  % r=1/(1/rp+1/rg), 10*log10(r)=40.79 (dB)
-    b=15 ;          % rp=Ih/b, 10*log10(rp)=43.01 (dB)
-    G=10 ;          % rg=Ih/G, 10*log10(rg)=44.77 (dB)
+  case 'mediumSNR'  % r=37500,    SNR=45.74 (dB)
+    b=5 ;           % rp=60000,   SPNR=47.78 (dB)
+    G=3 ;           % rg=100000,  SGNR=50 (dB)
     key=key+1 ; 
-  case 'lowSNR'     % r=1/(1/rp+1/rg), 1  0*log10(r)=37.78 (dB)
-    b=30 ;          % rp=Ih/b, 10*log10(rp)=40.00 (dB)
-    G=20 ;          % rg=Ih/G, 10*log10(rg)=41.76 (dB)
+  case 'lowSNR'     % r=9375,     SNR=39.72 (dB)
+    b=20 ;          % rp=15000,   SPNR=41.76 (dB)
+    G=12 ;          % rg=25000,   SGNR=43.98 (dB)
     key=key+2 ; 
   otherwise
     return ;
 end
 rng(key) ; 
 %% Optical system 
-na=1.4 ; 
-lambda=520 ;          % nm
-a=2*pi*na/lambda ; 
+na=1.40 ; 
+lambda=723 ;                  % Alexa700 wavelength in nm
+a=2*pi*na/lambda ;  
 % 2D Gaussian PSF; sigma is estimated from Airy PSF
-sigma=1.3238/a ;      % = 78.26 nm
+sigma=1.3238/a ;              % sigma=108.81; 2*sigma=217.61 (nm) 
+FWHM=2*sqrt(2*log(2))*sigma ; % FWHM=256.22 (nm)
 %% Frame 
 % Region of view: [0,Lx]x[0,Ly]
-Lx=25e3 ; Ly=25e3 ;   % frame size in nm
+Lx=35e3 ; Ly=35e3 ;   % frame size in nm
 Dx=100 ; Dy=100 ;     % pixel size of cammera
 Kx=Lx/Dx ; Ky=Ly/Dy ; % frame size in pixels
 %% Emitter intensity and signal to noise ratio
@@ -71,7 +72,8 @@ rg=Ih/G ;             % SGNR (nm^2/emitter)
 SGNR=10*log10(rg) ;   % SGNR (dB)
 r=rp*rg/(rp+rg) ;     % total SNR (nm^2/emitter) 
 SNR=10*log10(r) ;     % total SNR (dB)
-mu=0.5 ;              % mean of Gaussian noise (photons/s/nm^2)
+mu=5 ;                % mean of Gaussian noise (photons/s/nm^2)
+Coff=mu*Dt*Dx*Dy ;    % Coff=500 photons/pixel; Camera offset in effect
 %% Emitter locations - ground truth
 eLx=2*5*sigma ;       % an emitter is located in a region of size eLx, eLy
 eLy=2*5*sigma ;       % with probability > 99% 
@@ -116,9 +118,10 @@ xy_=xy1' ;
 fprintf(1,SNRr) ; 
 fprintf(1,': SNR=%5.2f (dB) M=%d RMSMD=%6.3f (nm) \n',SNR,M,RMSMD1) ; 
 
-%% Results, M=961: UGIA-F estimator
+%% Results, M=1024: UGIA-F estimator
 %           highSNR   mediumSNR   lowSNR    Average 
-% SNR:      54.77     40.79       37.78 (dB) 
+% SNR:      56.99     45.74       39.72 (dB) 
+% RMSMD:    4.11      9.27        17.11     10.16 (nm) 
 % RMSMD:    3.01      8.74        12.03     7.93 (nm) 
-% Average: mean([3.01 8.74 12.03])=7.93 (nm)
+% Average: mean([4.11      9.27        17.11])=7.93 (nm)
 
