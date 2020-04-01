@@ -74,7 +74,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 |**2DGauss_SESF_highSNR_Frame.tif**|Mean of Poisson noise |b=0.3|photons/s/nm<sup>2</sup>|
 | |Variance of Gaussian noise |G=0.3|photons/s/nm<sup>2</sup>| 
 | |Mean of Gaussian noise |mu=5|photons/s/nm<sup>2</sup>|
-|Corresponding SNRs |Signal to Poisson noise ratio |rp=1000000|nm<sup>2</sup>/emitter|
+|Correspondingly |Signal to Poisson noise ratio |rp=1000000|nm<sup>2</sup>/emitter|
 | |                             |SPNR=60.00|dB|
 | |Signal to Gaussian noise ratio |rg=1000000|nm<sup>2</sup>/emitter|
 | |                             |SGNR=60.00|dB|
@@ -84,7 +84,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 |**2DGauss_SESF_mediumSNR_Frame.tif**|Mean of Poisson noise |b=5|photons/s/nm<sup>2</sup>|
 | |Variance of Gaussian noise |G=3|photons/s/nm<sup>2</sup>| 
 | |Mean of Gaussian noise |mu=5|photons/s/nm<sup>2</sup>|
-|Corresponding SNRs |Signal to Poisson noise ratio |rp=60000|nm<sup>2</sup>/emitter|
+|Correspondingly |Signal to Poisson noise ratio |rp=60000|nm<sup>2</sup>/emitter|
 | |                             |SPNR=47.78|dB|
 | |Signal to Gaussian noise ratio |rg=100000|nm<sup>2</sup>/emitter|
 | |                             |SGNR=50.00|dB|
@@ -94,7 +94,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 |**2DGauss_SESF_lowSNR_Frame.tif**|Mean of Poisson noise |b=20|photons/s/nm<sup>2</sup>|
 | |Variance of Gaussian noise |G=12|photons/s/nm<sup>2</sup>| 
 | |Mean of Gaussian noise |mu=5|photons/s/nm<sup>2</sup>|
-|Corresponding SNRs |Signal to Poisson noise ratio |rp=15000|nm<sup>2</sup>/emitter|
+|Correspondingly |Signal to Poisson noise ratio |rp=15000|nm<sup>2</sup>/emitter|
 | |                             |SPNR=41.76|dB|
 | |Signal to Gaussian noise ratio |rg=25000|nm<sup>2</sup>/emitter|
 | |                             |SGNR=43.98|dB|
