@@ -35,12 +35,12 @@ rng('default') ;
 key=0 ;             % key for random number generators
 switch SNRr
   case 'highSNR'    % r=500000,   SNR=56.99 (dB)
-    b=0.3 ;         % rp=1000000, SPNR=60 (dB)
-    G=0.3 ;         % rg=1000000, SGNR=60 (dB)
+    b=0.3 ;         % rp=1000000, SPNR=60.00 (dB)
+    G=0.3 ;         % rg=1000000, SGNR=60.00 (dB)
     key=key+0 ;  
   case 'mediumSNR'  % r=37500,    SNR=45.74 (dB)
     b=5 ;           % rp=60000,   SPNR=47.78 (dB)
-    G=3 ;           % rg=100000,  SGNR=50 (dB)
+    G=3 ;           % rg=100000,  SGNR=50.00 (dB)
     key=key+1 ; 
   case 'lowSNR'     % r=9375,     SNR=39.72 (dB)
     b=20 ;          % rp=15000,   SPNR=41.76 (dB)
@@ -122,6 +122,5 @@ fprintf(1,': SNR=%5.2f (dB) M=%d RMSMD=%6.3f (nm) \n',SNR,M,RMSMD1) ;
 %           highSNR   mediumSNR   lowSNR    Average 
 % SNR:      56.99     45.74       39.72 (dB) 
 % RMSMD:    4.11      9.27        17.11     10.16 (nm) 
-% RMSMD:    3.01      8.74        12.03     7.93 (nm) 
-% Average: mean([4.11      9.27        17.11])=7.93 (nm)
+% Average: mean([4.11      9.27        17.11])=10.16 (nm)
 
