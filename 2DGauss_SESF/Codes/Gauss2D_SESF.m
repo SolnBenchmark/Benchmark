@@ -117,6 +117,13 @@ xy_=xy1' ;
 [RMSMD1,RMSMD2]=RMSMD(xy_,xyF) ;
 fprintf(1,SNRr) ; 
 fprintf(1,': SNR=%5.2f (dB) M=%d RMSMD=%6.3f (nm) \n',SNR,M,RMSMD1) ; 
+%% Show estimates
+figure('Position',[400 300 600 600],'Color',[1 1 1]) ;
+plot(xy_(1,:),xy_(2,:),'k.') ; hold on
+plot(xyF(1,:),xyF(2,:),'r.') ; hold off
+xlabel('x (nm)') 
+ylabel('y (nm)') ; 
+axis([0 Lx 0 Ly])
 
 %% Results, M=1024: UGIA-F estimator
 %           highSNR   mediumSNR   lowSNR    Average 
