@@ -126,8 +126,8 @@ ylabel('y (nm)') ;
 axis([0 Lx 0 Ly])
 
 %% Results, M=1024: UGIA-F estimator
-%           highSNR mediumSNR lowSNR  Average 
-% SNR:      56.99   45.74     39.72 (dB) 
-% RMSMD:    4.11    9.27      17.11   10.16 (nm) 
+%             highSNR mediumSNR lowSNR  Average 
+% SNR (dB):   56.99   45.74     39.72 
+% RMSMD (nm): 4.11    9.27      17.11   10.16 
 % Average: mean([4.11 9.27 17.11]) 
 
