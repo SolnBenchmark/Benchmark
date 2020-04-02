@@ -60,10 +60,10 @@ The leaderboards will be updated after a submission.
 
 **2DGauss_MESF (multiple emitters single frame): RMSMD (nm) vs emitter density**
 
-| Algorithm |1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|6 emt/um<sup>2</sup>|10 emt/um<sup>2</sup>|15 emt/um<sup>2</sup>|Average|
+| Algorithm |0.5 emt/um<sup>2</sup>|1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|4 emt/um<sup>2</sup>|8 emt/um<sup>2</sup>|Average|
 |-------:|------:|--------:|-----:|-----:|-----:|-----:|
-|UGIA-F     | 9.39 |10.07 |12.16 |18.96 |28.35|15.79|
-|SIC        | 44.45 |45.49 |46.57 |48.63 |50.57 |47.14|
+|UGIA-F     |9.81 |11.21 |13.46 |17.43 |27.89 |15.96 |
+|SIC        |50.01 |51.29 |53.77 |58.63 |60.87 |54.91|
 
 **2DGauss_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm) vs emitter distance**
 
