@@ -22,45 +22,33 @@
 % Electrical Engineering Department
 % The City College of City University of New York
 % E-mail: ysun@ccny.cuny.edu
-% 11/24/2019, 02/19/2020
+% 11/24/2019, 02/19/2020, 04/01/2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear
 %% Range emitter density: choose one of them
- eDen=1 ;            % emitter density (emitters/um^2)
+ eDen=0.5 ;          % emitter density (emitters/um^2)
+% eDen=1 ;          % emitter density (emitters/um^2)
 % eDen=2 ;          % emitter density (emitters/um^2)
-% eDen=6 ;          % emitter density (emitters/um^2)
-% eDen=10 ;         % emitter density (emitters/um^2)
-% eDen=15 ;         % emitter density (emitters/um^2)
-fprintf(1,'Density=%2d (emitters/um^2): \n',eDen) ; 
+% eDen=4 ;          % emitter density (emitters/um^2)
+% eDen=8 ;          % emitter density (emitters/um^2)
+fprintf(1,'Density=%3.2f (emitters/um^2): \n',eDen) ; 
 %% Intialization 
 rng('default') ; 
 key=0 ;             % key for random number generators
-switch eDen
-  case 1
-    key=key+0 ;  
-  case 2
-    key=key+1 ;  
-  case 6
-    key=key+3 ;  
-  case 10
-    key=key+4 ;  
-  case 15
-    key=key+5 ;  
-  otherwise
-    return ;
-end
+key=key+round(eDen) ; 
 rng(key) ; 
 %% Optical system 
-na=1.4 ; 
-lambda=520 ;          % nm
+na=1.40 ; 
+lambda=723 ;                  % Alexa700 wavelength in nm
 a=2*pi*na/lambda ; 
 % 2D Gaussian PSF; sigma is estimated from Airy PSF
-sigma=1.3238/a ;      % = 78.26 nm
+sigma=1.3238/a ;              % sigma=108.81; 2*sigma=217.61 (nm) 
+FWHM=2*sqrt(2*log(2))*sigma ; % FWHM=256.22 (nm)
 %% Frame 
 M=1000 ;              % number of emitters 
 % Region of view: [0,Lx]x[0,Ly]
-Lx=1e3*round(sqrt(M/eDen)) ;
+Lx=100*round(10*sqrt(M/eDen)) ; % an integer multiple of Dx
 Ly=Lx ;               % frame size in nm
 Dx=100 ; Dy=100 ;     % pixel size of cammera
 Kx=Lx/Dx ; Ky=Ly/Dy ; % frame size in pixels
@@ -68,16 +56,17 @@ Kx=Lx/Dx ; Ky=Ly/Dy ; % frame size in pixels
 Dt=0.01 ;             % second, time per frame (1/Dt is frame rate) 
 Ih=300000 ;           % average number of detected photons per emitter per second
 DtIh=Dt*Ih ;          % photon count per frame per emitter 
-% 'mediumSNR'         % r=1/(1/rp+1/rg), 10*log10(r)=40.79 (dB)
-b=15 ;                % rp=Ih/b, 10*log10(rp)=43.01 (dB)
-G=10 ;                % rg=Ih/G, 10*log10(rg)=44.77 (dB)
+% 'mediumSNR'         % r=37500, SNR=45.74 (dB)
+b=5 ;                 % rp=60000, SPNR=47.78 (dB)
+G=3 ;                 % rg=100000, SGNR=50.00 (dB)
 rp=Ih/b ;             % SPNR (nm^2/emitter) 
 SPNR=10*log10(rp) ;   % SPNR (dB)
 rg=Ih/G ;             % SGNR (nm^2/emitter) 
 SGNR=10*log10(rg) ;   % SGNR (dB)
 r=rp*rg/(rp+rg) ;     % total SNR (nm^2/emitter) 
 SNR=10*log10(r) ;     % total SNR (dB)
-mu=0.5 ;              % mean of Gaussian noise (photons/s/nm^2)
+mu=5 ;                % mean of Gaussian noise (photons/s/nm^2)
+Coff=mu*Dt*Dx*Dy ;    % Coff=500 photons/pixel; Camera offset in effect
 %% Emitter locations - ground truth
 xy=[Lx*rand(1,M) ; Ly*rand(1,M)] ;  % randomly uniformly distributed 
 xy0=xy' ;             % ground truth emitter locaitons 
@@ -109,10 +98,17 @@ xy1=load(filename_xy0,'-ascii') ;
 xy_=xy1' ; 
 %% Calculate RMSMD
 [RMSMD1,RMSMD2]=RMSMD(xy_,xyF) ;
-fprintf(1,'Density=%2d Lx=%d Ly=%d M=%d RMSMD=%6.3f (nm) \n',eDen,Lx,Ly,M,RMSMD1) ; 
+fprintf(1,'Density=%3.2f Lx=%d Ly=%d M=%d RMSMD=%6.3f (nm) \n',eDen,Lx,Ly,M,RMSMD1) ; 
+%% Show estimates
+figure('Position',[400 300 600 600],'Color',[1 1 1]) ;
+plot(xy_(1,:),xy_(2,:),'k.') ; hold on
+plot(xyF(1,:),xyF(2,:),'r.') ; hold off
+xlabel('x (nm)') 
+ylabel('y (nm)') ; 
+axis([0 Lx 0 Ly])
 
 %% Results, M=1000: UGIA-F estimator
-% eDen      1     2     6     10    15    Average 
-% RMSMD     9.39  10.07 12.16 18.96 28.35 15.79 (nm) 
-% mean([9.39  10.07 12.16 18.96 28.35])=15.79 
-
+% eDen        0.5   1     2     4     8     Average 
+% Lx=Ly (nm)  44700 31600 22400 15800 11200 
+% RMSMD (nm)  9.81  11.21 13.46 17.43 27.89 15.96 
+% mean([9.81  11.21 13.46 17.43 27.89]) 
