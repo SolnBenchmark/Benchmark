@@ -32,7 +32,7 @@ clear
 fprintf(1,'%s: \n',SNRr) ; 
 %% Intialization 
 rng('default') ; 
-key=0 ;             % key for random number generators
+key=432100 ;        % key for random number generators
 switch SNRr
   case 'highSNR'    % r=500000,   SNR=56.99 (dB)
     b=0.3 ;         % rp=1000000, SPNR=60.00 (dB)
@@ -126,8 +126,8 @@ ylabel('y (nm)') ;
 axis([0 Lx 0 Ly])
 
 %% Results, M=1024: UGIA-F estimator
-%           highSNR   mediumSNR   lowSNR    Average 
-% SNR:      56.99     45.74       39.72 (dB) 
-% RMSMD:    4.11      9.27        17.11     10.16 (nm) 
-% Average: mean([4.11      9.27        17.11])=10.16 (nm)
+%           highSNR mediumSNR lowSNR  Average 
+% SNR:      56.99   45.74     39.72 (dB) 
+% RMSMD:    4.11    9.27      17.11   10.16 (nm) 
+% Average: mean([4.11 9.27 17.11]) 
 
