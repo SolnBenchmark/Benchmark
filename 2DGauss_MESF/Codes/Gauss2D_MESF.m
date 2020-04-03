@@ -36,7 +36,7 @@ fprintf(1,'Density=%3.2f (emitters/um^2): \n',eDen) ;
 %% Intialization 
 rng('default') ; 
 key=0 ;             % key for random number generators
-key=key+round(eDen) ; 
+key=key+floor(eDen) ; 
 rng(key) ; 
 %% Optical system 
 na=1.40 ; 
@@ -110,5 +110,5 @@ axis([0 Lx 0 Ly])
 %% Results, M=1000: UGIA-F estimator
 % eDen        0.5   1     2     4     8     Average 
 % Lx=Ly (nm)  44700 31600 22400 15800 11200 
-% RMSMD (nm)  9.81  11.21 13.46 17.43 27.89 15.96 
-% mean([9.81  11.21 13.46 17.43 27.89]) 
+% RMSMD (nm)  9.31  11.21 13.46 17.43 27.89 15.86 
+% mean([9.31  11.21 13.46 17.43 27.89]) 
