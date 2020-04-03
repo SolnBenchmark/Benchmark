@@ -62,7 +62,7 @@ The leaderboards will be updated after a submission.
 
 | Algorithm |0.5 emt/um<sup>2</sup>|1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|4 emt/um<sup>2</sup>|8 emt/um<sup>2</sup>|Average|
 |-------:|------:|--------:|-----:|-----:|-----:|-----:|
-|UGIA-F     |9.81 |11.21 |13.46 |17.43 |27.89 |15.96 |
+|UGIA-F     |9.31 |11.21 |13.46 |17.43 |27.89 |15.86 |
 |SIC        |50.01 |51.29 |53.77 |58.63 |60.87 |54.91|
 
 **2DGauss_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm) vs emitter distance**
