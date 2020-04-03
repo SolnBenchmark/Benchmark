@@ -46,19 +46,19 @@ The three data frames are synthesized by using the following parameters.
 ### Emitter distribution and intensity (mean number of emitted photons)
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Number of emitters |M=961|  |
+|Number of emitters |M=1024 |  |
 |Emitter intensity |I=300000|photons/s/emitter|
 |Analog digital unit |ADU=1|photons/unit|
 
-Within the region of view, each emitter is randomly distributed in a square of sizes 783\*783 (nm<sup>2</sup>) so that their PSFs are well isolated. 
+Within the region of view, each emitter is randomly distributed in a square of sizes 980\*980 (nm<sup>2</sup>) so that their PSFs are well isolated. 
 
 ### Data frame 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Region of view|[0,Lx] x [0,Ly] |nm| 
-|Region of view size |Lx=25000, Ly=25000| nm|
+|Region of view size |Lx=31400, Ly=31400| nm|
 |Pixel size |Dx=100, Dy=100|nm|
-|Frame size |Kx=Lx/Dx=250, Ky=Ly/Dy=250|pixels|
+|Frame size |Kx=Lx/Dx=314, Ky=Ly/Dy=314|pixels|
 |Frame time |Dt=0.01|s|
 |Correspondingly | |
 |Frame rate|1/Dt=100|frames/s|
@@ -71,42 +71,49 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 ### Noise and signal to noise ratio in three data frames  
 |Data frame |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|:-----|
-|**2DAiry_SESF_highSNR_Frame.tif**|Mean of Poisson noise |b=0.5|photons/s/nm<sup>2</sup>|
-| |Variance of Gaussian noise |G=0.5|photons/s/nm<sup>2</sup>| 
-| |Mean of Gaussian noise |mu=0.5|photons/s/nm<sup>2</sup>|
-|Corresponding SNRs |Signal to Poisson noise ratio |rp=600000|nm<sup>2</sup>/emitter|
-| |                             |SPNR=57.78|dB|
-| |Signal to Gaussian noise ratio |rg=600000|nm<sup>2</sup>/emitter|
-| |                             |SGNR=57.78|dB|
-| |Total signal to noise ratio |r=300000|nm<sup>2</sup>/emitter|
-| |                           |SNR=54.77|dB|
-|**2DAiry_SESF_mediumSNR_Frame.tif**|Mean of Poisson noise |b=15|photons/s/nm<sup>2</sup>|
-| |Variance of Gaussian noise |G=10|photons/s/nm<sup>2</sup>| 
-| |Mean of Gaussian noise |mu=0.5|photons/s/nm<sup>2</sup>|
-|Corresponding SNRs |Signal to Poisson noise ratio |rp=20000|nm<sup>2</sup>/emitter|
-| |                             |SPNR=43.01|dB|
-| |Signal to Gaussian noise ratio |rg=30000|nm<sup>2</sup>/emitter|
-| |                             |SGNR=44.77|dB|
-| |Total signal to noise ratio |r=12000|nm<sup>2</sup>/emitter|
-| |                           |SNR=40.79|dB|
-|**2DAiry_SESF_lowSNR_Frame.tif**|Mean of Poisson noise |b=30|photons/s/nm<sup>2</sup>|
-| |Variance of Gaussian noise |G=20|photons/s/nm<sup>2</sup>| 
-| |Mean of Gaussian noise |mu=0.5|photons/s/nm<sup>2</sup>|
-|Corresponding SNRs |Signal to Poisson noise ratio |rp=10000|nm<sup>2</sup>/emitter|
-| |                             |SPNR=40.00|dB|
-| |Signal to Gaussian noise ratio |rg=15000|nm<sup>2</sup>/emitter|
-| |                             |SGNR=41.76|dB|
-| |Total signal to noise ratio |r=6000|nm<sup>2</sup>/emitter|
-| |                           |SNR=37.78|dB|
+|**2DAiry_SESF_highSNR_Frame.tif**|Mean of Poisson noise |b=0.3|photons/s/nm<sup>2</sup>|
+| |Variance of Gaussian noise |G=0.3|photons/s/nm<sup>2</sup>| 
+| |Mean of Gaussian noise |mu=5|photons/s/nm<sup>2</sup>|
+|Correspondingly |Signal to Poisson noise ratio |rp=1000000|nm<sup>2</sup>/emitter|
+| |                             |SPNR=60.00|dB|
+| |Signal to Gaussian noise ratio |rg=1000000|nm<sup>2</sup>/emitter|
+| |                             |SGNR=60.00|dB|
+| |Total signal to noise ratio |r=500000|nm<sup>2</sup>/emitter|
+| |                           |SNR=56.99|dB|
+| |Effective camera offset |Coff=500 |photons/pixel|
+|**2DAiry_SESF_mediumSNR_Frame.tif**|Mean of Poisson noise |b=5|photons/s/nm<sup>2</sup>|
+| |Variance of Gaussian noise |G=3|photons/s/nm<sup>2</sup>| 
+| |Mean of Gaussian noise |mu=5|photons/s/nm<sup>2</sup>|
+|Correspondingly |Signal to Poisson noise ratio |rp=60000|nm<sup>2</sup>/emitter|
+| |                             |SPNR=47.78|dB|
+| |Signal to Gaussian noise ratio |rg=100000|nm<sup>2</sup>/emitter|
+| |                             |SGNR=50.00|dB|
+| |Total signal to noise ratio |r=37500|nm<sup>2</sup>/emitter|
+| |                           |SNR=45.74|dB|
+| |Effective camera offset |Coff=500 |photons/pixel|
+|**2DAiry_SESF_lowSNR_Frame.tif**|Mean of Poisson noise |b=20|photons/s/nm<sup>2</sup>|
+| |Variance of Gaussian noise |G=12|photons/s/nm<sup>2</sup>| 
+| |Mean of Gaussian noise |mu=5|photons/s/nm<sup>2</sup>|
+|Correspondingly |Signal to Poisson noise ratio |rp=15000|nm<sup>2</sup>/emitter|
+| |                             |SPNR=41.76|dB|
+| |Signal to Gaussian noise ratio |rg=25000|nm<sup>2</sup>/emitter|
+| |                             |SGNR=43.98|dB|
+| |Total signal to noise ratio |r=9375|nm<sup>2</sup>/emitter|
+| |                           |SNR=39.72|dB|
+| |Effective camera offset |Coff=500 |photons/pixel|
 
-The mean of Gaussian noise includes the effect of camera offset. 
+The mean of Gaussian noise mu includes the effect of camera offset. When mu is solely contributed by the camera offset, i.e. the Gaussian noise has a zero mean, the effective camera offset is Coff=Dt\*Dx\*Dy\*mu. 
 
 ### Optical system
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Numerical aperture |na=1.4| |
-|Fluorescence wavelength |lambda=520|nm|
-|Standard deviation|78.26|nm|
+|Numerical aperture |na=1.43| |
+|Fluorescence wavelength |lambda=665|nm|
+|Correspondingly| | |
+|Standard deviation |sigma=97.98 |nm|
+|Full-width half-maximum |FWHM=230.72 |nm|
+
+Dye Alexa647 is considered. 
 
 PSF is 2D Airy and its standard deviation is estimated by sigma=1.3238/a where a=2\*pi\*na/lambda [1]. 
 
