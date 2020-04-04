@@ -105,15 +105,13 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 The mean of Gaussian noise mu includes the effect of camera offset. When mu is solely contributed by the camera offset, i.e. the Gaussian noise has a zero mean, the effective camera offset is Coff=Dt\*Dx\*Dy\*mu. 
 
 ### Optical system
-|Parameter |Variable and value| Unit|
-|:-----|:-----|:-----|
-|Numerical aperture |na=1.40| |
-|Fluorescence wavelength |lambda=723|nm|
-|Correspondingly| | |
-|Standard deviation |sigma=108.81|nm|
-|Full-width half-maximum |FWHM=256.22|nm|
-
-Dye Alexa700 is considered. 
+|Parameter |Variable and value|Unit | |
+|:-----|:-----|:-----|:-----|
+|Numerical aperture |na=1.40| | |
+|Fluorescence wavelength |lambda=723|nm|Dye Alexa700 |
+|Correspondingly| | | |
+|Standard deviation |sigma=108.81|nm| |
+|Full-width half-maximum |FWHM=256.22|nm| |
 
 PSF is 2D Gaussian and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*pi\*na/lambda [1]. 
 
