@@ -95,7 +95,7 @@ Correspondingly, the stationary probability of state i, i.e. the probability tha
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Region of view|[0,Lx] x [0,Ly] |nm| 
-|Region of view size|Lx=2048, Ly=2048|nm|
+|Region of view size |Lx=2048, Ly=2048|nm|
 |Pixel size |Dx=128, Dy=128|nm|
 |Frame size |Kx=16, Ky=16|pixels|
 |Frame time |Dt=0.01|sec|
@@ -104,8 +104,8 @@ Correspondingly, the stationary probability of state i, i.e. the probability tha
 |Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
 |Temporal resolution |TR=N\*Dt=10 |sec|
-|Average number of activations per emitter|Nape=Pa\*N=12|frames/emitter|
-|Average number of activated emitters per frame|Naae=Pa\*M=3|emitters/frame|
+|Average number of activations per emitter |Nape=Pa\*N=12|frames/emitter|
+|Average number of activated emitters per frame |Naae=Pa\*M=3|emitters/frame|
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
@@ -114,9 +114,9 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 ### Noise 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Mean of Poisson noise |b=15|photons/sec/nm<sup>2</sup>|
-|Variance of Gaussian noise |G=10|photons/sec/nm<sup>2</sup>| 
-|Mean of Gaussian noise |mu=0.5|photons/sec/nm<sup>2</sup>|
+|Mean of Poisson noise |b=5|photons/sec/nm<sup>2</sup>|
+|Variance of Gaussian noise |G=3|photons/sec/nm<sup>2</sup>| 
+|Mean of Gaussian noise |mu=5|photons/sec/nm<sup>2</sup>|
 
 The mean of Gaussian noise includes the effect of camera offset. 
 
@@ -124,19 +124,24 @@ The mean of Gaussian noise includes the effect of camera offset.
 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Signal to Poisson noise ratio |rp=20000|nm<sup>2</sup>/emitter|
-|                             |SPNR=43.01|dB|
-|Signal to Gaussian noise ratio |rg=30000|nm<sup>2</sup>/emitter|
-|                             |SGNR=44.77|dB|
-|Total signal to noise ratio |r=12000|nm<sup>2</sup>/emitter|
-|                           |SNR=40.79|dB|
+|Signal to Poisson noise ratio |rp=60000|nm<sup>2</sup>/emitter|
+|                             |SPNR=47.78|dB|
+|Signal to Gaussian noise ratio |rg=100000|nm<sup>2</sup>/emitter|
+|                             |SGNR=50.00|dB|
+|Total signal to noise ratio |r=37500|nm<sup>2</sup>/emitter|
+|                           |SNR=45.74|dB|
+|Effective camera offset |Coff=500 |photons/pixel|
+
+The mean of Gaussian noise mu includes the effect of camera offset. When mu is solely contributed by the camera offset, i.e. the Gaussian noise has a zero mean, the effective camera offset is Coff=Dt\*Dx\*Dy\*mu. 
 
 ### Optical system
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Numerical aperture |na=1.4| |
-|Fluorescence wavelength |lambda=520|nm|
-|Standard deviation|78.26|nm|
+|Numerical aperture |na=1.40| | |
+|Fluorescence wavelength |lambda=723|nm|Dye Alexa700 |
+|Correspondingly| | | |
+|Standard deviation |sigma=108.81|nm| |
+|Full-width half-maximum |FWHM=256.22|nm| |
 
 PSF is 2D Gaussian and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*pi\*na/lambda [1]. 
 
