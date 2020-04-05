@@ -85,9 +85,9 @@ The leaderboards will be updated after a submission.
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |-------:|-----:|-----:|-----:|-----:|
-|UGIA-M   |3.08  |3.06    |3.36      |3.17|
-|SIC            |42.99 |42.59 |43.50 |43.03|
-|UGIA-F    |29.68 |49.52 |102.09  |60.43|
+|UGIA-M   |3.64 |3.61 |4.12 |3.79|
+|SIC      |50.79 |50.46 |49.76 |50.34|
+|UGIA-F   |37.95 |64.41 |116.79 |73.05|
 
 ## 3D Astigmatic
 
