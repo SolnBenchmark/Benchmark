@@ -77,9 +77,9 @@ The leaderboards will be updated after a submission.
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average |
 |-------:|-----:|-----:|-----:|-----:|
-|UGIA-M   |3.24  |3.16  |3.10  |3.17|
-|UGIA-F    |11.22 |12.30 |18.66 |14.06|
-|SIC           |40.91 |40.05 |40.37 |40.44|
+|UGIA-M   |3.31 |3.62 |3.31 |3.41|
+|UGIA-F   |13.06 |15.49 |25.76 |18.10|
+|SIC      |45.18 |44.29 |47.80 |45.76|
 
 **2DGauss_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm) vs emitter distance**
 
@@ -147,8 +147,8 @@ Join the group discussion and receive announcements: [Soln Benchmark](https://gr
 |:-------|:------|:--------|:-----|
 |UGIA-M     |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
 |UGIA-F     |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
-|[3D-DAOSTORM]( https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_ZhuangLab_storm-2Danalysis&d=DwID-g&c=4NmamNZG3KTnUCoC6InoLJ6KV1tbVKrkZXHRwtIMGmo&r=j0A6IFQM1sqhJ9JGnpoeSyUsEY4C_j3vAHGUhAHkwqc&m=KyWuibdcanyti6L5Rv5wyAfNPjtPqLpgLow4D7Hfwv0&s=D8QCk3zeetHK2OJqex-T45UyU0qNm8qUSdmB7HeK_gc&e=)|Hazen Babcock| Harvard Center for Advanced Imaging|USA |
-|[Cspline]( https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_ZhuangLab_storm-2Danalysis&d=DwID-g&c=4NmamNZG3KTnUCoC6InoLJ6KV1tbVKrkZXHRwtIMGmo&r=j0A6IFQM1sqhJ9JGnpoeSyUsEY4C_j3vAHGUhAHkwqc&m=KyWuibdcanyti6L5Rv5wyAfNPjtPqLpgLow4D7Hfwv0&s=D8QCk3zeetHK2OJqex-T45UyU0qNm8qUSdmB7HeK_gc&e=)|Hazen Babcock| Harvard Center for Advanced Imaging|USA |
+|[3D-DAOSTORM]( https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_ZhuangLab_storm-2Danalysis&d=DwID-g&c=4NmamNZG3KTnUCoC6InoLJ6KV1tbVKrkZXHRwtIMGmo&r=j0A6IFQM1sqhJ9JGnpoeSyUsEY4C_j3vAHGUhAHkwqc&m=KyWuibdcanyti6L5Rv5wyAfNPjtPqLpgLow4D7Hfwv0&s=D8QCk3zeetHK2OJqex-T45UyU0qNm8qUSdmB7HeK_gc&e=)|Hazen Babcock |Harvard Center for Advanced Imaging |USA |
+|[Cspline]( https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_ZhuangLab_storm-2Danalysis&d=DwID-g&c=4NmamNZG3KTnUCoC6InoLJ6KV1tbVKrkZXHRwtIMGmo&r=j0A6IFQM1sqhJ9JGnpoeSyUsEY4C_j3vAHGUhAHkwqc&m=KyWuibdcanyti6L5Rv5wyAfNPjtPqLpgLow4D7Hfwv0&s=D8QCk3zeetHK2OJqex-T45UyU0qNm8qUSdmB7HeK_gc&e=)|Hazen Babcock |Harvard Center for Advanced Imaging |USA |
 |[FCEG]( https://www.frontiersin.org/articles/10.3389/fbioe.2019.00338/full) |Fabian Hauser|University of Applied Sciences Upper Austria, School of Medical Engineering and Applied Social Sciences |Austria |
 |[LSTR]( https://www.mdpi.com/1422-0067/19/4/1150) |Fabian Hauser|University of Applied Sciences Upper Austria, School of Medical Engineering and Applied Social Sciences |Austria |
 |[PeakFit]( https://gdsc-smlm.readthedocs.io/en/latest) |Alex Herbert|Genome Damage and Stability Centre, University of Sussex |UK |
