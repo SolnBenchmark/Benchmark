@@ -26,7 +26,7 @@
 % Electrical Engineering Department
 % The City College of City University of New York
 % E-mail: ysun@ccny.cuny.edu
-% 02/26/2020
+% 02/26/2020, 04/05/2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear
@@ -41,10 +41,12 @@ key=key+eD ;
 rng(key) ; 
 fprintf(1,'Emitter distance: %d (nm) \n',eD) ; 
 %% Optical system 
-na=1.4 ; 
-lambda=520 ;          % nm
-a=2*pi*na/lambda ; 
-sigma=1.3238/a ;      % = 78.26 nm
+na=1.40 ; 
+lambda=723 ;                  % Alexa700 wavelength in nm
+a=2*pi*na/lambda ;  
+% 2D Gaussian PSF; sigma is estimated from Airy PSF
+sigma=1.3238/a ;              % sigma=108.81; 2*sigma=217.61 (nm) 
+FWHM=2*sqrt(2*log(2))*sigma ; % FWHM=256.22 (nm)
 %% Frame 
 % Region of view: [0,Lx]x[0,Ly]
 Lx=2^11 ;
@@ -55,16 +57,17 @@ Kx=Lx/Dx ; Ky=Ly/Dy ; % frame size in pixels
 Dt=0.01 ;             % second, time per frame (1/Dt is frame rate) 
 Ih=300000 ;           % average number of detected photons per emitter per second
 DtIh=Dt*Ih ;          % photon count per frame per emitter 
-% 'mediumSNR'         % r=1/(1/rp+1/rg), 10*log10(r)=40.79 (dB)
-b=15 ;                % rp=Ih/b, 10*log10(rp)=43.01 (dB)
-G=10 ;                % rg=Ih/G, 10*log10(rg)=44.77 (dB)
+% 'mediumSNR'         % r=37500, SNR=45.74 (dB)
+b=5 ;                 % rp=60000, SPNR=47.78 (dB)
+G=3 ;                 % rg=100000, SGNR=50.00 (dB)
 rp=Ih/b ;             % SPNR (nm^2/emitter) 
 SPNR=10*log10(rp) ;   % SPNR (dB)
 rg=Ih/G ;             % SGNR (nm^2/emitter) 
 SGNR=10*log10(rg) ;   % SGNR (dB)
 r=rp*rg/(rp+rg) ;     % total SNR (nm^2/emitter) 
 SNR=10*log10(r) ;     % total SNR (dB)
-mu=0.5 ;              % mean of Gaussian noise (photons/s/nm^2)
+mu=5 ;                % mean of Gaussian noise (photons/s/nm^2)
+Coff=mu*Dt*Dx*Dy ;    % Coff=500 photons/pixel; Camera offset in effect
 %% Emitter locations - ground truth
 fprintf(1,'Emitter locations: \n') ;
 M=250 ; 
@@ -262,8 +265,8 @@ xlabel('Temporal resolution (s)') ;
 % M=250; N=100; TR=1 sec
 % pM: # emitters activated at least once in a movie
 % Distance: 40    30    20      Average (nm)
-% pM:       250   250   250   
-% UGIA-M:   3.08  3.06  3.36    3.17
-% UGIA-F:   29.68 49.52 102.09  60.43
-% Average RMSMD-M: mean([3.08  3.06    3.36]) 
-% Average RMSMD-F: mean([29.68 49.52 102.09])
+% pM:       250   250   250
+% UGIA-M:   3.64  3.61  4.12    3.79
+% UGIA-F:   37.95 64.41 116.79  73.05 
+% Average RMSMD-M: mean([3.64  3.61  4.12]) 
+% Average RMSMD-F: mean([37.95 64.41 116.79])
