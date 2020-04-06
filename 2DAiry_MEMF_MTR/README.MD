@@ -136,7 +136,7 @@ The mean of Gaussian noise mu includes the effect of camera offset. When mu is s
 |Parameter |Variable and value|Unit | |
 |:-----|:-----|:-----|:-----|
 |Numerical aperture |na=1.43| | |
-|Fluorescence wavelength |lambda=665|nm|Dye Alexa647 |
+|Fluorescence wavelength |lambda=665|nm|Dye Alexa 647 |
 |Correspondingly| | | |
 |Standard deviation |sigma=97.98 |nm| |
 |Full-width half-maximum |FWHM=230.72 |nm| |
