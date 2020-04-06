@@ -57,7 +57,7 @@ Kx=Lx/Dx ; Ky=Ly/Dy ; % frame size in pixels
 Dt=0.01 ;             % second, time per frame (1/Dt is frame rate) 
 Ih=300000 ;           % average number of detected photons per emitter per second
 DtIh=Dt*Ih ;          % photon count per frame per emitter 
-% 'mediumSNR'         % r=1/(1/rp+1/rg), 10*log10(r)=40.79 (dB)
+% 'mediumSNR'         % r=37500,    SNR=45.74 (dB)
 b=5 ;                 % rp=60000,   SPNR=47.78 (dB)
 G=3 ;                 % rg=100000,  SGNR=50.00 (dB)
 rp=Ih/b ;             % SPNR (nm^2/emitter) 
