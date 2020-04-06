@@ -133,8 +133,8 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 The mean of Gaussian noise mu includes the effect of camera offset. When mu is solely contributed by the camera offset, i.e. the Gaussian noise has a zero mean, the effective camera offset is Coff=Dt\*Dx\*Dy\*mu. 
 
 ### Optical system
-|Parameter |Variable and value| Unit|
-|:-----|:-----|:-----|
+|Parameter |Variable and value|Unit | |
+|:-----|:-----|:-----|:-----|
 |Numerical aperture |na=1.43| | |
 |Fluorescence wavelength |lambda=665|nm|Dye Alexa647 |
 |Correspondingly| | | |
