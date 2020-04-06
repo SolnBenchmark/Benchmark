@@ -45,8 +45,8 @@ The leaderboards will be updated after a submission.
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |-------:|-----:|-----:|-----:|-----:|
 |UGIA-M   |3.10 |3.32 |3.59 |3.34|
-|SIC      |36.80 |61.19 |108.90 |68.96|
-|UGIA-F   |51.27 |52.57 |51.82 |51.89|
+|SIC      |51.27 |52.57 |51.82 |51.89|
+|UGIA-F   |36.80 |61.19 |108.90 |68.96|
 
 ## 2D Gauss
 
