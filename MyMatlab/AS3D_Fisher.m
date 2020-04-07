@@ -53,8 +53,11 @@ qx=zeros(M,Kx) ;    qy=zeros(M,Ky) ;
 DqxDx=zeros(M,Kx) ; DqyDy=zeros(M,Ky) ; 
 DqxDz=zeros(M,Kx) ; DqyDz=zeros(M,Ky) ; 
 kx=0:Kx-1 ; ky=0:Ky-1 ; 
+if M>200
+  fprintf(1,'Step 1 ... \n') ;
+end
 for i=1:M
-  if mod(i,100)==0
+  if (M>200)&&(mod(i,100)==0||i==1)
     fprintf(1,'M=%3d  m=%3d\n',M,i) ;
   end
   z=xyz(3,i) ;
@@ -85,7 +88,13 @@ if r==inf
   Qu=Qu+1e-10 ;     % add 1e-10 to avoid 0/0=NaN 
 end
 F=zeros(3*M,3*M) ;	% Fisher information matrix: x1, y1, z1, x2, y2, z2, ...
+if M>200
+  fprintf(1,'Step 2 ... \n') ;
+end
 for i=1:M	% 
+  if (M>200)&&(mod(i,100)==0||i==1)
+    fprintf(1,'M=%3d  m=%3d\n',M,i) ;
+  end
 	qyDqxDxi=qy(i,:)'*DqxDx(i,:) ; 
 	DqyDyqxi=DqyDy(i,:)'*qx(i,:) ;
 	qyDqxDzi=qy(i,:)'*DqxDz(i,:) ;
