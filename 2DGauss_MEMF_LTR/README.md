@@ -118,7 +118,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 |Variance of Gaussian noise |G=3|photons/sec/nm<sup>2</sup>| 
 |Mean of Gaussian noise |mu=5|photons/sec/nm<sup>2</sup>|
 
-**Corresponding signal to noise ratios**
+**Corresponding signal to noise ratios and camera offset**
 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
