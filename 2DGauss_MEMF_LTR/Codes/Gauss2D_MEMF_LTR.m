@@ -67,7 +67,7 @@ SGNR=10*log10(rg) ;   % SGNR (dB)
 r=rp*rg/(rp+rg) ;     % total SNR (nm^2/emitter) 
 SNR=10*log10(r) ;     % total SNR (dB)
 mu=5 ;                % mean of Gaussian noise (photons/s/nm^2)
-Coff=mu*Dt*Dx*Dy ;    % Coff=500 photons/pixel; Camera offset in effect
+Coff=mu*Dt*Dx*Dy ;    % Coff=819.2 photons/pixel; Camera offset in effect
 %% Emitter locations - ground truth
 fprintf(1,'Emitter locations: \n') ;
 M=250 ; 
