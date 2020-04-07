@@ -95,7 +95,7 @@ Correspondingly, the stationary probability of state i, i.e. the probability tha
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Region of view|[0,Lx] x [0,Ly] x [-Lz,Lz] |nm| 
-|Size of lateral view|Lx=2048, Ly=2048|nm|
+|Size of lateral view |Lx=2048, Ly=2048|nm|
 |Size of axial view |Lz=400 |nm| 
 |Pixel size |Dx=128, Dy=128|nm|
 |Frame size |Kx=16, Ky=16|pixels|
@@ -105,8 +105,8 @@ Correspondingly, the stationary probability of state i, i.e. the probability tha
 |Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
 |Temporal resolution |TR=N\*Dt=5 |sec|
-|Average number of activations per emitter|Nape=Pa\*N=12|frames/emitter|
-|Average number of activated emitters per frame|Naae=Pa\*M=6|emitters/frame|
+|Average number of activations per emitter |Nape=Pa\*N=12|frames/emitter|
+|Average number of activated emitters per frame |Naae=Pa\*M=6|emitters/frame|
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
@@ -117,20 +117,21 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 |:-----|:-----|:-----|
 |Mean of Poisson noise |b=0.3|photons/sec/nm<sup>2</sup>|
 |Variance of Gaussian noise |G=0.2|photons/sec/nm<sup>2</sup>| 
-|Mean of Gaussian noise |mu=0.5|photons/sec/nm<sup>2</sup>|
-
-The mean of Gaussian noise includes the effect of camera offset. 
+|Mean of Gaussian noise |mu=5|photons/sec/nm<sup>2</sup>|
 
 **Corresponding signal to noise ratios**
 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Signal to Poisson noise ratio |rp=1000000|nm<sup>2</sup>/emitter|
-|                             |SPNR=60|dB|
+|                             |SPNR=60.00|dB|
 |Signal to Gaussian noise ratio |rg=1500000|nm<sup>2</sup>/emitter|
 |                             |SGNR=61.76|dB|
 |Total signal to noise ratio |r=600000|nm<sup>2</sup>/emitter|
 |                           |SNR=57.78|dB|
+|Effective camera offset |Coff=819.2 |photons/pixel|
+
+The mean of Gaussian noise mu includes the effect of camera offset. When mu is solely contributed by the camera offset, i.e. the Gaussian noise has a zero mean, the effective camera offset is Coff=Dt\*Dx\*Dy\*mu. 
 
 ### Optical system
 |Parameter |Variable and value| Unit|
