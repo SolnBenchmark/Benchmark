@@ -128,7 +128,7 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 |                             |SGNR=50.00|dB|
 |Total signal to noise ratio |r=37500|nm<sup>2</sup>/emitter|
 |                           |SNR=45.74|dB|
-|Effective camera offset |Coff=500 |photons/pixel|
+|Effective camera offset |Coff=819.2 |photons/pixel|
 
 The mean of Gaussian noise mu includes the effect of camera offset. When mu is solely contributed by the camera offset, i.e. the Gaussian noise has a zero mean, the effective camera offset is Coff=Dt\*Dx\*Dy\*mu. 
 
