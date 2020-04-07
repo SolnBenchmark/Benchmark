@@ -101,7 +101,7 @@ The leaderboards will be updated after a submission.
 
 | Algorithm |0.1 emt/um<sup>2</sup>|0.3 emt/um<sup>2</sup>|0.5 emt/um<sup>2</sup>|1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|3 emt/um<sup>2</sup>|Average|
 |-------:|------:|--------:|-----:|-----:|-----:|-----:|-----:|
-|UGIA-F   |18.07 |22.65 |22.37 |27.57 |38.61 |69.41 |57.78|
+|UGIA-F   |16.90 |21.44 |22.51 |25.37 |42.85 |68.90 |33.00 |
 
 **3DAS_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm) vs emitter distance**
 
