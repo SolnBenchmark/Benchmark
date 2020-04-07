@@ -21,7 +21,7 @@
 % Electrical Engineering Department
 % The City College of City University of New York
 % E-mail: ysun@ccny.cuny.edu
-% 2/17/2019
+% 2/17/2019, 04/06/2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear
@@ -34,17 +34,17 @@ fprintf(1,'%s: \n',SNRr) ;
 rng('default') ; 
 key=0 ;             % key for random number generators
 switch SNRr
-  case 'highSNR'    % r=1/(1/rp+1/rg), 10*log10(r)=64.77 (dB)
-    b=0.05 ;        % rp=Ih/b, 10*log10(rp)=67.78 (dB)
-    G=0.05 ;        % rg=Ih/G, 10*log10(rg)=67.78 (dB)
+  case 'highSNR'    % r=3000000,  SNR=64.77 (dB)
+    b=0.05 ;        % rp=6000000, SPNR=67.78 (dB)
+    G=0.05 ;        % rg=6000000, SGNR=67.78 (dB)
     key=key+0 ;  
-  case 'mediumSNR'  % r=1/(1/rp+1/rg), 10*log10(r)=50.79 (dB)
-    b=1.5 ;         % rp=Ih/b, 10*log10(rp)=53.01 (dB)
-    G=1 ;           % rg=Ih/G, 10*log10(rg)=54.77 (dB)
+  case 'mediumSNR'  % r=375000,   SNR=55.74 (dB)
+    b=0.5 ;         % rp=600000,  SPNR=57.78 (dB)
+    G=0.3 ;         % rg=1000000, SGNR=60.00 (dB)
     key=key+1 ; 
-  case 'lowSNR'     % r=1/(1/rp+1/rg), 10*log10(r)=47.78 (dB)
-    b=3 ;           % rp=Ih/b, 10*log10(rp)=50.00 (dB)
-    G=2 ;           % rg=Ih/G, 10*log10(rg)=51.76 (dB)
+  case 'lowSNR'     % r=120000,   SNR=50.79 (dB)
+    b=1.5 ;         % rp=200000,  SPNR=53.01 (dB)
+    G=1.0 ;         % rg=300000,  SGNR=54.77 (dB)
     key=key+2 ; 
   otherwise
     return ;
@@ -69,7 +69,7 @@ xlabel('z (nm)')
 ylabel('\sigma_x(z), \sigma_y(z) (nm)')
 %% Frame 
 % sample is located at [0,Lx]x[0,Ly]x[-Lz,Lz]
-Lx=6e4 ; Ly=6e4 ;     % frame size in nm
+Lx=60e3 ; Ly=60e3 ;     % frame size in nm
 Lz=400 ;              % 2xLz - axial depth in nm
 Dx=100 ; Dy=100 ;     % pixel size in nm
 Kx=Lx/Dx ; Ky=Ly/Dy ; % frame size in pixels
@@ -83,7 +83,8 @@ rg=Ih/G ;             % SGNR (nm^2/emitter)
 SGNR=10*log10(rg) ;   % SGNR (dB)
 r=rp*rg/(rp+rg) ;     % total SNR (nm^2/emitter) 
 SNR=10*log10(r) ;     % total SNR (dB)
-mu=0.5 ;              % mean of Gaussian noise (photons/s/nm^2)
+mu=5 ;                % mean of Gaussian noise (photons/s/nm^2)
+Coff=mu*Dt*Dx*Dy ;    % Coff=500 photons/pixel; Camera offset in effect
 %% Emitter locations - ground truth
 sigma=300 ;           % maximal sigmax and sigmay
 eLx=2*4*sigma ;       % an emitter is located in a region of size eLx, eLy, eLy
@@ -100,8 +101,6 @@ end
 xyz0=xyz' ;             % ground truth emitter locaitons 
 filename_xyz0=strcat('3DAS_SESF_',SNRr,'_xyz0','.txt') ; 
 save(filename_xyz0,'-ascii','xyz0') ;
-figure 
-plot3(xyz(1,:),xyz(2,:),xyz(3,:),'r*') ; 
 %% Generate and save a data frame
 fprintf(1,'Generate a data frame: \n') ; 
 U=AS3D_Frame(c,d,sigmax0,Ax,Bx,sigmay0,Ay,By,Kx,Ky,Dx,Dy,Dt,Ih,b,mu,G,xyz) ;
@@ -130,9 +129,17 @@ xyz_=xyz1' ;
 [RMSMD1,RMSMD2]=RMSMD(xyz_,xyzF) ;
 fprintf(1,SNRr) ; 
 fprintf(1,': SNR=%5.2f (dB) M=%d RMSMD=%6.3f (nm) \n',SNR,M,RMSMD1) ; 
+%% Show estimates
+figure('Position',[400 300 600 600],'Color',[1 1 1]) ;
+plot3(xyz_(1,:),xyz_(2,:),xyz_(3,:),'k.') ; hold on
+plot3(xyzF(1,:),xyzF(2,:),xyzF(3,:),'r.') ; hold off
+xlabel('x (nm)') 
+ylabel('y (nm)')
+ylabel('z (nm)') ; 
+axis([0 Lx 0 Ly -Lz Lz])
 
 %% Results, M=625: UGIA-F estimator
-%           highSNR   mediumSNR   lowSNR    Average 
-% SNR:      64.77     50.79       47.78 (dB) 
-% RMSMD:    11.80     29.54       39.36     26.90 (nm) 
-% Average: mean([11.80 29.54 39.36])=26.90 (nm)
+%             highSNR	mediumSNR lowSNR  Average 
+% SNR (dB):   64.77   55.74     50.79
+% RMSMD (nm): 11.80   18.79     30.30   20.30
+% Average: mean([11.80 18.79 30.30])
