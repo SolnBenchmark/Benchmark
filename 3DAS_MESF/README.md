@@ -86,24 +86,24 @@ Emitters are randomly and uniformly distributed in the cuboid [0,Lx] x [0,Ly] x 
 ### Region of view and frame size for six data frames 
 |Data frame |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|:-----|
-|**3DAS_MESF_density0.1_Frame.tif** |Region of view size |Lx=71000, Ly=71000|nm|
+|**3DAS_MESF_density0.1_Frame.tif** |Region of view size |Lx=70700, Ly=70700|nm|
 |Correspondingly |Emitter density in lateral plane|0.1|emitters/um<sup>2</sup>|
-|                |Frame size |Kx=710, Ky=710|pixels|
-|**3DAS_MESF_density0.3_Frame.tif** |Region of view size |Lx=41000, Ly=41000|nm|
+|                |Frame size |Kx=707, Ky=707|pixels|
+|**3DAS_MESF_density0.3_Frame.tif** |Region of view size |Lx=40800, Ly=40800|nm|
 |Correspondingly |Emitter density in lateral plane|0.3|emitters/um<sup>2</sup>|
-|                |Frame size |Kx=410, Ky=410|pixels|
-|**3DAS_MESF_density0.5_Frame.tif** |Region of view size |Lx=32000, Ly=32000|nm|
+|                |Frame size |Kx=408, Ky=408|pixels|
+|**3DAS_MESF_density0.5_Frame.tif** |Region of view size |Lx=31600, Ly=31600|nm|
 |Correspondingly |Emitter density in lateral plane|0.5|emitters/um<sup>2</sup>|
-|                |Frame size |Kx=320, Ky=320|pixels|
-|**3DAS_MESF_density1_Frame.tif** |Region of view size |Lx=22000, Ly=22000|nm|
+|                |Frame size |Kx=316, Ky=316|pixels|
+|**3DAS_MESF_density1_Frame.tif** |Region of view size |Lx=22400, Ly=22400|nm|
 |Correspondingly |Emitter density in lateral plane|1|emitters/um<sup>2</sup>|
-|                |Frame size |Kx=220, Ky=220|pixels|
-|**3DAS_MESF_density2_Frame.tif** |Region of view size |Lx=16000, Ly=16000|nm|
+|                |Frame size |Kx=224, Ky=224|pixels|
+|**3DAS_MESF_density2_Frame.tif** |Region of view size |Lx=15800, Ly=15800|nm|
 |Correspondingly |Emitter density in lateral plane|2|emitters/um<sup>2</sup>|
-|                |Frame size |Kx=160, Ky=160|pixels|
-|**3DAS_MESF_density3_Frame.tif** |Region of view size |Lx=13000, Ly=13000|nm|
+|                |Frame size |Kx=158, Ky=158|pixels|
+|**3DAS_MESF_density3_Frame.tif** |Region of view size |Lx=12900, Ly=12900|nm|
 |Correspondingly |Emitter density in lateral plane|3|emitters/um<sup>2</sup>|
-|                |Frame size |Kx=130, Ky=130|pixels|
+|                |Frame size |Kx=129, Ky=129|pixels|
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
@@ -114,20 +114,21 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 |:-----|:-----|:-----|
 |Mean of Poisson noise |b=0.3|photons/s/nm<sup>2</sup>|
 |Variance of Gaussian noise |G=0.2|photons/s/nm<sup>2</sup>| 
-|Mean of Gaussian noise |mu=0.5|photons/s/nm<sup>2</sup>|
-
-The mean of Gaussian noise includes the effect of camera offset. 
+|Mean of Gaussian noise |mu=5|photons/s/nm<sup>2</sup>|
 
 **Corresponding signal to noise ratios**
 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Signal to Poisson noise ratio |rp=1000000|nm<sup>2</sup>/emitter|
-|                             |SPNR=60|dB|
+|                             |SPNR=60.00|dB|
 |Signal to Gaussian noise ratio |rg=1500000|nm<sup>2</sup>/emitter|
 |                             |SGNR=61.76|dB|
 |Total signal to noise ratio |r=600000|nm<sup>2</sup>/emitter|
 |                           |SNR=57.78|dB|
+|Effective camera offset |Coff=500 |photons/pixel|
+
+The mean of Gaussian noise mu includes the effect of camera offset. When mu is solely contributed by the camera offset, i.e. the Gaussian noise has a zero mean, the effective camera offset is Coff=Dt\*Dx\*Dy\*mu. 
 
 ### Optical system
 |Parameter |Variable and value| Unit|
