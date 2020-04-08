@@ -26,7 +26,7 @@
 % Electrical Engineering Department
 % The City College of City University of New York
 % E-mail: ysun@ccny.cuny.edu
-% 03/07/2020
+% 03/07/2020, 04/07/2020 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear
@@ -68,16 +68,17 @@ Lz=400 ;              % 2xLz - axial depth in nm
 Dt=0.01 ;             % second, time per frame (1/Dt is frame rate) 
 Ih=300000 ;           % average number of detected photons per emitter per second
 DtIh=Dt*Ih ;          % photon count per frame per emitter 
-% 'mediumSNR'         % r=1/(1/rp+1/rg), 10*log10(r)=57.78 (dB)
-b=0.3 ;               % rp=Ih/b, 10*log10(rp)=60.00 (dB)
-G=0.2 ;               % rg=Ih/G, 10*log10(rg)=61.76 (dB)
+% 'mediumSNR'         % r=600000,   SNR=57.78 (dB)
+b=0.3 ;               % rp=1000000,  SPNR=60.00 (dB)
+G=0.2 ;               % rg=1500000, SGNR=61.76 (dB)
 rp=Ih/b ;             % SPNR (nm^2/emitter) 
 SPNR=10*log10(rp) ;   % SPNR (dB)
 rg=Ih/G ;             % SGNR (nm^2/emitter) 
 SGNR=10*log10(rg) ;   % SGNR (dB)
 r=rp*rg/(rp+rg) ;     % total SNR (nm^2/emitter) 
 SNR=10*log10(r) ;     % total SNR (dB)
-mu=0.5 ;              % mean of Gaussian noise (photons/s/nm^2)
+mu=5 ;                % mean of Gaussian noise (photons/s/nm^2)
+Coff=mu*Dt*Dx*Dy ;    % Coff=819.2 photons/pixel; Camera offset in effect
 %% Emitter locations - ground truth
 fprintf(1,'Emitter locations: \n') ;
 M=250 ; 
@@ -104,10 +105,6 @@ xy_=[cos(phi_) -sin(phi_)
      sin(phi_) cos(phi_)]*xy1(1:2,:)+2*randn(2,1) ; 
 xy_=xy_+[Lx/2 ; Ly/2] ; % adjust to frame center in lateral plane
 xyz=[xy_ ; xy1(3,:)] ; 
-% show emitter locations
-figure 
-plot3(xyz(1,:),xyz(2,:),xyz(3,:),'r*') ; 
-axis([0 Lx 0 Ly -Lz Lz]) ; 
 % save emitter locations 
 xyz0=xyz' ;             % ground truth emitter locaitons 
 filename_xyz0=strcat('3DAS_MEMF_LTR_eD',num2str(eD),'nm_xyz0','.txt') ; 
@@ -274,13 +271,15 @@ legend(lg,'UGIA-M','UGIA-F') ;
 ylabel('RMSMD (nm)') ; 
 xlabel('Temporal resolution (s)') ; 
 
-%% Show SOLN images
-figure
-plot3(xyzF(1,1:pF),xyzF(2,1:pF),xyzF(3,1:pF),'g+') ; hold on
-plot3(xyzM(1,1:pM,n),xyzM(2,1:pM,n),xyzM(3,1:pM,n),'bx') ; 
-plot3(xyz(1,:),xyz(2,:),xyz(3,:),'r*') ; 
-hold off
-axis([0 Lx 0 Ly -Lz Lz]) ; 
+%% Show estimates
+figure('Position',[400 300 600 600],'Color',[1 1 1]) ;
+plot3(xyz(1,:),xyz(2,:),xyz(3,:),'k.') ; hold on
+plot3(xyzM(1,1:pM,n),xyzM(2,1:pM,n),xyzM(3,1:pM,n),'b.') ; 
+plot3(xyzF(1,:),xyzF(2,:),xyzF(3,:),'r.') ; hold off
+xlabel('x (nm)') 
+ylabel('y (nm)')
+ylabel('z (nm)') ; 
+axis([0 Lx 0 Ly -Lz Lz])
 
 %% Results: RMSMD vs emitter distance 
 % M=250; N=200; TR=2 sec
