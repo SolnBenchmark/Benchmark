@@ -59,7 +59,7 @@ Within the region of view, each emitter is randomly distributed in a square of s
 |Region of view size |Lx=31400, Ly=31400| nm|
 |Pixel size |Dx=100, Dy=100|nm|
 |Frame size |Kx=Lx/Dx=314, Ky=Ly/Dy=314|pixels|
-|Frame time |Dt=0.01|s|
+|Frame time |Dt=0.01|sec|
 |Correspondingly | |
 |Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
