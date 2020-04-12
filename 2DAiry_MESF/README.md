@@ -8,11 +8,11 @@ Evaluate and benchmark performance of localization algorithms in localization of
 
 Five data frames with different emitter densities are synthesized and saved as tiff files with 16 bits in depth:
 
-**2DAiry_MESF_density0.5_Frame.tif  (For purpose of demonstration, .png images are shown here.)**
+**2DAiry_MESF_density0.5_Frame.tif (For purpose of demonstration, .png images are shown here.)**
 
 ![Alt text](Doc/2DAiry_MESF_density0.5_Frame.png)
 
-**2DAiry_MESF_density1_Frame.tif  (For purpose of demonstration, .png images are shown here.)**
+**2DAiry_MESF_density1_Frame.tif**
 
 ![Alt text](Doc/2DAiry_MESF_density1_Frame.png)
 
@@ -59,7 +59,7 @@ The five data frames are synthesized by using the following parameters.
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Number of emitters |M=1000|  |
-|Emitter intensity |I=300000|photons/s/emitter|
+|Emitter intensity |I=300000|photons/sec/emitter|
 |Analog digital unit |ADU=1|photons/unit|
 
 Emitters are randomly and uniformly distributed in the region of view. 
@@ -70,9 +70,9 @@ Emitters are randomly and uniformly distributed in the region of view.
 |Region of view|[0,Lx] x [0,Ly] |nm| 
 |Pixel size |Dx=100, Dy=100|nm|
 |Frame size |Kx=Lx/Dx, Ky=Ly/Dy |pixels |
-|Frame time |Dt=0.01|s|
+|Frame time |Dt=0.01|sec|
 |Correspondingly | |
-|Frame rate|1/Dt=100|frames/s|
+|Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
 
 ### Region of view and frame size for five data frames 
@@ -101,9 +101,9 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 ### Noise 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Mean of Poisson noise |b=5|photons/s/nm<sup>2</sup>|
-|Variance of Gaussian noise |G=3|photons/s/nm<sup>2</sup>| 
-|Mean of Gaussian noise |mu=5|photons/s/nm<sup>2</sup>|
+|Mean of Poisson noise |b=5|photons/sec/nm<sup>2</sup>|
+|Variance of Gaussian noise |G=3|photons/sec/nm<sup>2</sup>| 
+|Mean of Gaussian noise |mu=5|photons/sec/nm<sup>2</sup>|
 
 **Corresponding signal to noise ratios and camera offset**
 
