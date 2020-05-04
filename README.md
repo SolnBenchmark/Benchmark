@@ -26,11 +26,11 @@ The leaderboards will be updated after a submission.
 |SIC      |50.58 |51.11 |53.96 |55.87 |61.37 |54.58|
 |3D-DAOSTORM|104.03 |70.94 |69.78 |99.38 |103.17 |89.46|
 
-**2DAiry_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm), STR (nm^2s) vs emitter distance**
+**2DAiry_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|40 (nm)|30 (nm)|20 (nm)|Average|
 |-------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
-|         |   **RMSMD (nm):**|      |      |      |**STR (nm^2s):**  |       |      |      |
+|         |   **RMSMD (nm):**|      |      |      |**STR (nm<sup>2</sup>s):**  |       |      |      |
 |UGIA-M   |2.58 |2.79 |2.65 |2.67|    |       |      |      |
 |UGIA-F   |9.28 |9.57 |12.69 |10.51|    |       |      |      |
 |SIC      |46.11 |46.28 |44.61 |45.67|    |       |      |      |
