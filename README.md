@@ -36,11 +36,11 @@ The leaderboards will be updated after a submission.
 
 **2DAiry_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm) vs emitter distance**
 
-|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
-|-------:|-----:|-----:|-----:|-----:|
-|UGIA-M   |3.29  |2.97  |3.51  |3.26|
-|UGIA-F   |11.10 |11.61 |17.62 |13.44|
-|SIC      |43.99 |43.71 |44.10 |43.93|
+|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|   |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
+|-------:|-----:|-----:|-----:|-----:|        |-------:|-----:|-----:|-----:|-----:|
+|UGIA-M   |3.29  |2.97  |3.51  |3.26|         |UGIA-M   |3.29  |2.97  |3.51  |3.26|
+|UGIA-F   |11.10 |11.61 |17.62 |13.44|        |UGIA-F   |11.10 |11.61 |17.62 |13.44|
+|SIC      |43.99 |43.71 |44.10 |43.93|        |SIC      |43.99 |43.71 |44.10 |43.93|
 
 **2DAiry_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm) vs emitter distance**
 
