@@ -30,7 +30,7 @@ For each data movie, the emitter locations (x,y) in nm shall be estimated and sa
 
 ... ...
 
-100 4.1254239e+02   6.8510823e+03
+4.1254239e+02   6.8510823e+03
 
 The filenames in submission shall be in the format: 
 
