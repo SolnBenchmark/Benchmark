@@ -42,8 +42,8 @@ The leaderboards will be updated after a submission.
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average| |40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |         |**RMSMD (nm):**|  |  |      |    |**STR (nm<sup>2</sup>s):**| | | |
-|UGIA-M   |3.29  |2.97  |3.51  |3.26|       |       |       |       |     |
-|UGIA-F   |11.10 |11.61 |17.62 |13.44|      |       |       |       |     |
+|UGIA-M   |3.29  |2.97  |3.51  |3.26|       |554 |555 |675 |595 |
+|UGIA-F   |11.10 |11.61 |17.62 |13.44|      |7954 |1167 |23805 | 10975 |
 |SIC      |43.99 |43.71 |44.10 |43.93|      |       |       |       |     |
 
 **2DAiry_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD, STR vs emitter distance**
