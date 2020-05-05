@@ -122,8 +122,8 @@ The leaderboards will be updated after a submission.
 |         |RMSMD|  |  |      |    |STR| | | |
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
-|UGIA-M   |6.12  |6.03  |6.45  |6.20|       |       |       |       |     |
-|UGIA-F    |38.35 |47.28 |57.15 |47.59|     |       |       |       |     |
+|UGIA-M   |6.12  |6.03  |6.45  |6.20|       |5,424 |5,267 |6,020 |5,570 |
+|UGIA-F    |38.35 |47.28 |57.15 |47.59|     |212,825 |323,361 |472,480 |336222 |
 
 **3DAS_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
@@ -138,8 +138,8 @@ The leaderboards will be updated after a submission.
 |         |RMSMD|  |  |      |    |STR| | | |
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
-|UGIA-M   |8.82    |8.69    |9.20    |8.90| |       |       |       |     |
-|UGIA-F    |110.03 |133.76 |178.14 |140.64| |       |       |       |     |
+|UGIA-M   |8.82    |8.69    |9.20    |8.90| |2,251 |2,183 |2,447 |2,294 |
+|UGIA-F    |110.03 |133.76 |178.14 |140.64| |350,305 |517,706 |948,234 |605,415 |
 
 # Non-Blind Localization
 This evaluation and benchmark is non-blind, that is, all the parameters of an optical system are known a priori, which are supposed to have been obtained through a calibration. Nevertheless, a blind localization algorithm that estimates by itself the system parameters from a data frame or a data movie can also be evaluated and benchmarked. 
@@ -166,9 +166,9 @@ Join the group discussion and receive announcements: [Soln Benchmark](https://gr
 |UGIA-F     |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
 |[3D-DAOSTORM]( https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_ZhuangLab_storm-2Danalysis&d=DwID-g&c=4NmamNZG3KTnUCoC6InoLJ6KV1tbVKrkZXHRwtIMGmo&r=j0A6IFQM1sqhJ9JGnpoeSyUsEY4C_j3vAHGUhAHkwqc&m=KyWuibdcanyti6L5Rv5wyAfNPjtPqLpgLow4D7Hfwv0&s=D8QCk3zeetHK2OJqex-T45UyU0qNm8qUSdmB7HeK_gc&e=)|Hazen Babcock |Harvard Center for Advanced Imaging |USA |
 |[Cspline]( https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_ZhuangLab_storm-2Danalysis&d=DwID-g&c=4NmamNZG3KTnUCoC6InoLJ6KV1tbVKrkZXHRwtIMGmo&r=j0A6IFQM1sqhJ9JGnpoeSyUsEY4C_j3vAHGUhAHkwqc&m=KyWuibdcanyti6L5Rv5wyAfNPjtPqLpgLow4D7Hfwv0&s=D8QCk3zeetHK2OJqex-T45UyU0qNm8qUSdmB7HeK_gc&e=)|Hazen Babcock |Harvard Center for Advanced Imaging |USA |
-|[FCEG]( https://www.frontiersin.org/articles/10.3389/fbioe.2019.00338/full) |Fabian Hauser|University of Applied Sciences Upper Austria, School of Medical Engineering and Applied Social Sciences |Austria |
-|[LSTR]( https://www.mdpi.com/1422-0067/19/4/1150) |Fabian Hauser|University of Applied Sciences Upper Austria, School of Medical Engineering and Applied Social Sciences |Austria |
-|[PeakFit]( https://gdsc-smlm.readthedocs.io/en/latest) |Alex Herbert|Genome Damage and Stability Centre, University of Sussex |UK |
+|[FCEG]( https://www.frontiersin.org/articles/10.3389/fbioe.2019.00338/full) |Fabian Hauser |University of Applied Sciences Upper Austria, School of Medical Engineering and Applied Social Sciences |Austria |
+|[LSTR]( https://www.mdpi.com/1422-0067/19/4/1150) |Fabian Hauser |University of Applied Sciences Upper Austria, School of Medical Engineering and Applied Social Sciences |Austria |
+|[PeakFit]( https://gdsc-smlm.readthedocs.io/en/latest) |Alex Herbert |Genome Damage and Stability Centre, University of Sussex |UK |
 |SIC      |Yi Sun | Electrical Engineering Department, The City College of New York |USA |
 
 # Matlab Codes
