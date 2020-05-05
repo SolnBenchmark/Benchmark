@@ -22,11 +22,11 @@ Three data movies with different distances between adjacent emitters are synthes
 
 ### Submission 
 
-For each data movie, the frame number n and emitter locations (x,y) in nm shall be estimated and saved row by row in a .txt file: e.g.
+For each data movie, the emitter locations (x,y) in nm shall be estimated and saved row by row in a .txt file: e.g.
 
-25 4.4184628e+02   5.0638849e+03
+4.4184628e+02   5.0638849e+03
 
-25 4.2119986e+02   5.8867272e+03
+4.2119986e+02   5.8867272e+03
 
 ... ...
 
