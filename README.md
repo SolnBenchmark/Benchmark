@@ -33,7 +33,7 @@ The leaderboards will be updated after a submission.
 
 **2DAiry_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
-|         |RMSMD:|  |  |      |    |STR:| | | |
+|         |RMSMD|  |  |      |    |STR| | | |
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |2.58 |2.79 |2.65 |2.67|          |965 |1123 |1017 |1035 |
@@ -42,7 +42,7 @@ The leaderboards will be updated after a submission.
 
 **2DAiry_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
-|         |RMSMD:|  |  |      |    |STR:| | | |
+|         |RMSMD|  |  |      |    |STR| | | |
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |3.29  |2.97  |3.51  |3.26|       |554 |555 |675 |595 |
@@ -51,7 +51,7 @@ The leaderboards will be updated after a submission.
 
 **2DAiry_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
-|         |RMSMD:|  |  |      |    |STR:| | | |
+|         |RMSMD|  |  |      |    |STR| | | |
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |3.10 |3.32 |3.59 |3.34|          |139 |159 |187 |162 |
@@ -78,7 +78,7 @@ The leaderboards will be updated after a submission.
 
 **2DGauss_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
-|         |RMSMD:|  |  |      |    |STR:| | | |
+|         |RMSMD|  |  |      |    |STR| | | |
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |2.95 |3.15 |3.22 |3.11 |         |1260 |1432 |1496 |1396 |
@@ -87,7 +87,7 @@ The leaderboards will be updated after a submission.
 
 **2DGauss_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
-|         |RMSMD:|  |  |      |    |STR:| | | |
+|         |RMSMD|  |  |      |    |STR| | | |
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |3.31 |3.62 |3.31 |3.41|          |792 |947 |794 |844 |
@@ -96,7 +96,7 @@ The leaderboards will be updated after a submission.
 
 **2DGauss_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
-|         |RMSMD:|  |  |      |    |STR:| | | |
+|         |RMSMD|  |  |      |    |STR| | | |
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |3.64 |3.61 |4.12 |3.79|          |192 |188 |245 |208 |
@@ -119,7 +119,7 @@ The leaderboards will be updated after a submission.
 
 **3DAS_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD, STR (nm<sup>2</sup>s) vs emitter distance**
 
-|         |RMSMD:|  |  |      |    |STR:| | | |
+|         |RMSMD|  |  |      |    |STR| | | |
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |6.12  |6.03  |6.45  |6.20|       |       |       |       |     |
@@ -127,7 +127,7 @@ The leaderboards will be updated after a submission.
 
 **3DAS_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
-|         |RMSMD:|  |  |      |    |STR:| | | |
+|         |RMSMD|  |  |      |    |STR| | | |
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |6.83  |6.35  |7.39  |6.86|       |       |       |       |     |
@@ -135,7 +135,7 @@ The leaderboards will be updated after a submission.
 
 **3DAS_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
-|         |RMSMD:|  |  |      |    |STR:| | | |
+|         |RMSMD|  |  |      |    |STR| | | |
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |8.82    |8.69    |9.20    |8.90| |       |       |       |     |
