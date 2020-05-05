@@ -1,7 +1,7 @@
 # SolnBenchmark
 SolnBenchmark provides a means to evaluate and benchmark performance of localization algorithms for stochastic optical localization nanoscopy (SOLN). 
 
-The metric of root mean square minimum distance (RMSMD) [2] evaluates the quality of a SOLN image. In addition, the metric of spatiotemporal resolution (STR) [3] evaluates the quality of a SOLN video. 
+The metric of root mean square minimum distance (RMSMD) [2] evaluates the quality of a SOLN image. The metric of spatiotemporal resolution (STR) [3] evaluates the quality of a SOLN video. 
 
 The unbiased Gaussian information-achieving (UGIA-F and UGIA-M) estimators [1]-[3] benchmark the performance of a participant algorithm. 
 
