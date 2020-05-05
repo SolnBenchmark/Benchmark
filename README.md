@@ -123,7 +123,7 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |6.12  |6.03  |6.45  |6.20|       |5,424 |5,267 |6,020 |5,570 |
-|UGIA-F    |38.35 |47.28 |57.15 |47.59|     |212,825 |323,361 |472,480 |336222 |
+|UGIA-F    |38.35 |47.28 |57.15 |47.59|     |212,825 |323,361 |472,480 |336,222 |
 
 **3DAS_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
