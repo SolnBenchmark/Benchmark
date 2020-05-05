@@ -73,7 +73,7 @@ The leaderboards will be updated after a submission.
 |SIC        |49.62 |50.80 |53.10 |57.01 |58.66 |53.84|
 |3D-DAOSTORM|103.65 |113.21 |85.28 |92.70 |123.23 |103.61|
 
-**2DGauss_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) nvs emitter distance**
+**2DGauss_MEMF_LTR (multiple emitters multiple frames low temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average| |40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
