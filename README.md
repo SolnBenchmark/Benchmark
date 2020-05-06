@@ -118,7 +118,7 @@ The leaderboards will be updated after a submission.
 |UGIA-M   |6.83  |6.35  |7.39  |6.86|   
 |UGIA-F    |54.20 |67.39 |90.72 |70.77| 
 
-**3DAS_MEMF_HTR (multiple emitters multiple frames high temporal resolution, 2 sec): RMSMD (nm) emitter distance**
+**3DAS_MEMF_HTR (multiple emitters multiple frames high temporal resolution, 2 sec): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
