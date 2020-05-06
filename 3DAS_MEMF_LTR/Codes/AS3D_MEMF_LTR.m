@@ -282,7 +282,7 @@ ylabel('z (nm)') ;
 axis([0 Lx 0 Ly -Lz Lz])
 
 %% Results: RMSMD vs emitter distance 
-% M=250; N=200; TR=2 sec
+% M=250; N=1000; TR=10 sec
 % pM: # of emitters activated at least once in a movie
 % Distance: 40    30    20    Average (nm)
 % pM:       250   250   250     
