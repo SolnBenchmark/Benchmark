@@ -122,24 +122,24 @@ The leaderboards will be updated after a submission.
 |         |RMSMD|  |  |      |    |STR| | | |
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
-|UGIA-M   |6.12  |6.03  |6.45  |6.20|       |815.60 |791.79 |905.93 |837.77 |
-|UGIA-F    |38.35 |47.28 |57.15 |47.59|     |32,026.25 |48,677.72 |71,122.63 |50,608.87 |
+|UGIA-M   |6.12  |6.03  |6.45  |6.20|       |543.73 |527.86 |603.95 |558.52 |
+|UGIA-F    |38.35 |47.28 |57.15 |47.59|     |21,350.83 |32,451.82 |47,415.09 |33,739.24 |
 
 **3DAS_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
 |         |RMSMD|  |  |      |    |STR| | | |
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
-|UGIA-M   |6.83  |6.35  |7.39  |6.86|       |507.91 |439.03 |594.61 |513.85 |
-|UGIA-F    |54.20 |67.39 |90.72 |70.77|     |31,984.82 |49,446.58 |89,608.96 |57,013.45 |
+|UGIA-M   |6.83  |6.35  |7.39  |6.86|       |338.61 |292.69 |396.41 |342.57|
+|UGIA-F    |54.20 |67.39 |90.72 |70.77|     |21,323.21 |32,964.39 |59,739.30 |38,008.97  |
 
 **3DAS_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
 |         |RMSMD|  |  |      |    |STR| | | |
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
-|UGIA-M   |8.82    |8.69    |9.20    |8.90| |338.80 |328.89 |368.62 |345.44 |
-|UGIA-F    |110.03 |133.76 |178.14 |140.64| |52,726.33 |77,921.60 |138,206.42 |89,618.12 |
+|UGIA-M   |8.82    |8.69    |9.20    |8.90| |225.87 |219.26 |245.75 |230.29 |
+|UGIA-F    |110.03 |133.76 |178.14 |140.64| |35,150.89  51,947.73  92,137.62  59,745.41 |
 
 # Non-Blind Localization
 This evaluation and benchmark is non-blind, that is, all the parameters of an optical system are known a priori, which are supposed to have been obtained through a calibration. Nevertheless, a blind localization algorithm that estimates by itself the system parameters from a data frame or a data movie can also be evaluated and benchmarked. 
