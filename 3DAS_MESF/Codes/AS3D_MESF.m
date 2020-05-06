@@ -25,7 +25,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear
-%% Range emitter density: choose one of them
+%% Emitter density: choose one of them
  eDen=0.1 ;            % emitter density (emitters/um^2)
 % eDen=0.3 ;            % emitter density (emitters/um^2)
 % eDen=0.5 ;            % emitter density (emitters/um^2)
