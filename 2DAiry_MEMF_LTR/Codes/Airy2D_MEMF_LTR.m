@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SolnBenchmark: Airy2D_MEMF_LTR 
-% (1) Gaussian - PSF
+% (1) Airy - PSF
 % (2) 2D - emitter locations 
 % (3) ME - Multiple Emitter localization 
 % (4) MF - from a data movie of multiple frame
