@@ -139,7 +139,7 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |8.82    |8.69    |9.20    |8.90| |225.87 |219.26 |245.75 |230.29 |
-|UGIA-F    |110.03 |133.76 |178.14 |140.64| |35,150.89  51,947.73  92,137.62  59,745.41 |
+|UGIA-F    |110.03 |133.76 |178.14 |140.64| |35,150.89 |51,947.73 |92,137.62 |59,745.41 |
 
 # Non-Blind Localization
 This evaluation and benchmark is non-blind, that is, all the parameters of an optical system are known a priori, which are supposed to have been obtained through a calibration. Nevertheless, a blind localization algorithm that estimates by itself the system parameters from a data frame or a data movie can also be evaluated and benchmarked. 
