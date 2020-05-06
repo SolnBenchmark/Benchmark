@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SolnBenchmark: AS3D_MEMF_LTR 
-% (1) Astigmatic - PSF
+% (1) AS - astigmatic PSF
 % (2) 3D - emitter locations 
 % (3) ME - Multiple Emitter localization 
 % (4) MF - from a data movie of multiple frame
