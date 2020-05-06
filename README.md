@@ -37,7 +37,7 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |2.58 |2.79 |2.65 |2.67|          |145 |170 |153 |156 |
-|UGIA-F   |9.28 |9.57 |12.69 |10.51|        |1,875 |1,994 |3,507 |2,459|
+|UGIA-F   |9.28 |9.57 |12.69 |10.51|        |1875 |1994 |3507 |2459|
 |SIC      |46.11 |46.28 |44.61 |45.67|      |       |       |       |     |
 
 **2DAiry_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
@@ -46,7 +46,7 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |3.29  |2.97  |3.51  |3.26|       |84 |84 |102 |90 |
-|UGIA-F   |11.10 |11.61 |17.62 |13.44|      |1,198 |1,756 |3,583 |2,179 |
+|UGIA-F   |11.10 |11.61 |17.62 |13.44|      |1198 |1756 |3583 |2179 |
 |SIC      |43.99 |43.71 |44.10 |43.93|      |       |       |       |     |
 
 **2DAiry_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
@@ -56,7 +56,7 @@ The leaderboards will be updated after a submission.
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |3.10 |3.32 |3.59 |3.34|          |21 |24 |28 |24 |
 |SIC      |51.27 |52.57 |51.82 |51.89|      |       |       |       |     |
-|UGIA-F   |36.80 |61.19 |108.90 |68.96|     |2,949 |8,153 |25,824 |12,309 |
+|UGIA-F   |36.80 |61.19 |108.90 |68.96|     |2949 |8153 |25824 |12309 |
 
 ## 2D Gauss
 
@@ -82,7 +82,7 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |2.95 |3.15 |3.22 |3.11 |         |190 |216 |226 |211 |
-|UGIA-F   |11.85 |13.23 |12.82 |12.63 |     |3,058 |3,811 |3,579 |3,483 |
+|UGIA-F   |11.85 |13.23 |12.82 |12.63 |     |3058 |3811 |3579 |3483 |
 |SIC      |44.53 |42.97 |43.01 |43.50 |     |       |       |       |     |
 
 **2DGauss_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
@@ -91,7 +91,7 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |3.31 |3.62 |3.31 |3.41|          |119 |143 |119 |127 |
-|UGIA-F   |13.06 |15.49 |25.76 |18.10|      |1,857 |2,612 |7,225 |3,898|
+|UGIA-F   |13.06 |15.49 |25.76 |18.10|      |1857 |2612 |7225 |3898|
 |SIC      |45.18 |44.29 |47.80 |45.76|      |       |       |       |     |
 
 **2DGauss_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
@@ -101,7 +101,7 @@ The leaderboards will be updated after a submission.
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |3.64 |3.61 |4.12 |3.79|          |29 |28 |37 |31 |
 |SIC      |50.79 |50.46 |49.76 |50.34|      |       |       |       |     |
-|UGIA-F   |37.95 |64.41 |116.79 |73.05|     |3,136 |9,034 |2,9702 |13,957 |
+|UGIA-F   |37.95 |64.41 |116.79 |73.05|     |3136 |9034 |29702 |13957 |
 
 ## 3D Astigmatic
 
@@ -123,7 +123,7 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |6.12  |6.03  |6.45  |6.20|       |544 |528 |604 |559 |
-|UGIA-F    |38.35 |47.28 |57.15 |47.59|     |21,351 |32,452 |47,415 |33,739 |
+|UGIA-F    |38.35 |47.28 |57.15 |47.59|     |21351 |32452 |47415 |33739 |
 
 **3DAS_MEMF_MTR (multiple emitters multiple frames median temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
@@ -131,7 +131,7 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |6.83  |6.35  |7.39  |6.86|       |339 |293 |396 |343|
-|UGIA-F    |54.20 |67.39 |90.72 |70.77|     |21,323 |32,964 |59,739 |38,009  |
+|UGIA-F    |54.20 |67.39 |90.72 |70.77|     |21323 |32964 |59739 |38009  |
 
 **3DAS_MEMF_HTR (multiple emitters multiple frames high temporal resolution): RMSMD (nm), STR (nm<sup>2</sup>s) vs emitter distance**
 
@@ -139,7 +139,7 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |**Algorithm**|**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**| |**40 (nm)**|**30 (nm)**|**20 (nm)**|**Average**|
 |UGIA-M   |8.82    |8.69    |9.20    |8.90| |225 |219 |245 |230 |
-|UGIA-F    |110.03 |133.76 |178.14 |140.64| |35,151 |51,948 |92,138 |59,746 |
+|UGIA-F    |110.03 |133.76 |178.14 |140.64| |35151 |51948 |92138 |59746 |
 
 # Non-Blind Localization
 This evaluation and benchmark is non-blind, that is, all the parameters of an optical system are known a priori, which are supposed to have been obtained through a calibration. Nevertheless, a blind localization algorithm that estimates by itself the system parameters from a data frame or a data movie can also be evaluated and benchmarked. 
