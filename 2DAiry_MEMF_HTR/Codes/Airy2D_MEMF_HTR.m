@@ -267,6 +267,6 @@ xlabel('Temporal resolution (s)') ;
 % pM: # emitters activated at least once in a movie
 % Distance:     40    30    20      Average (nm)
 % pM:           499   500   500
-% UGIA-M (nm):  3.10  3.02  3.45
-% UGIA-F (nm):  43.37 88.96 191.08
-% mean([]) 
+% UGIA-M (nm):  3.10  3.02  3.45    3.19
+% UGIA-F (nm):  43.37 88.96 191.08  107.80
+% mean([43.37 88.96 191.08]) 
