@@ -59,7 +59,7 @@ Emitters are located on a 3D helix with different lateral adjacent-emitter dista
 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Number of emitters |M=250|  |
+|Number of emitters |M=500|  |
 |Emitter intensity |I=300000|photons/sec/emitter|
 |Analog digital unit |ADU=1|photons/unit|
 
@@ -106,7 +106,7 @@ Correspondingly, the stationary probability of state i, i.e. the probability tha
 |Photon count |Dt\*I=3000|photons/frame/emitter|
 |Temporal resolution |TR=N\*Dt=5 |sec|
 |Average number of activations per emitter |Nape=Pa\*N=12|frames/emitter|
-|Average number of activated emitters per frame |Naae=Pa\*M=6|emitters/frame|
+|Average number of activated emitters per frame |Naae=Pa\*M=12|emitters/frame|
 
 The corresponding 2D coordinate in a data frame is shown below. Note y axis points down. 
 
