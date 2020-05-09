@@ -1,4 +1,4 @@
-# 3DAS_MEMF_STH: 3D Astigmatic PSF Multiple Emitter Multiple Frame Super Temporal Resolution 
+# 3DAS_MEMF_STR: 3D Astigmatic PSF Multiple Emitter Multiple Frame Super Temporal Resolution 
 
 ## Purpose 
 Evaluate and benchmark performance of localization algorithms in localization of multiple emitters from a data movie of multiple frames with super temporal resolution (0.1 seconds). 
@@ -8,17 +8,17 @@ Evaluate and benchmark performance of localization algorithms in localization of
 
 Three data movies with different distances between adjacent emitters are synthesized and saved as tiff files with 16 bits in depth, each of which is stored in a zip file:
 
-**3DAS_MEMF_STH_eD40nm_movie.zip  (For purpose of demonstration, .png images of the 10th frames are shown here.)**
+**3DAS_MEMF_STR_eD40nm_movie.zip  (For purpose of demonstration, .png images of the 10th frames are shown here.)**
 
-![Alt text](Doc/3DAS_MEMF_STH_eD40nm_Frame10.png)
+![Alt text](Doc/3DAS_MEMF_STR_eD40nm_Frame10.png)
 
-**3DAS_MEMF_STH_eD30nm_movie.zip**
+**3DAS_MEMF_STR_eD30nm_movie.zip**
 
-![Alt text](Doc/3DAS_MEMF_STH_eD30nm_Frame10.png)
+![Alt text](Doc/3DAS_MEMF_STR_eD30nm_Frame10.png)
 
-**3DAS_MEMF_STH_eD20nm_movie.zip**
+**3DAS_MEMF_STR_eD20nm_movie.zip**
 
-![Alt text](Doc/3DAS_MEMF_STH_eD20nm_Frame10.png)
+![Alt text](Doc/3DAS_MEMF_STR_eD20nm_Frame10.png)
 
 ### Submission 
 
@@ -34,11 +34,11 @@ For each data movie, the emitter locations (x,y,z) in nm shall be estimated and 
 
 The filenames in submission shall be in the format: 
 
-**3DAS_MEMF_STH_eD40nm_xyz_algorithmName.txt** 
+**3DAS_MEMF_STR_eD40nm_xyz_algorithmName.txt** 
 
-**3DAS_MEMF_STH_eD30nm_xyz_algorithmName.txt** 
+**3DAS_MEMF_STR_eD30nm_xyz_algorithmName.txt** 
 
-**3DAS_MEMF_STH_eD20nm_xyz_algorithmName.txt** 
+**3DAS_MEMF_STR_eD20nm_xyz_algorithmName.txt** 
 
 ## Parameters
 The three data movies are synthesized by using the following parameters. 
@@ -51,9 +51,9 @@ Emitters are located on a 3D helix with different lateral adjacent-emitter dista
 
 |Data movie filename |Emitter lateral distance| Unit|
 |:-----|:-----|:-----|
-|3DAS_MEMF_STH_eD40nm_movie.zip |40|nm|
-|3DAS_MEMF_STH_eD30nm_movie.zip |30|nm|
-|3DAS_MEMF_STH_eD20nm_movie.zip |20|nm|
+|3DAS_MEMF_STR_eD40nm_movie.zip |40|nm|
+|3DAS_MEMF_STR_eD30nm_movie.zip |30|nm|
+|3DAS_MEMF_STR_eD20nm_movie.zip |20|nm|
 
 **Number of emitters and emitter intensity (mean number of emitted photons)**
 
