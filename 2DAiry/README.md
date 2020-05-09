@@ -1,1 +1,1 @@
-**Eveluation and benchmark for 2D Airy PSF**
+**Eveluation and benchmark with 2D Airy PSF**
