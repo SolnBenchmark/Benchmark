@@ -26,7 +26,7 @@
 % Electrical Engineering Department
 % The City College of City University of New York
 % E-mail: ysun@ccny.cuny.edu
-% 02/28/2020, 04/04/2020 
+% 02/28/2020, 04/04/2020, 05/07/2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear
@@ -49,7 +49,7 @@ sigma=1.3238/a ;              % sigma=108.81; 2*sigma=217.61 (nm)
 FWHM=2*sqrt(2*log(2))*sigma ; % FWHM=256.22 (nm)
 %% Frame 
 % Region of view: [0,Lx]x[0,Ly]
-Lx=2^11 ;
+Lx=2^12 ;
 Ly=Lx ;               % frame size in nm
 Dx=2^7 ; Dy=2^7 ;     % pixel size of cammera
 Kx=Lx/Dx ; Ky=Ly/Dy ; % frame size in pixels
@@ -70,14 +70,14 @@ mu=5 ;                % mean of Gaussian noise (photons/s/nm^2)
 Coff=mu*Dt*Dx*Dy ;    % Coff=819.2 photons/pixel; Camera offset in effect
 %% Emitter locations - ground truth
 fprintf(1,'Emitter locations: \n') ;
-M=250 ; 
-beta=4 ; phi=0.1 ;    % helix parameters 
+M=500 ;
+phi=0.1 ; beta=7+0.5*rand ;  % helix parameters xy1=zeros(2,M) ;
 xy1=zeros(2,M) ; 
 t=zeros(1,M) ; 
 m=1 ; t(m)=2 ;        % 1st emitter locaiton
 xy1(:,m)=[beta*t(m)*cos(phi*t(m)) ; beta*t(m)*sin(phi*t(m))] ; 
 for m=2:M
-  if mod(m,10)==0||m==1
+  if mod(m,10)==0||m==3
     fprintf(1,'M=%3d m=%3d \n',M,m) ;
   end
   syms t0
@@ -93,13 +93,6 @@ xy=xy+[Lx/2 ; Ly/2] ; % adjust to frame center
 xy0=xy' ;             % ground truth emitter locaitons 
 filename_xy0=strcat('2DGauss_MEMF_LTR_eD',num2str(eD),'nm_xy0','.txt') ; 
 save(filename_xy0,'-ascii','xy0') ;
-
-%% emitters located on a circle with equal distance
-% M=150 ; % # of emitters
-% Dd=40 ; % nm, distance between adjacent emitters 
-% rd=Dd/(2*sin(pi/M)) ; % radius
-% theta=2*pi*(0:M-1)/M ; 
-% xy=[rd.*cos(theta)+Lx/2 ; rd.*sin(theta)+Ly/2] ; 
 
 %% Emitter activations
 N=1000 ;    % Temporal resolution (TR): N*Dt=10 sec
@@ -122,8 +115,8 @@ p2=r10*r21/den ;          % =0.0036, probability of state 2
 p3=r10*r21*r32/den ;      % =0.0011, probability of state 3
 p4=r10*r21*r32*r43/den ;  % =0.0002, probability of state 4
 pa=1-p0 ;                 % =0.0120, probability of activation 
-Naae=(1-p0)*M ;           % =Nape*M/N=3, average # of activated emitters/frame
-pd=1-(1-p0^N)^M ;         % =1.4275e-03, probability that at least one emitter 
+Naae=(1-p0)*M ;           % =Nape*M/N=6, average # of activated emitters/frame
+pd=1-(1-p0^N)^M ;         % =2.8530e-3, probability that at least one emitter 
                           % is not activated in data movie
 c0=zeros(M,N+1) ; % states of Markov chains in data movie
 for n=2:N+1
@@ -179,52 +172,59 @@ imwrite(U88,filename_Frame) ; % save data frame
 
 %% Localization by the UGIA-M and UGIA-F estimators 
 fprintf(1,'UGIA-M and UGIA-F estimators: \n') ; 
-[xyM,xyF,FF,FF_]=Gauss2D_UGIA_MF(sigma,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy,a) ;
+[xyM,xyF]=Gauss2D_UGIA_MF(sigma,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy,a) ;
 %% Calculate RMSMD and show sequence
-Fig=figure('Position',[400 50 600 600],'Color',[1 1 1]) ;
-sft=0.07 ; 
+Fig=figure('Position',[300 200 600 600],'Color',[0 0 0]) ;
+sft=0.075 ;     % Figure setup
+C1=-sft ; C2=0.5-(1-0.25)*sft+0.006;
+R1=0.5-(1-0.25)*sft+0.009 ; R2=-sft+0.011 ;
+W1=0.5+1.25*sft-0.008 ; W2=0.5+1.25*sft+0.012 ;
+H1=0.5+1.25*sft-0.001 ; H2=0.5+1.25*sft-0.001 ;
+
 xyFa=zeros(2,sum(Na)) ; 
-RMSMD_M=zeros(1,N) ; 
-RMSMD_F=zeros(1,N) ; 
+RMSMD_M=zeros(1,N) ; RMSMD_F=zeros(1,N) ; 
 pF=0 ;        % number of activated emitters from 1st to nth frames
 Ia=uint8(zeros(M,1)) ;  % indices of activated emitter of a movie
 for n=1:N
 % 
   Figa=subplot(2,2,1) ;
-  whitebg([0 0 0]) ;
-  show8bNanoscopyImage(xy,Lx,Ly,1,1,7,'Yes','gray','No') ; hold on
-  plot(xyActive(1,1:Na(n),n),xyActive(2,1:Na(n),n),'r.') ;
-  plot([100 400],Ly-[100 100],'w-',[100 100],Ly-[100-30 100+30],'w-',[400 400],Ly-[100-30 100+30],'w-') ;
+  plot(xy(1,:),Ly-xy(2,:),'w.','MarkerSize',4) ; hold on
+  plot(xyActive(1,1:Na(n),n),Ly-xyActive(2,1:Na(n),n),'r.') ;
+  plot([0 Lx Lx 0 0],[0 0 Ly Ly 0],'w-','MarkerSize',2)
+  plot([200 700],[200 200],'w-',[200 200],[200-60 200+60],'w-',[700 700],[200-60 200+60],'w-') ;
   hold off
-  text(105,Ly-200,'300 nm','Color','white') % ,'FontSize',8)
+  text(180,420,'500 nm','Color','white') ;
   axis([0 Lx 0 Ly])
   set(gca,'XTick',[]) ; % Turn off X and Y ticks
   set(gca,'YTick',[]) ;
   axis off
-  set(Figa,'OuterPosition',[-sft,0.5-(1-0.25)*sft+0.005,0.5+1.25*sft,0.5+1.25*sft]);
+  set(Figa,'OuterPosition',[C1,R1,W1,H1]) ;
 %
   Figb=subplot(2,2,2) ;
   filename_Frame=strcat('2DGauss_MEMF_LTR_eD',num2str(eD),'nm_Frame',num2str(n),'.tif') ;
-  V16=imread(filename_Frame); % read 10th data frame
+  V16=imread(filename_Frame); % read data frame
   V=double(V16) ;
-  show8bimage(V,'Yes','gray','No') ;
-  text(1,15.5,compose('TR=%5.2f (sec)',Dt*n),'Color','white') %,'FontSize',8)
+  show8bimage(V,'Yes','gray','No') ; hold on
+  plot([0 Lx/Dx Lx/Dx 0 0]+0.5,[0 0 Ly/Dy Ly/Dy 0]+0.5,'w-','MarkerSize',2) ; hold off
+  text(1+0.5,30+0.3,compose('TR=%5.2f (sec)',Dt*n),'Color','white') ;
   axis off
   set(gca,'XTick',[]) ; % Turn off X and Y ticks
   set(gca,'YTick',[]) ;
-  set(Figb,'OuterPosition',[0.5-(1-0.25)*sft+0.0115,0.5-(1-0.25)*sft+0.005,0.5+1.25*sft,0.5+1.25*sft]);
+  set(Figb,'OuterPosition',[C2,R1,W2,H1]) ;
 %
   Figc=subplot(2,2,3) ; % show current estimated locations
   Ia=(Ia | a(:,n)) ;
   pM=sum(Ia) ;        % # of emitters that were activated at least once in frames 1 to  n
   [RMSMD_M(n),~]=RMSMD(xyM(:,1:pM,n),xy) ;
-  show8bNanoscopyImage(xyM(:,1:pM,n),Lx,Ly,1,1,7,'Yes','gray','No') ;
-  text(0.5*Dx,1*Dy,'UGIA-M','Color','white') %,'FontSize',8)
-  text(0.5*Dx,15*Dy,compose('RMSMD=%4.2f (nm)',RMSMD_M(n)),'Color','white') %,'FontSize',8)
+  plot(xyM(1,1:pM,n),Ly-xyM(2,1:pM,n),'w.','MarkerSize',4) ; hold on
+  plot([0 Lx Lx 0 0],[0 0 Ly Ly 0],'w-','MarkerSize',2) ; hold off
+  axis([0 Lx 0 Ly])
+  text(1*Dx,Ly-2*Dy,'UGIA-M','Color','white') ;
+  text(1*Dx,Ly-30*Dy,compose('RMSMD=%4.2f (nm) ',RMSMD_M(n)),'Color','white') ;
   set(gca,'XTick',[]) ; % Turn off X and Y ticks
   set(gca,'YTick',[]) ;
   axis off
-  set(Figc,'OuterPosition',[-sft,-sft+0.01,0.5+1.25*sft,0.5+1.25*sft]);
+  set(Figc,'OuterPosition',[C1,R2,W1,H2]) ;
 %
   Figd=subplot(2,2,4) ; % show all estimated locations
   xyFa(:,pF+1:pF+Na(n))=xyF(:,1:Na(n),n) ;  % No action if Na(n)=0
@@ -241,32 +241,32 @@ for n=1:N
   end
   [RMSMD_F(n),~]=RMSMD(xyT(:,1:p),xy) ;
   %[RMSMD_F(n),~]=RMSMD(xyFa(:,1:pF),xy) ;
-  show8bNanoscopyImage(xyFa(:,1:pF),Lx,Ly,1,1,7,'Yes','gray','No') ;
-  text(0.5*Dx,1*Dy,'UGIA-F','Color','white') %,'FontSize',8)
-  text(0.5*Dx,15*Dy,compose('RMSMD=%4.2f (nm)',RMSMD_F(n)),'Color','white') %,'FontSize',8)
+  plot(xyFa(1,1:pF),Ly-xyFa(2,1:pF),'w.','MarkerSize',4) ; hold on
+  plot([0 Lx Lx 0 0],[0 0 Ly Ly 0],'w-','MarkerSize',2) ; hold off
+  axis([0 Lx 0 Ly])
+  text(1*Dx,Ly-2*Dy,'UGIA-F','Color','white') ;
+  text(1*Dx,Ly-30*Dy,compose('RMSMD=%4.2f (nm) ',RMSMD_F(n)),'Color','white') ;
   set(gca,'XTick',[]) ; % Turn off X and Y ticks
   set(gca,'YTick',[]) ;
   axis off
-  set(Figd,'OuterPosition',[0.5-(1-0.25)*sft+0.0115,-sft+0.01,0.5+1.25*sft,0.5+1.25*sft]);
+  set(Figd,'OuterPosition',[C2,R2,W2,H2]) ;
   getframe(gcf) ;
   fprintf(1,'eD=%2d N=%3d n=%3d pM=%d pF=%d p=%d \n',eD,N,n,pM,pF,p) ;
 end
 
 %% Show RMSMDs
 figure
-whitebg([1 1 1]) ;
-lg=loglog(Dt*(1:N),RMSMD_M,'r-',Dt*(1:N),RMSMD_F,'k-') ;
-axis([0.01 N*Dt 1 1e3])
-legend(lg,'UGIA-M','UGIA-F') ; 
+lg=loglog(Dt*(1:N),RMSMD_M,'r-',Dt*(1:N),RMSMD_F,'k-') ; 
+legend(lg,'UGIA-M','UGIA-F','location','southwest') ; 
+axis([Dt Dt*N min(RMSMD_M) max(RMSMD_M)]) ;
 ylabel('RMSMD (nm)') ; 
 xlabel('Temporal resolution (s)') ; 
 
 %% Results: RMSMD vs emitter distance 
 % M=250; N=1000; TR=10 sec
 % pM: # emitters activated at least once in a movie
-% Distance: 40    30    20    Average (nm)
-% pM:       250   250   250
-% UGIA-M:   2.95  3.15  3.22  3.11
-% UGIA-F:   11.85 13.23 12.82 12.63
-% Average RMSMD-M: mean([2.95  3.15  3.22])
-% Average RMSMD-F: mean([11.85 13.23 12.82])
+% Distance:     40    30    20    Average (nm)
+% pM:           250   250   250
+% UGIA-M (nm):  3.26  3.20  3.32  3.26
+% UGIA-F (nm):  10.60 15.27 14.02 13.29
+% mean([3.26  3.20  3.32]) 
