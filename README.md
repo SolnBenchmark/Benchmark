@@ -28,32 +28,40 @@ The leaderboards will be updated after a submission.
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
-|UGIA-M   |2.58 |2.79 |2.65 |2.67|
-|UGIA-F   |9.28 |9.57 |12.69 |10.51|
-|SIC      |46.11 |46.28 |44.61 |45.67|
+|UGIA-M   |2.56  |2.58  |2.77  |2.63|
+|UGIA-F   |9.11  |10.31 |11.87 |10.43|
+|SIC      |44.91 |47.56 |45.49 |45.99|
 
 **2DAiry_MEMF_MTR (multiple emitters multiple frames median temporal resolution, 5 sec): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
-|UGIA-M   |2.77 |2.77 |3.06 |2.87 |
-|UGIA-F   |10.49 |12.70 |18.14 |13.78 |
-|SIC      |46.39 |46.99 |47.17 |46.85 |
+|UGIA-M   |3.00 |2.70 |2.73 |2.81|
+|UGIA-F   |10.74 |15.38 |25.39 |17.17|
+|SIC      |48.05 |45.78 |44.99 |46.27|
 
 **2DAiry_MEMF_HTR (multiple emitters multiple frames high temporal resolution, 1 sec): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
-|UGIA-M   |3.10 |3.32 |3.59 |3.34| 
-|SIC      |51.27 |52.57 |51.82 |51.89| 
-|UGIA-F   |36.80 |61.19 |108.90 |68.96|
+|UGIA-M   |3.10  |3.02  |3.45 |3.19| 
+|SIC           |47.80 |45.67 |46.46 |46.64| 
+|UGIA-F   |43.37 |88.96 |191.08  |107.80|
+
+**2DAiry_MEMF_VTR (multiple emitters multiple frames very high temporal resolution, 0.5 sec): RMSMD (nm) vs emitter distance**
+
+|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
+|--------:|------:|-----:|-----:|-----:|
+|UGIA-M   |4.45 |3.81 |2.83 |3.70|
+|UGIA-F    |25.13 |70.48 |172.39  |89.33|
 
 **2DAiry_MEMF_STR (multiple emitters multiple frames super temporal resolution, 0.1 sec): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
-|UGIA-M   |4.82  |6.88  |12.22 |7.97 |
-|SIC      |52.39 |53.11 |52.37 |52.62 |
+|UGIA-M   |4.44 |5.18 |10.86 |6.82|
+|SIC      |47.64 |47.48 |48.09 |47.74|
+|UGIA-F   |157.18 |202.84 |369.39 |243.14|
 
 ## 2D Gauss
 
@@ -77,32 +85,41 @@ The leaderboards will be updated after a submission.
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
-|UGIA-M   |2.95 |3.15 |3.22 |3.11 | 
-|UGIA-F   |11.85 |13.23 |12.82 |12.63 | 
-|SIC      |44.53 |42.97 |43.01 |43.50 | 
+|UGIA-M   |3.26  |3.20  |3.32  |3.26| 
+|UGIA-F   |10.60 |15.27 |14.02 |13.29| 
+|SIC      |43.77 |44.00 |45.01 |44.26| 
 
 **2DGauss_MEMF_MTR (multiple emitters multiple frames median temporal resolution, 5 sec): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
-|UGIA-M   |3.31 |3.62 |3.31 |3.41|   
-|UGIA-F   |13.06 |15.49 |25.76 |18.10| 
-|SIC      |45.18 |44.29 |47.80 |45.76| 
+|UGIA-M   |3.19 | 3.36  |3.30  |3.28|   
+|UGIA-F   |15.57 |18.42 |37.80 |23.93| 
+|SIC      |41.72 |42.14 |42.70 |42.19| 
 
 **2DGauss_MEMF_HTR (multiple emitters multiple frames high temporal resolution, 1 sec): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
-|UGIA-M   |3.64 |3.61 |4.12 |3.79|      
-|SIC      |50.79 |50.46 |49.76 |50.34|  
-|UGIA-F   |37.95 |64.41 |116.79 |73.05| 
+|UGIA-M   |3.35  |3.64  |4.15    |3.71|      
+|SIC      |||||  
+|UGIA-F   |55.46 |95.30 |217.64  |122.80| 
+
+**2DGauss_MEMF_VTR (multiple emitters multiple frames very high temporal resolution, 0.5 sec): RMSMD (nm) vs emitter distance**
+
+|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
+|--------:|------:|-----:|-----:|-----:|
+|UGIA-M   |4.25  |3.67  |2.92  |3.61|
+|SIC      |||||
+|UGIA-F   |38.06 |95.97 |170.28  |101.44|
 
 **2DGauss_MEMF_STR (multiple emitters multiple frames super temporal resolution, 0.1 sec): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
-|UGIA-M   |6.85 |9.63 |16.35 |10.94 |
-|SIC      |48.50 |48.21 |49.02 |48.58 |
+|UGIA-M   |5.35   | 6.48    |11.37   |7.73|
+|SIC      |44.77 |44.29 |43.69 |44.25|
+|UGIA-F   |184.48  |238.10  |346.25  |256.28|
 
 ## 3D Astigmatic
 
@@ -122,22 +139,35 @@ The leaderboards will be updated after a submission.
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
-|UGIA-M   |6.12  |6.03  |6.45  |6.20|   
-|UGIA-F    |38.35 |47.28 |57.15 |47.59| 
+|UGIA-M   |1.77  |1.05  |4.34  |2.39|   
+|UGIA-F    |32.95 |42.68 |64.00 |46.54| 
 
 **3DAS_MEMF_MTR (multiple emitters multiple frames median temporal resolution, 5 sec): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
-|UGIA-M   |6.83  |6.35  |7.39  |6.86|   
-|UGIA-F    |54.20 |67.39 |90.72 |70.77| 
+|UGIA-M   |1.64  |1.78  |2.91  |2.11|   
+|UGIA-F    |50.57 |68.82 |97.21 |72.20| 
 
-**3DAS_MEMF_HTR (multiple emitters multiple frames high temporal resolution, 2 sec): RMSMD (nm) vs emitter distance**
+**3DAS_MEMF_HTR (multiple emitters multiple frames high temporal resolution, 1 sec): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
-|UGIA-M   |8.82    |8.69    |9.20    |8.90| 
-|UGIA-F    |110.03 |133.76 |178.14 |140.64| 
+|UGIA-M   |8.88  |9.66    |11.95   |10.16| 
+|UGIA-F    |180.61  |230.46  |284.44  |231.83| 
+
+**3DAS_MEMF_VTR (multiple emitters multiple frames very high temporal resolution, 0.5 sec): RMSMD (nm) vs emitter distance**
+
+|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
+|--------:|------:|-----:|-----:|-----:|
+|UGIA-M   |6.93    |6.73    |7.57    |7.08| 
+|UGIA-F    |139.77  |182.91  |248.23  |190.30| 
+
+**3DAS_MEMF_STR (multiple emitters multiple frames super temporal resolution, 0.1 sec): RMSMD (nm) vs emitter distance**
+
+|Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
+|--------:|------:|-----:|-----:|-----:|
+|UGIA-M   |29.44   |27.21       |35.33       |30.66| 
 
 # Non-Blind Localization
 This evaluation and benchmark is non-blind, that is, all the parameters of an optical system are known a priori, which are supposed to have been obtained through a calibration. Nevertheless, a blind localization algorithm that estimates by itself the system parameters from a data frame or a data movie can also be evaluated and benchmarked. 
