@@ -293,8 +293,8 @@ axis([0 Lx 0 Ly -Lz Lz])
 %% Results: RMSMD vs emitter distance 
 % M=250; N=1000; TR=10 sec
 % pM: # of emitters activated at least once in a movie
-% Distance:     40    30      20      Average (nm)
+% Distance:     40    30    20      Average (nm)
 % pM:           499   500   500   
 % UGIA-M (nm):  1.77  1.05  4.34  2.39
-% UGIA-F (nm):  32.95 42.68 64.00 46.5433
-% mean([1.77  1.05  4.34]) 
+% UGIA-F (nm):  32.95 42.68 64.00 46.54
+% mean([32.95 42.68 64.00]) 
