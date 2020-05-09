@@ -115,8 +115,8 @@ p2=r10*r21/den ;          % =0.0357, probability of state 2
 p3=r10*r21*r32/den ;      % =0.0107, probability of state 3
 p4=r10*r21*r32*r43/den ;  % =0.0022, probability of state 4
 pa=1-p0 ;                 % =0.1200, probability of activation 
-Naae=(1-p0)*M ;           % =Nape*M/N=30, average # of activated emitters/frame
-pd=1-(1-p0^N)^M ;         % =7.0154e-04, probability that at least one emitter 
+Naae=(1-p0)*M ;           % =Nape*M/N=60, average # of activated emitters/frame
+pd=1-(1-p0^N)^M ;         % =1.4026e-3, probability that at least one emitter
                           % is not activated in data movie
 c0=zeros(M,N+1) ; % states of Markov chains in data movie
 for n=2:N+1
