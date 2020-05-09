@@ -1,5 +1,7 @@
-# Leaderboards for 2D Airy
+# Leaderboards 
 The leaderboards will be updated after a submission. 
+
+## 2D Airy
 
 **2DAiry_SESF (single emitter single frame): RMSMD (nm) vs SNR**
 
