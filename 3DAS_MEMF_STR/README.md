@@ -95,10 +95,10 @@ Correspondingly, the stationary probability of state i, i.e. the probability tha
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Region of view|[0,Lx] x [0,Ly] x [-Lz,Lz] |nm| 
-|Size of lateral view |Lx=2048, Ly=2048|nm|
+|Size of lateral view |Lx=4096, Ly=4096|nm|
 |Size of axial view |Lz=400 |nm| 
 |Pixel size |Dx=128, Dy=128|nm|
-|Frame size |Kx=16, Ky=16|pixels|
+|Frame size |Kx=32, Ky=32|pixels|
 |Frame time |Dt=0.01|sec|
 |Movie length |N=10|frames |
 |Correspondingly | |
