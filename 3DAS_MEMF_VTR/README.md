@@ -105,7 +105,7 @@ Correspondingly, the stationary probability of state i, i.e. the probability tha
 |Correspondingly | |
 |Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=6000|photons/frame/emitter|
-|Temporal resolution |TR=N\*Dt=0.1 |sec|
+|Temporal resolution |TR=N\*Dt=0.5 |sec|
 |Average number of activations per emitter |Nape=Pa\*N=6|frames/emitter|
 |Average number of activated emitters per frame |Naae=Pa\*M=60|emitters/frame|
 
