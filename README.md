@@ -180,7 +180,7 @@ A participant algorithm estimates emitter locations from a data frame or a data 
 
 The participant submits the estimated SOLN image. 
 
-The quality of a submitted SOLN image is evaluated by RMSMD in comparison with the true emitter locations. 
+The precision of a submitted SOLN image is evaluated by RMSMD in comparison with the true emitter locations. 
 
 The rank and RMSMD of a participant algorithm are listed in the leaderboards. 
 
