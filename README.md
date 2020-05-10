@@ -111,7 +111,7 @@ The leaderboards will be updated after a submission.
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |4.25  |3.67  |2.92  |3.61|
-|SIC      |||||
+|SIC      |44.96 |43.10 |44.35 |44.14|
 |UGIA-F   |38.06 |95.97 |170.28  |101.44|
 
 **2DGauss_MEMF_STR (multiple emitters multiple frames super temporal resolution, 0.1 sec): RMSMD (nm) vs emitter distance**
