@@ -1,6 +1,6 @@
-% [xyM,xyF,FF,FF_]=Airy2D_UGIA_MF(na,lambda,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy,a)
-% Produce 2D SOLN images by the UGIA-M and UGIA-F estimators and their covariance
-% matrices with a 2D Airy PSF. 
+% [xyM,xyF]=Airy2D_UGIA_MF(na,lambda,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy,a)
+%
+% Produce 2D SOLN images by the UGIA-M and UGIA-F estimators with a 2D Airy PSF. 
 % 
 % Input:
 % na      - Numerical aperture
@@ -23,13 +23,10 @@
 % xyF     - zeros(2,max(Na),N), xyF(:,1:Na(n),n) are estimated emitter 
 %           locations by UGIA-F estimator for frame n only. 
 %           If Na(n)=0, then xyF(:,:,n)=zeros(2,M).
-% FF      - zeros(2*M,2*M,N), FF(:,:,n) is Fisher information matrix of 
-%           nth frame 
-% FF_     - zeros(2*M,2*M,N), FF_(:,:,n) is inverse of FF(:,:,n) 
 %
 % Note: (1) All distances are in nm 
 %       (2) Gaussian noise is approximated by Poisson noise
-%       (3) Gaussian noise mean is ignored
+%       (3) Gaussian noise mean is ignored [1]
 %
 % Reference
 % [1] Y. Sun, "Localization precision of stochastic optical localization 
@@ -43,16 +40,15 @@
 % BioImaging Conf., QBI 2020, Oxford, UK, Jan. 6-9, 2020.
 %
 % Yi Sun
-% 01/19/2020, 02/21/2020
+% 01/19/2020, 02/21/2020, 05/08/2020
 
-function [xyM,xyF,FF,FF_]=Airy2D_UGIA_MF(na,lambda,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy,a) 
+function [xyM,xyF]=Airy2D_UGIA_MF(na,lambda,Kx,Ky,Dx,Dy,Dt,Ih,b,G,xy,a) 
 
 [M,N]=size(a) ; 
 Na=sum(a) ;             % number of activated emitters in nth frame
 xyM=zeros(2,M,N) ; 
 xyF=zeros(2,max(Na),N) ; 
-FF=zeros(2*M,2*M,N) ; 
-FF_=zeros(2*M,2*M,N) ; 
+FF=zeros(2*M,2*M) ; 
 FM=zeros(2*M,2*M) ;     % Fisher information matrix up to nth frame
 xyA=zeros(2,max(Na)) ;  % activated emitter locations in nth frame
 ma=zeros(1,M) ;         % index of activated emitters in a frame 
@@ -79,19 +75,14 @@ for n=1:N
       for j=1:p
         lm1=2*(ma(j)-1) ; j1=2*(j-1) ;
         % Fisher information matrix of nth frame
-        FF(km1+1,lm1+1,n)=F(k1+1,j1+1) ;
-        FF(km1+1,lm1+2,n)=F(k1+1,j1+2) ;
-        FF(km1+2,lm1+1,n)=F(k1+2,j1+1) ;
-        FF(km1+2,lm1+2,n)=F(k1+2,j1+2) ;
-        % Inverse Fisher information matrix of nth frame
-        FF_(km1+1,lm1+1,n)=F_(k1+1,j1+1) ;
-        FF_(km1+1,lm1+2,n)=F_(k1+1,j1+2) ;
-        FF_(km1+2,lm1+1,n)=F_(k1+2,j1+1) ;
-        FF_(km1+2,lm1+2,n)=F_(k1+2,j1+2) ;
+        FF(km1+1,lm1+1)=F(k1+1,j1+1) ;
+        FF(km1+1,lm1+2)=F(k1+1,j1+2) ;
+        FF(km1+2,lm1+1)=F(k1+2,j1+1) ;
+        FF(km1+2,lm1+2)=F(k1+2,j1+2) ;
       end
     end
     % UGIA-M estimator
-    FM=FM+FF(:,:,n) ;   % Fisher information of data movie from frames 1 to n
+    FM=FM+FF ;   % Fisher information of data movie from frames 1 to n
     FM_=pinv(FM) ;      % covariance matrix of UGIA-M estimator
     [U,L,~]=svd(FM_) ;
     W=U*L.^0.5*randn(2*M,1) ; % error vector achieving Fisher information FM
