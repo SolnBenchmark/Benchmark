@@ -36,7 +36,7 @@ clear
 % eD=20 ;             % nm 
 %% Intialization 
 rng('default') ; 
-key=432800 ;          % key for random number generators
+key=0 ;          % key for random number generators
 key=key+eD ; 
 rng(key) ; 
 fprintf(1,'Emitter distance: %d (nm) \n',eD) ; 
