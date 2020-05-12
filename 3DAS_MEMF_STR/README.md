@@ -94,7 +94,7 @@ Correspondingly, the stationary probability of state i, i.e. the probability tha
 ### Data movie 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Region of view|[0,Lx] x [0,Ly] x [-Lz,Lz] |nm| 
+|Field of view |[0,Lx] x [0,Ly] x [-Lz,Lz] |nm| 
 |Size of lateral view |Lx=4096, Ly=4096|nm|
 |Size of axial view |Lz=400 |nm| 
 |Pixel size |Dx=128, Dy=128|nm|
