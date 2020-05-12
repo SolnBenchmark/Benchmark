@@ -62,12 +62,12 @@ The five data frames are synthesized by using the following parameters.
 |Emitter intensity |I=300000|photons/sec/emitter|
 |Analog digital unit |ADU=1|photons/unit|
 
-Emitters are randomly and uniformly distributed in the region of view. 
+Emitters are randomly and uniformly distributed in the field of view. 
 
 ### Data frame 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Region of view|[0,Lx] x [0,Ly] |nm| 
+|Field of view|[0,Lx] x [0,Ly] |nm| 
 |Pixel size |Dx=100, Dy=100|nm|
 |Frame size |Kx=Lx/Dx, Ky=Ly/Dy |pixels |
 |Frame time |Dt=0.01|sec|
@@ -75,22 +75,22 @@ Emitters are randomly and uniformly distributed in the region of view.
 |Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
 
-### Region of view and frame size for five data frames 
+### Field of view and frame size for five data frames 
 |Data frame |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|:-----|
-|**2DAiry_MESF_density0.5_Frame.tif** |Region of view size |Lx=44700, Ly=44700|nm|
+|**2DAiry_MESF_density0.5_Frame.tif** |Field of view size |Lx=44700, Ly=44700|nm|
 |Correspondingly |Emitter density |0.5|emitters/um<sup>2</sup>|
 |                |Frame size |Kx=447, Ky=447|pixels|
-|**2DAiry_MESF_density1_Frame.tif** |Region of view size |Lx=31600, Ly=31600|nm|
+|**2DAiry_MESF_density1_Frame.tif** |Field of view size |Lx=31600, Ly=31600|nm|
 |Correspondingly |Emitter density |1|emitters/um<sup>2</sup>|
 |                |Frame size |Kx=316, Ky=316|pixels|
-|**2DAiry_MESF_density2_Frame.tif** |Region of view size |Lx=22400, Ly=22400|nm|
+|**2DAiry_MESF_density2_Frame.tif** |Field of view size |Lx=22400, Ly=22400|nm|
 |Correspondingly |Emitter density |2|emitters/um<sup>2</sup>|
 |                |Frame size |Kx=224, Ky=224|pixels|
-|**2DAiry_MESF_density4_Frame.tif** |Region of view size |Lx=15800, Ly=15800|nm|
+|**2DAiry_MESF_density4_Frame.tif** |Field of view size |Lx=15800, Ly=15800|nm|
 |Correspondingly |Emitter density |4|emitters/um<sup>2</sup>|
 |                |Frame size |Kx=158, Ky=158|pixels|
-|**2DAiry_MESF_density8_Frame.tif**|Region of view size |Lx=11200, Ly=11200|nm|
+|**2DAiry_MESF_density8_Frame.tif**|Field of view size |Lx=11200, Ly=11200|nm|
 |Correspondingly |Emitter density |8|emitters/um<sup>2</sup>|
 |                |Frame size |Kx=112, Ky=112|pixels|
 
