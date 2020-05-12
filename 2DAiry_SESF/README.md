@@ -50,13 +50,13 @@ The three data frames are synthesized by using the following parameters.
 |Emitter intensity |I=300000|photons/sec/emitter|
 |Analog digital unit |ADU=1|photons/unit|
 
-Within the region of view, each emitter is randomly distributed in a square of sizes 980\*980 (nm<sup>2</sup>) so that their PSFs are well isolated. 
+Within the field of view, each emitter is randomly distributed in a square of sizes 980\*980 (nm<sup>2</sup>) so that their PSFs are well isolated. 
 
 ### Data frame 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Region of view|[0,Lx] x [0,Ly] |nm| 
-|Region of view size |Lx=31400, Ly=31400| nm|
+|Field of view |[0,Lx] x [0,Ly] |nm| 
+|Field of view size |Lx=31400, Ly=31400| nm|
 |Pixel size |Dx=100, Dy=100|nm|
 |Frame size |Kx=Lx/Dx=314, Ky=Ly/Dy=314|pixels|
 |Frame time |Dt=0.01|sec|
