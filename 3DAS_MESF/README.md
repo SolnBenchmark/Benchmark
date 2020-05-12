@@ -74,7 +74,7 @@ Emitters are randomly and uniformly distributed in the cuboid [0,Lx] x [0,Ly] x 
 ### Data frame 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Region of view|[0,Lx] x [0,Ly] x [-Lz,Lz] |nm| 
+|Field of view |[0,Lx] x [0,Ly] x [-Lz,Lz] |nm| 
 |Size of axial view |Lz=400 |nm| 
 |Pixel size |Dx=100, Dy=100|nm|
 |Frame size |Kx=Lx/Dx, Ky=Ly/Dy|pixels|
@@ -83,25 +83,25 @@ Emitters are randomly and uniformly distributed in the cuboid [0,Lx] x [0,Ly] x 
 |Frame rate|1/Dt=100|frames/sec|
 |Photon count |Dt\*I=3000|photons/frame/emitter|
 
-### Region of view and frame size for six data frames 
+### Field of view and frame size for six data frames 
 |Data frame |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|:-----|
-|**3DAS_MESF_density0.1_Frame.tif** |Region of view size |Lx=70700, Ly=70700|nm|
+|**3DAS_MESF_density0.1_Frame.tif** |Field of view size |Lx=70700, Ly=70700|nm|
 |Correspondingly |Emitter density in lateral plane|0.1|emitters/um<sup>2</sup>|
 |                |Frame size |Kx=707, Ky=707|pixels|
-|**3DAS_MESF_density0.3_Frame.tif** |Region of view size |Lx=40800, Ly=40800|nm|
+|**3DAS_MESF_density0.3_Frame.tif** |Field of view size |Lx=40800, Ly=40800|nm|
 |Correspondingly |Emitter density in lateral plane|0.3|emitters/um<sup>2</sup>|
 |                |Frame size |Kx=408, Ky=408|pixels|
-|**3DAS_MESF_density0.5_Frame.tif** |Region of view size |Lx=31600, Ly=31600|nm|
+|**3DAS_MESF_density0.5_Frame.tif** |Field of view size |Lx=31600, Ly=31600|nm|
 |Correspondingly |Emitter density in lateral plane|0.5|emitters/um<sup>2</sup>|
 |                |Frame size |Kx=316, Ky=316|pixels|
-|**3DAS_MESF_density1_Frame.tif** |Region of view size |Lx=22400, Ly=22400|nm|
+|**3DAS_MESF_density1_Frame.tif** |Field of view size |Lx=22400, Ly=22400|nm|
 |Correspondingly |Emitter density in lateral plane|1|emitters/um<sup>2</sup>|
 |                |Frame size |Kx=224, Ky=224|pixels|
-|**3DAS_MESF_density2_Frame.tif** |Region of view size |Lx=15800, Ly=15800|nm|
+|**3DAS_MESF_density2_Frame.tif** |Field of view size |Lx=15800, Ly=15800|nm|
 |Correspondingly |Emitter density in lateral plane|2|emitters/um<sup>2</sup>|
 |                |Frame size |Kx=158, Ky=158|pixels|
-|**3DAS_MESF_density3_Frame.tif** |Region of view size |Lx=12900, Ly=12900|nm|
+|**3DAS_MESF_density3_Frame.tif** |Field of view size |Lx=12900, Ly=12900|nm|
 |Correspondingly |Emitter density in lateral plane|3|emitters/um<sup>2</sup>|
 |                |Frame size |Kx=129, Ky=129|pixels|
 
