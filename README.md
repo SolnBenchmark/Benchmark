@@ -33,12 +33,14 @@ The leaderboards will be updated after a submission.
 |UGIA-M   |2.56  |2.58  |2.77  |2.63|
 |UGIA-F   |9.11  |10.31 |11.87 |10.43|
 |SIC      |44.91 |47.56 |45.49 |45.99|
+|QC-STORM |15.13 |12.24 |14.51 |13.96|
 
 **2DAiry_MEMF_MTR (multiple emitters multiple frames median temporal resolution, 5 sec): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |3.00 |2.70 |2.73 |2.81|
+|QC-STORM |12.94 |12.71 |11.05 |12.23 |
 |UGIA-F   |10.74 |15.38 |25.39 |17.17|
 |SIC      |48.05 |45.78 |44.99 |46.27|
 
@@ -47,7 +49,8 @@ The leaderboards will be updated after a submission.
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |3.10  |3.02  |3.45 |3.19| 
-|SIC           |47.80 |45.67 |46.46 |46.64| 
+|QC-STORM |13.90 |12.86 |14.50   |13.75|
+|SIC      |47.80 |45.67 |46.46 |46.64| 
 |UGIA-F   |43.37 |88.96 |191.08  |107.80|
 
 **2DAiry_MEMF_VTR (multiple emitters multiple frames very high temporal resolution, 0.5 sec): RMSMD (nm) vs emitter distance**
@@ -55,14 +58,16 @@ The leaderboards will be updated after a submission.
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |4.45 |3.81 |2.83 |3.70|
+|QC-STORM |13.58 |16.59 |14.03   |14.73|
 |SIC      |46.84 |46.45 |47.26 |46.85|
-|UGIA-F    |25.13 |70.48 |172.39  |89.33|
+|UGIA-F   |25.13 |70.48 |172.39  |89.33|
 
 **2DAiry_MEMF_STR (multiple emitters multiple frames super temporal resolution, 0.1 sec): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |4.44 |5.18 |10.86 |6.82|
+|QC-STORM |28.07 |27.68 |  28.28 |  28.01|
 |SIC      |47.64 |47.48 |48.09 |47.74|
 |UGIA-F   |157.18 |202.84 |369.39 |243.14|
 
