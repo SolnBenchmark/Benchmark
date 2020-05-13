@@ -97,13 +97,15 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |3.26  |3.20  |3.32  |3.26| 
 |UGIA-F   |10.60 |15.27 |14.02 |13.29| 
+|QC-STORM |15.13 |15.84 |13.30 |14.76|
 |SIC      |43.77 |44.00 |45.01 |44.26| 
 
 **2DGauss_MEMF_MTR (multiple emitters multiple frames median temporal resolution, 5 sec): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
-|UGIA-M   |3.19 | 3.36  |3.30  |3.28|   
+|UGIA-M   |3.19 | 3.36  |3.30  |3.28|  
+|QC-STORM |15.38 |13.70 |15.55 |14.88 |
 |UGIA-F   |15.57 |18.42 |37.80 |23.93| 
 |SIC      |41.72 |42.14 |42.70 |42.19| 
 
@@ -111,7 +113,8 @@ The leaderboards will be updated after a submission.
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
-|UGIA-M   |3.35  |3.64  |4.15    |3.71|      
+|UGIA-M   |3.35  |3.64  |4.15    |3.71| 
+|QC-STORM |16.25 |15.68 |15.59   |15.84 |
 |SIC      |44.06 |43.43 |45.60 |44.36|  
 |UGIA-F   |55.46 |95.30 |217.64  |122.80| 
 
@@ -120,6 +123,7 @@ The leaderboards will be updated after a submission.
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |4.25  |3.67  |2.92  |3.61|
+|QC-STORM |15.00 |13.57 |15.14 |14.57|
 |SIC      |44.96 |43.10 |44.35 |44.14|
 |UGIA-F   |38.06 |95.97 |170.28  |101.44|
 
@@ -128,6 +132,7 @@ The leaderboards will be updated after a submission.
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |5.35   | 6.48    |11.37   |7.73|
+|QC-STORM |34.94  | 29.22 |  32.25 |  32.14 |
 |SIC      |44.77 |44.29 |43.69 |44.25|
 |UGIA-F   |184.48  |238.10  |346.25  |256.28|
 
