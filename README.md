@@ -15,6 +15,7 @@ The leaderboards will be updated after a submission.
 |UGIA-F   |3.75  |8.53 |15.86 |9.38| 
 |3D-DAOSTORM|14.65 |16.56 |20.75 |17.32 |
 |SIC      |44.28 |48.67 |66.97 |53.31
+|QC-STORM |14.66 |25.19 |215.86 |85.24|
 
 **2DAiry_MESF (multiple emitters single frame): RMSMD (nm) vs emitter density**
 
@@ -22,7 +23,8 @@ The leaderboards will be updated after a submission.
 |-------:|------:|--------:|-----:|-----:|-----:|-----:|
 |UGIA-F   |8.91 |9.70 |13.48 |18.28 |24.85 |15.04|
 |SIC      |50.58 |51.11 |53.96 |55.87 |61.37 |54.58|
-|3D-DAOSTORM|104.03 |70.94 |69.78 |99.38 |103.17 |89.46|
+|3D-DAOSTORM |104.03 |70.94 |69.78 |99.38 |103.17 |89.46|
+|QC-STORM |132.53 |134.63 |119.05 |167.89 |328.11 |176.44|
 
 **2DAiry_MEMF_LTR (multiple emitters multiple frames low temporal resolution, 10 sec): RMSMD (nm) vs emitter distance**
 
