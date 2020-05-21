@@ -16,6 +16,10 @@ The leaderboards will be updated after a submission.
 |3D-DAOSTORM|14.65 |16.56 |20.75 |17.32 |
 |SIC      |44.28 |48.67 |66.97 |53.31
 |QC-STORM |14.66 |25.19 |215.86 |85.24|
+|MrSE     |150.79 | 158.14 |   164.87 | 157.93|
+|MaLiang  |150.83 | 159.48 |  171.21  |160.51|
+|PALMER   |184.99 | 252.57 |   257.65 | 231.74|
+
 
 **2DAiry_MESF (multiple emitters single frame): RMSMD (nm) vs emitter density**
 
@@ -25,6 +29,9 @@ The leaderboards will be updated after a submission.
 |SIC      |50.58 |51.11 |53.96 |55.87 |61.37 |54.58|
 |3D-DAOSTORM |104.03 |70.94 |69.78 |99.38 |103.17 |89.46|
 |QC-STORM |132.53 |134.63 |119.05 |167.89 |328.11 |176.44|
+|PALMER   |217.12 | 228.98 | 240.24 | 265.98 | 263.43 | 243.15 |
+|MrSE     |228.15 | 258.66 | 283.77 | 324.94 | 381.57 | 295.42 |
+|MaLiang  |229.46 | 259.28 | 285.14 | 326.10 | 383.55 | 296.71 |
 
 **2DAiry_MEMF_LTR (multiple emitters multiple frames low temporal resolution, 10 sec): RMSMD (nm) vs emitter distance**
 
@@ -33,7 +40,11 @@ The leaderboards will be updated after a submission.
 |UGIA-M   |2.56  |2.58  |2.77  |2.63|
 |UGIA-F   |9.11  |10.31 |11.87 |10.43|
 |QC-STORM |15.13 |12.24 |14.51 |13.96|
+|MaLiang  |45.80 |13.58 |11.22 |  23.53|
+|MrSE     |45.50 |18.00 |18.18 |  27.23|
+|PALMER   |29.29 |29.58 |28.98 |  29.28|
 |SIC      |44.91 |47.56 |45.49 |45.99|
+
 
 **2DAiry_MEMF_MTR (multiple emitters multiple frames median temporal resolution, 5 sec): RMSMD (nm) vs emitter distance**
 
@@ -42,7 +53,10 @@ The leaderboards will be updated after a submission.
 |UGIA-M   |3.00 |2.70 |2.73 |2.81|
 |QC-STORM |12.94 |12.71 |11.05 |12.23 |
 |UGIA-F   |10.74 |15.38 |25.39 |17.17|
+|PALMER   |30.78 |  29.09 |27.97 |29.28|
 |SIC      |48.05 |45.78 |44.99 |46.27|
+|MaLiang  |119.09 | 23.82 |12.81 |51.91|
+|MrSE     |119.05 | 27.10 |18.89 |55.01|
 
 **2DAiry_MEMF_HTR (multiple emitters multiple frames high temporal resolution, 1 sec): RMSMD (nm) vs emitter distance**
 
@@ -50,8 +64,11 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |3.10  |3.02  |3.45 |3.19| 
 |QC-STORM |13.90 |12.86 |14.50   |13.75|
+|PALMER   |24.14 |  20.74 |26.98 |  23.95|
 |SIC      |47.80 |45.67 |46.46 |46.64| 
 |UGIA-F   |43.37 |88.96 |191.08  |107.80|
+|MaLiang  |199.22  |99.15 |30.09 |  109.49|
+|MrSE     |199.69  |98.07 |44.81 |  114.19|
 
 **2DAiry_MEMF_VTR (multiple emitters multiple frames very high temporal resolution, 0.5 sec): RMSMD (nm) vs emitter distance**
 
@@ -59,8 +76,11 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |4.45 |3.81 |2.83 |3.70|
 |QC-STORM |13.58 |16.59 |14.03   |14.73|
+|PALMER   |30.90 |  25.08  | 26.33 |  27.44|
 |SIC      |46.84 |46.45 |47.26 |46.85|
 |UGIA-F   |25.13 |70.48 |172.39  |89.33|
+|MaLiang  |214.83 | 152.53 | 46.57 |  137.98|
+|MrSE     |214.80 | 147.23 | 58.81 |  140.28|
 
 **2DAiry_MEMF_STR (multiple emitters multiple frames super temporal resolution, 0.1 sec): RMSMD (nm) vs emitter distance**
 
@@ -69,7 +89,10 @@ The leaderboards will be updated after a submission.
 |UGIA-M   |4.44 |5.18 |10.86 |6.82|
 |QC-STORM |28.07 |27.68 |  28.28 |  28.01|
 |SIC      |47.64 |47.48 |48.09 |47.74|
+|MrSE     |236.23 | 168.85 | 184.31 | 196.46|
+|MaLiang  |236.84 | 172.45 | 188.23 | 199.17|
 |UGIA-F   |157.18 |202.84 |369.39 |243.14|
+|PALMER   |358.06 | 405.67 | 1048.81 |604.18|
 
 ## 2D Gauss
 
