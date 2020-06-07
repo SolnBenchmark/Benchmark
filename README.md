@@ -194,6 +194,7 @@ The leaderboards will be updated after a submission.
 | Algorithm |0.1 emt/um<sup>2</sup>|0.3 emt/um<sup>2</sup>|0.5 emt/um<sup>2</sup>|1 emt/um<sup>2</sup>|2 emt/um<sup>2</sup>|3 emt/um<sup>2</sup>|Average|
 |-------:|------:|--------:|-----:|-----:|-----:|-----:|-----:|
 |UGIA-F   |16.90 |21.44 |22.51 |25.37 |42.85 |68.90 |33.00 |
+|QC-STORM |1306.97 |914.39 |654.74 |589.88 |855.87 |1405.72 |954.60|
 
 **3DAS_MEMF_LTR (multiple emitters multiple frames low temporal resolution, 10 sec): RMSMD vs emitter distance**
 
@@ -201,6 +202,7 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |1.77  |1.05  |4.34  |2.39|   
 |UGIA-F    |32.95 |42.68 |64.00 |46.54| 
+|QC-STORM |263.72 |222.77 |215.70 |234.06|
 
 **3DAS_MEMF_MTR (multiple emitters multiple frames median temporal resolution, 5 sec): RMSMD (nm) vs emitter distance**
 
@@ -208,6 +210,7 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |1.64  |1.78  |2.91  |2.11|   
 |UGIA-F    |50.57 |68.82 |97.21 |72.20| 
+|QC-STORM |259.71 | 267.29 | 246.66 | 257.88|
 
 **3DAS_MEMF_HTR (multiple emitters multiple frames high temporal resolution, 1 sec): RMSMD (nm) vs emitter distance**
 
@@ -215,19 +218,23 @@ The leaderboards will be updated after a submission.
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |8.88  |9.66    |11.95   |10.16| 
 |UGIA-F    |180.61  |230.46  |284.44  |231.83| 
+|QC-STORM | |268.17 |280.77 | |
 
 **3DAS_MEMF_VTR (multiple emitters multiple frames very high temporal resolution, 0.5 sec): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |6.93    |6.73    |7.57    |7.08| 
-|UGIA-F    |139.77  |182.91  |248.23  |190.30| 
+|UGIA-F    |139.77  |182.91  |248.23 |190.30| 
+|QC-STORM |252.70 |256.61 |254.71 |254.67|
 
 **3DAS_MEMF_STR (multiple emitters multiple frames super temporal resolution, 0.1 sec): RMSMD (nm) vs emitter distance**
 
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |29.44   |27.21       |35.33       |30.66| 
+|QC-STORM |555.73  |418.74      |341.72      |438.73|
+
 
 # Non-Blind Localization
 This evaluation and benchmark is non-blind, that is, all the parameters of an optical system are known a priori, which are supposed to have been obtained through a calibration. Nevertheless, a blind localization algorithm that estimates by itself the system parameters from a data frame or a data movie can also be evaluated and benchmarked. 
