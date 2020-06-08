@@ -217,8 +217,8 @@ The leaderboards will be updated after a submission.
 |Algorithm|40 (nm)|30 (nm)|20 (nm)|Average|
 |--------:|------:|-----:|-----:|-----:|
 |UGIA-M   |8.88  |9.66    |11.95   |10.16| 
-|UGIA-F    |180.61  |230.46  |284.44  |231.83| 
-|QC-STORM | |268.17 |280.77 | |
+|UGIA-F   |180.61  |230.46  |284.44  |231.83| 
+|QC-STORM |734.75 |268.17 |280.77  |427.90 |
 
 **3DAS_MEMF_VTR (multiple emitters multiple frames very high temporal resolution, 0.5 sec): RMSMD (nm) vs emitter distance**
 
