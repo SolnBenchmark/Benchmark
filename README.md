@@ -280,6 +280,8 @@ The data movies, data frames, UGIA-F estimator, and UGIA-M estimator all are gen
 
 [3] Y. Sun, "[Spatiotemporal resolution as an information theoretical property of stochastic optical localization nanoscopy](https://www.researchgate.net/publication/335798848_Spatiotemporal_Resolution_as_an_Information_Theoretical_Property_of_Stochastic_Optical_Localization_Nanoscopy)," 2020 Quantitative BioImaging Conf., QBI 2020, Oxford, UK, Jan. 6-9, 2020. 
 
+[4] Y. Sun, "Information sufficient segmentation and signal-to-noise ratio in stochastic optical localization nanoscopy," Optics Letters, vol. 45, no. 21, pp. 6102-6105, Nov. 1, 2020. 
+
 # Contact
 
 Yi Sun, Electrical Engineering Department, Nanoscopy Laboratory, The City College of City University of New York, New York, NY 10031, USA. E-mail: ysun@ccny.cuny.edu
