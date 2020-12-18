@@ -17,12 +17,15 @@
 % [2] Y. Sun, "Root mean square minimum distance as a quality metric for
 % stochastic optical localization nanoscopy images," Sci. Reports, vol. 8, 
 % no. 1, pp. 17211, Nov. 2018.
+% [3] Y. Sun, "Information sufficient segmentation and signal-to-noise 
+% ratio in stochastic optical localization nanoscopy," Optics Letters, 
+% vol. 45, no. 21, pp. 6102-6105, Nov. 1, 2020. 
 % 
 % Yi Sun
 % Electrical Engineering Department
 % The City College of City University of New York
 % E-mail: ysun@ccny.cuny.edu
-% 11/24/2019, 02/19/2020, 04/01/2020
+% 11/24/2019, 02/19/2020, 04/01/2020, 12/18/2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear
@@ -56,15 +59,20 @@ Kx=Lx/Dx ; Ky=Ly/Dy ; % frame size in pixels
 Dt=0.01 ;             % second, time per frame (1/Dt is frame rate) 
 Ih=300000 ;           % average number of detected photons per emitter per second
 DtIh=Dt*Ih ;          % photon count per frame per emitter 
-% 'mediumSNR'         % r=37500, SNR=45.74 (dB)
-b=5 ;                 % rp=60000, SPNR=47.78 (dB)
-G=3 ;                 % rg=100000, SGNR=50.00 (dB)
-rp=Ih/b ;             % SPNR (nm^2/emitter) 
-SPNR=10*log10(rp) ;   % SPNR (dB)
-rg=Ih/G ;             % SGNR (nm^2/emitter) 
-SGNR=10*log10(rg) ;   % SGNR (dB)
-r=rp*rg/(rp+rg) ;     % total SNR (nm^2/emitter) 
-SNR=10*log10(r) ;     % total SNR (dB)
+% 'mediumSNR'         % r=37500,    SNR =-6.01 (dB)
+b=5 ;                 % rp=60000,   SPNR=-3.97 (dB)
+G=3 ;                 % rg=100000,  SGNR=-1.75 (dB)
+rp=Ih/b ;             % 
+betas=0.07912 ;       % [3]
+beta=betas/sigma^2 ; 
+nup=beta*rp ; 
+SPNR=10*log10(nup) ;  % (dB)
+rg=Ih/G ;             % SGNR
+nug=beta*rg ; 
+SGNR=10*log10(nug) ;  % (dB)
+r=rp*rg/(rp+rg) ;     % total SNR 
+nu=beta*r ; 
+SNR=10*log10(nu) ;    % (dB)
 mu=5 ;                % mean of Gaussian noise (photons/s/nm^2)
 Coff=mu*Dt*Dx*Dy ;    % Coff=500 photons/pixel; Camera offset in effect
 %% Emitter locations - ground truth
@@ -110,5 +118,5 @@ axis([0 Lx 0 Ly])
 %% Results, M=1000: UGIA-F estimator
 % eDen        0.5   1     2     4     8     Average 
 % Lx=Ly (nm)  44700 31600 22400 15800 11200 
-% RMSMD (nm)  9.31  11.21 13.46 17.43 27.89 15.86 
-% mean([9.31  11.21 13.46 17.43 27.89]) 
+% RMSMD (nm)  9.76  11.16 12.42 19.52 28.49 16.27
+% mean([9.76  11.16 12.42 19.52 28.49]) 
