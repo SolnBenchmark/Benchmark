@@ -16,12 +16,15 @@
 % [2] Y. Sun, "Root mean square minimum distance as a quality metric for
 % stochastic optical localization nanoscopy images," Sci. Reports, vol. 8, 
 % no. 1, pp. 17211, Nov. 2018.
+% [3] Y. Sun, "Information sufficient segmentation and signal-to-noise 
+% ratio in stochastic optical localization nanoscopy," Optics Letters, 
+% vol. 45, no. 21, pp. 6102-6105, Nov. 1, 2020. 
 % 
 % Yi Sun
 % Electrical Engineering Department
 % The City College of City University of New York
 % E-mail: ysun@ccny.cuny.edu
-% 11/23/2019, 02/22/2020, 04/02/2020
+% 11/23/2019, 02/22/2020, 04/02/2020, 12/18/2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear
@@ -34,17 +37,17 @@ fprintf(1,'%s: \n',SNRr) ;
 rng('default') ; 
 key=0 ;             % key for random number generators
 switch SNRr
-  case 'highSNR'    % r=500000,   SNR=56.99 (dB)
-    b=0.3 ;         % rp=1000000, SPNR=60.00 (dB)
-    G=0.3 ;         % rg=1000000, SGNR=60.00 (dB)
+  case 'highSNR'    % r=500000,   SNR =4.67 (dB)
+    b=0.3 ;         % rp=1000000, SPNR=7.68 (dB)
+    G=0.3 ;         % rg=1000000, SGNR=7.68 (dB)
     key=key+0 ;  
-  case 'mediumSNR'  % r=37500,    SNR=45.74 (dB)
-    b=5 ;           % rp=60000,   SPNR=47.78 (dB)
-    G=3 ;           % rg=100000,  SGNR=50.00 (dB)
+  case 'mediumSNR'  % r=37500,    SNR =-6.58 (dB)
+    b=5 ;           % rp=60000,   SPNR=-4.54 (dB)
+    G=3 ;           % rg=100000,  SGNR=-2.32 (dB)
     key=key+1 ; 
-  case 'lowSNR'     % r=9375,     SNR=39.72 (dB)
-    b=20 ;          % rp=15000,   SPNR=41.76 (dB)
-    G=12 ;          % rg=25000,   SGNR=43.98 (dB)
+  case 'lowSNR'     % r=9375,     SNR =-12.60 (dB)
+    b=20 ;          % rp=15000,   SPNR=-10.56 (dB)
+    G=12 ;          % rg=25000,   SGNR= -8.34 (dB)
     key=key+2 ; 
   otherwise
     return ;
@@ -66,12 +69,20 @@ Kx=Lx/Dx ; Ky=Ly/Dy ; % frame size in pixels
 Dt=0.01 ;             % second, time per frame (1/Dt is frame rate) 
 Ih=300000 ;           % average number of detected photons per emitter per second
 DtIh=Dt*Ih ;          % photon count per frame per emitter 
-rp=Ih/b ;             % SPNR (nm^2/emitter) 
-SPNR=10*log10(rp) ;   % SPNR (dB)
-rg=Ih/G ;             % SGNR (nm^2/emitter) 
-SGNR=10*log10(rg) ;   % SGNR (dB)
-r=rp*rg/(rp+rg) ;     % total SNR (nm^2/emitter) 
-SNR=10*log10(r) ;     % total SNR (dB)
+rp=Ih/b ;             % SPNR 
+betas=0.03209 ;       % [3]
+beta=a^2*betas ; 
+nup=beta*rp ; 
+SPNR=10*log10(nup)    % (dB)
+rg=Ih/G ;             % SGNR
+nug=beta*rg ; 
+SGNR=10*log10(nug)    % (dB)
+r=rp*rg/(rp+rg) ;     % total SNR 
+nu=beta*r ; 
+SNR=10*log10(nu)      % (dB)
+
+return
+
 mu=5 ;                % mean of Gaussian noise (photons/s/nm^2)
 Coff=mu*Dt*Dx*Dy ;    % Coff=500 photons/pixel; Camera offset in effect
 %% Emitter locations - ground truth
@@ -127,6 +138,6 @@ axis([0 Lx 0 Ly])
 
 %% Results, M=1024: UGIA-F estimator
 %             highSNR mediumSNR lowSNR  Average 
-% SNR (dB):   56.99   45.74     39.72 
+% SNR (dB):   4.67    -6.58     -12.60 
 % RMSMD (nm): 3.75    8.53      15.86   9.38
 % Average: mean([3.75    8.53      15.86]) 
