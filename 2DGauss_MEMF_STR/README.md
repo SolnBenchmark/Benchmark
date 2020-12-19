@@ -111,6 +111,17 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 
 ![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/Doc/FrameCoordinates.png)
 
+### Optical system
+|Parameter |Variable and value| Unit| |
+|:-----|:-----|:-----|:-----|
+|Numerical aperture |na=1.40| | |
+|Fluorescence wavelength |lambda=723|nm|Dye Alexa 700 |
+|Correspondingly| | | |
+|Standard deviation |sigma=108.81|nm| |
+|Full-width half-maximum |FWHM=256.22|nm| |
+
+PSF is 2D Gaussian and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*pi\*na/lambda [1]. 
+
 ### Noise 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
@@ -123,32 +134,13 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Signal to Poisson noise ratio |rp=180000|nm<sup>2</sup>/emitter|
-|                             |SPNR=52.55|dB|
+|                             |SPNR=0.80|dB|
 |Signal to Gaussian noise ratio |rg=300000|nm<sup>2</sup>/emitter|
-|                             |SGNR=54.77|dB|
+|                             |SGNR=3.02|dB|
 |Total signal to noise ratio |r=112500|nm<sup>2</sup>/emitter|
-|                           |SNR=50.51|dB|
+|                           |SNR=-1.24|dB|
 |Effective camera offset |Coff=819.2 |photons/pixel|
 
 The mean of Gaussian noise mu includes the effect of camera offset. When mu is solely contributed by the camera offset, i.e. the Gaussian noise has a zero mean, the effective camera offset is Coff=Dt\*Dx\*Dy\*mu. 
 
-### Optical system
-|Parameter |Variable and value| Unit| |
-|:-----|:-----|:-----|:-----|
-|Numerical aperture |na=1.40| | |
-|Fluorescence wavelength |lambda=723|nm|Dye Alexa 700 |
-|Correspondingly| | | |
-|Standard deviation |sigma=108.81|nm| |
-|Full-width half-maximum |FWHM=256.22|nm| |
-
-PSF is 2D Gaussian and its standard deviation is estimated from an Airy PSF by sigma=1.3238/a where a=2\*pi\*na/lambda [1]. 
-
-### Definitions
-|Parameter |Definition| Unit|
-|:-----|:-----|:-----|
-|Signal to Poisson noise ratio |rp=I/b|nm<sup>2</sup>/emitter|
-| |SPNR=10log10(rp)|dB|
-|Signal to Gaussian noise ratio |rg=I/G|nm<sup>2</sup>/emitter|
-| |SGNR=10log10(rg)|dB|
-|Total signal to noise ratio |r=rp\*rg/(rp+rg)|nm<sup>2</sup>/emitter|
-| |SNR=10log10(r)|dB|
+SPNR, SGNR, and SNR are defined in [4].
