@@ -59,8 +59,8 @@ Dt=0.01 ;             % second, time per frame (1/Dt is frame rate)
 Ih=300000 ;           % average number of detected photons per emitter per second
 DtIh=Dt*Ih ;          % photon count per frame per emitter 
 % 'mediumSNR'         % 
-b=5 ;                 % rp=60000, SPNR=47.78 (dB)
-G=3 ;                 % rg=100000, SGNR=50.00 (dB)
+b=5 ;                 % 
+G=3 ;                 % 
 betas=0.03209 ;       % [3]
 beta=a^2*betas ; 
 rp=Ih/b ;             % 60000
