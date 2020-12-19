@@ -143,4 +143,4 @@ PSF is 2D Gaussian and its standard deviation is estimated from an Airy PSF by s
 
 The mean of Gaussian noise mu includes the effect of camera offset. When mu is solely contributed by the camera offset, i.e. the Gaussian noise has a zero mean, the effective camera offset is Coff=Dt\*Dx\*Dy\*mu. 
 
-The SPNR, SGNR, and SNR are defined in [4].
+SPNR, SGNR, and SNR are defined in [4].
