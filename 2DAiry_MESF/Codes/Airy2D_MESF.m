@@ -17,25 +17,28 @@
 % [2] Y. Sun, "Root mean square minimum distance as a quality metric for
 % stochastic optical localization nanoscopy images," Sci. Reports, vol. 8, 
 % no. 1, pp. 17211, Nov. 2018.
+% [3] Y. Sun, "Information sufficient segmentation and signal-to-noise 
+% ratio in stochastic optical localization nanoscopy," Optics Letters, 
+% vol. 45, no. 21, pp. 6102-6105, Nov. 1, 2020. 
 % 
 % Yi Sun
 % Electrical Engineering Department
 % The City College of City University of New York
 % E-mail: ysun@ccny.cuny.edu
-% 02/24/2020, 04/03/2020
+% 02/24/2020, 04/03/2020, 04/18/2020, 12/18/2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear
 %% Emitter density: choose one of them
- eDen=0.5 ;        % emitter density (emitters/um^2)
-% eDen=1 ;          % emitter density (emitters/um^2)
-% eDen=2 ;          % emitter density (emitters/um^2)
-% eDen=4 ;          % emitter density (emitters/um^2)
-% eDen=8 ;          % emitter density (emitters/um^2)
+ eDen=0.5 ;          % emitter density (emitters/um^2)
+% eDen=1 ;            % emitter density (emitters/um^2)
+% eDen=2 ;            % emitter density (emitters/um^2)
+% eDen=4 ;            % emitter density (emitters/um^2)
+% eDen=8 ;            % emitter density (emitters/um^2)
 fprintf(1,'Density=%3.2f (emitters/um^2): \n',eDen) ; 
 %% Intialization 
 rng('default') ; 
-key=0 ;             % key for random number generators
+key=0 ;               % key for random number generators
 key=key+floor(eDen) ; 
 rng(key) ; 
 %% Optical system 
@@ -55,15 +58,20 @@ Kx=Lx/Dx ; Ky=Ly/Dy ; % frame size in pixels
 Dt=0.01 ;             % second, time per frame (1/Dt is frame rate) 
 Ih=300000 ;           % average number of detected photons per emitter per second
 DtIh=Dt*Ih ;          % photon count per frame per emitter 
-% 'mediumSNR'         % r=37500, SNR=45.74 (dB)
+% 'mediumSNR'         % 
 b=5 ;                 % rp=60000, SPNR=47.78 (dB)
 G=3 ;                 % rg=100000, SGNR=50.00 (dB)
-rp=Ih/b ;             % SPNR (nm^2/emitter) 
-SPNR=10*log10(rp) ;   % SPNR (dB)
-rg=Ih/G ;             % SGNR (nm^2/emitter) 
-SGNR=10*log10(rg) ;   % SGNR (dB)
-r=rp*rg/(rp+rg) ;     % total SNR (nm^2/emitter) 
-SNR=10*log10(r) ;     % total SNR (dB)
+betas=0.03209 ;       % [3]
+beta=a^2*betas ; 
+rp=Ih/b ;             % 60000
+nup=beta*rp ; 
+SPNR=10*log10(nup)    % -4.54 (dB)
+rg=Ih/G ;             % 100000
+nug=beta*rg ; 
+SGNR=10*log10(nug)    % -2.32 (dB)
+r=rp*rg/(rp+rg) ;     % 37500
+nu=beta*r ; 
+SNR=10*log10(nu)      % -6.58 (dB)
 mu=5 ;                % mean of Gaussian noise (photons/s/nm^2)
 Coff=mu*Dt*Dx*Dy ;    % Coff=500 photons/pixel; Camera offset in effect
 %% Emitter locations - ground truth
@@ -109,6 +117,5 @@ axis([0 Lx 0 Ly])
 %% Results, M=1000: UGIA-F estimator
 % eDen        0.5   1     2     4     8     Average 
 % Lx=Ly (nm)  44700 31600 22400 15800 11200 
-% RMSMD (nm)  8.41  8.97  11.56 16.29 21.58 13.36
-% mean([8.41  8.97  11.56 16.29 21.58]) 
-
+% RMSMD (nm)  8.91  9.70  13.48 18.28 24.85 15.04
+% mean([8.91  9.70  13.48 18.28 24.85]) 
