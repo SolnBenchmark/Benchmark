@@ -68,42 +68,6 @@ The corresponding 2D coordinate in a data frame is shown below. Note y axis poin
 
 ![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/Doc/FrameCoordinates.png)
 
-### Noise and signal to noise ratio in three data frames  
-|Data frame |Parameter |Variable and value| Unit|
-|:-----|:-----|:-----|:-----|
-|**2DAiry_SESF_highSNR_Frame.tif**|Mean of Poisson noise |b=0.3|photons/sec/nm<sup>2</sup>|
-| |Variance of Gaussian noise |G=0.3|photons/sec/nm<sup>2</sup>| 
-| |Mean of Gaussian noise |mu=5|photons/sec/nm<sup>2</sup>|
-|Correspondingly |Signal to Poisson noise ratio |rp=1000000|nm<sup>2</sup>/emitter|
-| |                             |SPNR=60.00|dB|
-| |Signal to Gaussian noise ratio |rg=1000000|nm<sup>2</sup>/emitter|
-| |                             |SGNR=60.00|dB|
-| |Total signal to noise ratio |r=500000|nm<sup>2</sup>/emitter|
-| |                           |SNR=56.99|dB|
-| |Effective camera offset |Coff=500 |photons/pixel|
-|**2DAiry_SESF_mediumSNR_Frame.tif**|Mean of Poisson noise |b=5|photons/sec/nm<sup>2</sup>|
-| |Variance of Gaussian noise |G=3|photons/sec/nm<sup>2</sup>| 
-| |Mean of Gaussian noise |mu=5|photons/sec/nm<sup>2</sup>|
-|Correspondingly |Signal to Poisson noise ratio |rp=60000|nm<sup>2</sup>/emitter|
-| |                             |SPNR=47.78|dB|
-| |Signal to Gaussian noise ratio |rg=100000|nm<sup>2</sup>/emitter|
-| |                             |SGNR=50.00|dB|
-| |Total signal to noise ratio |r=37500|nm<sup>2</sup>/emitter|
-| |                           |SNR=45.74|dB|
-| |Effective camera offset |Coff=500 |photons/pixel|
-|**2DAiry_SESF_lowSNR_Frame.tif**|Mean of Poisson noise |b=20|photons/sec/nm<sup>2</sup>|
-| |Variance of Gaussian noise |G=12|photons/sec/nm<sup>2</sup>| 
-| |Mean of Gaussian noise |mu=5|photons/sec/nm<sup>2</sup>|
-|Correspondingly |Signal to Poisson noise ratio |rp=15000|nm<sup>2</sup>/emitter|
-| |                             |SPNR=41.76|dB|
-| |Signal to Gaussian noise ratio |rg=25000|nm<sup>2</sup>/emitter|
-| |                             |SGNR=43.98|dB|
-| |Total signal to noise ratio |r=9375|nm<sup>2</sup>/emitter|
-| |                           |SNR=39.72|dB|
-| |Effective camera offset |Coff=500 |photons/pixel|
-
-The mean of Gaussian noise mu includes the effect of camera offset. When mu is solely contributed by the camera offset, i.e. the Gaussian noise has a zero mean, the effective camera offset is Coff=Dt\*Dx\*Dy\*mu. 
-
 ### Optical system
 |Parameter |Variable and value|Unit | |
 |:-----|:-----|:-----|:-----|
@@ -115,12 +79,40 @@ The mean of Gaussian noise mu includes the effect of camera offset. When mu is s
 
 PSF is 2D Airy and its standard deviation is estimated by sigma=1.3238/a where a=2\*pi\*na/lambda [1]. 
 
-### Definitions
-|Parameter |Definition| Unit|
-|:-----|:-----|:-----|
-|Signal to Poisson noise ratio |rp=I/b|nm<sup>2</sup>/emitter|
-| |SPNR=10log10(rp)|dB|
-|Signal to Gaussian noise ratio |rg=I/G|nm<sup>2</sup>/emitter|
-| |SGNR=10log10(rg)|dB|
-|Total signal to noise ratio |r=rp\*rg/(rp+rg)|nm<sup>2</sup>/emitter|
-| |SNR=10log10(r)|dB|
+### Noise and signal to noise ratio in three data frames  
+|Data frame |Parameter |Variable and value| Unit|
+|:-----|:-----|:-----|:-----|
+|**2DAiry_SESF_highSNR_Frame.tif**|Mean of Poisson noise |b=0.3|photons/sec/nm<sup>2</sup>|
+| |Variance of Gaussian noise |G=0.3|photons/sec/nm<sup>2</sup>| 
+| |Mean of Gaussian noise |mu=5|photons/sec/nm<sup>2</sup>|
+|Correspondingly |Signal to Poisson noise ratio |rp=1000000|nm<sup>2</sup>/emitter|
+| |                             |SPNR=7.68|dB|
+| |Signal to Gaussian noise ratio |rg=1000000|nm<sup>2</sup>/emitter|
+| |                             |SGNR=7.68|dB|
+| |Total signal to noise ratio |r=500000|nm<sup>2</sup>/emitter|
+| |                           |SNR=4.67|dB|
+| |Effective camera offset |Coff=500 |photons/pixel|
+|**2DAiry_SESF_mediumSNR_Frame.tif**|Mean of Poisson noise |b=5|photons/sec/nm<sup>2</sup>|
+| |Variance of Gaussian noise |G=3|photons/sec/nm<sup>2</sup>| 
+| |Mean of Gaussian noise |mu=5|photons/sec/nm<sup>2</sup>|
+|Correspondingly |Signal to Poisson noise ratio |rp=60000|nm<sup>2</sup>/emitter|
+| |                             |SPNR=-4.54|dB|
+| |Signal to Gaussian noise ratio |rg=100000|nm<sup>2</sup>/emitter|
+| |                             |SGNR=-2.32|dB|
+| |Total signal to noise ratio |r=37500|nm<sup>2</sup>/emitter|
+| |                           |SNR=-6.58|dB|
+| |Effective camera offset |Coff=500 |photons/pixel|
+|**2DAiry_SESF_lowSNR_Frame.tif**|Mean of Poisson noise |b=20|photons/sec/nm<sup>2</sup>|
+| |Variance of Gaussian noise |G=12|photons/sec/nm<sup>2</sup>| 
+| |Mean of Gaussian noise |mu=5|photons/sec/nm<sup>2</sup>|
+|Correspondingly |Signal to Poisson noise ratio |rp=15000|nm<sup>2</sup>/emitter|
+| |                             |SPNR=-10.56|dB|
+| |Signal to Gaussian noise ratio |rg=25000|nm<sup>2</sup>/emitter|
+| |                             |SGNR=-8.34|dB|
+| |Total signal to noise ratio |r=9375|nm<sup>2</sup>/emitter|
+| |                           |SNR=-12.60|dB|
+| |Effective camera offset |Coff=500 |photons/pixel|
+
+The mean of Gaussian noise mu includes the effect of camera offset. When mu is solely contributed by the camera offset, i.e. the Gaussian noise has a zero mean, the effective camera offset is Coff=Dt\*Dx\*Dy\*mu. 
+
+SPNR, SGNR, and SNR are defined in [4].
