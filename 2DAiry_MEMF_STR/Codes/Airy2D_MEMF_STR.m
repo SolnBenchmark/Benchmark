@@ -21,12 +21,15 @@
 % [3] Y. Sun, "Spatiotemporal resolution as an information theoretical 
 % property of stochastic optical localization nanoscopy," 2020 Quantitative 
 % BioImaging Conf., QBI 2020, Oxford, UK, Jan. 6-9, 2020.
+% [4] Y. Sun, "Information sufficient segmentation and signal-to-noise 
+% ratio in stochastic optical localization nanoscopy," Optics Letters, 
+% vol. 45, no. 21, pp. 6102-6105, Nov. 1, 2020. 
 % 
 % Yi Sun
 % Electrical Engineering Department
 % The City College of City University of New York
 % E-mail: ysun@ccny.cuny.edu
-% 05/06/2020
+% 05/06/2020, 12/18/2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear
@@ -57,15 +60,20 @@ Kx=Lx/Dx ; Ky=Ly/Dy ; % frame size in pixels
 Dt=0.01 ;             % second, time per frame (1/Dt is frame rate) 
 Ih=3*300000 ;         % average number of detected photons per emitter per second
 DtIh=Dt*Ih ;          % photon count per frame per emitter 
-% 'high SNR'          % r=112500, SNR=50.51 (dB)
-b=5 ;                 % rp=180000, SPNR=52.55 (dB)
-G=3 ;                 % rg=300000, SGNR=54.77 (dB)
-rp=Ih/b ;             % SPNR (nm^2/emitter) 
-SPNR=10*log10(rp) ;   % SPNR (dB)
-rg=Ih/G ;             % SGNR (nm^2/emitter) 
-SGNR=10*log10(rg) ;   % SGNR (dB)
-r=rp*rg/(rp+rg) ;     % total SNR (nm^2/emitter) 
-SNR=10*log10(r) ;     % total SNR (dB)
+% 'high SNR'          % 
+b=5 ;                 % 
+G=3 ;                 % 
+betas=0.03209 ;       % [4]
+beta=a^2*betas ; 
+rp=Ih/b ;             % 180000
+nup=beta*rp ; 
+SPNR=10*log10(nup)    % 0.23 (dB)
+rg=Ih/G ;             % 300000
+nug=beta*rg ; 
+SGNR=10*log10(nug)    % 2.45 (dB)
+r=rp*rg/(rp+rg) ;     % 112500
+nu=beta*r ; 
+SNR=10*log10(nu)      % -1.81 (dB)
 mu=5 ;                % mean of Gaussian noise (photons/s/nm^2)
 Coff=mu*Dt*Dx*Dy ;    % Coff=819.2 photons/pixel; Camera offset in effect
 %% Emitter locations - ground truth
