@@ -59,20 +59,20 @@ Kx=Lx/Dx ; Ky=Ly/Dy ; % frame size in pixels
 Dt=0.01 ;             % second, time per frame (1/Dt is frame rate) 
 Ih=300000 ;           % average number of detected photons per emitter per second
 DtIh=Dt*Ih ;          % photon count per frame per emitter 
-% 'mediumSNR'         % r=37500,    SNR =-6.01 (dB)
-b=5 ;                 % rp=60000,   SPNR=-3.97 (dB)
-G=3 ;                 % rg=100000,  SGNR=-1.75 (dB)
-rp=Ih/b ;             % 
+% 'mediumSNR'         
+b=5 ;                 % 
+G=3 ;                 % 
 betas=0.07912 ;       % [3]
 beta=betas/sigma^2 ; 
+rp=Ih/b ;             % 60000
 nup=beta*rp ; 
-SPNR=10*log10(nup) ;  % (dB)
-rg=Ih/G ;             % SGNR
+SPNR=10*log10(nup) ;  % -3.97 (dB)
+rg=Ih/G ;             % 100000
 nug=beta*rg ; 
-SGNR=10*log10(nug) ;  % (dB)
-r=rp*rg/(rp+rg) ;     % total SNR 
+SGNR=10*log10(nug) ;  % -1.75 (dB)
+r=rp*rg/(rp+rg) ;     % 37500 
 nu=beta*r ; 
-SNR=10*log10(nu) ;    % (dB)
+SNR=10*log10(nu) ;    % -6.01 (dB)
 mu=5 ;                % mean of Gaussian noise (photons/s/nm^2)
 Coff=mu*Dt*Dx*Dy ;    % Coff=500 photons/pixel; Camera offset in effect
 %% Emitter locations - ground truth
