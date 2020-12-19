@@ -134,11 +134,11 @@ PSF is 2D Gaussian and its standard deviation is estimated from an Airy PSF by s
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Signal to Poisson noise ratio |rp=60000|nm<sup>2</sup>/emitter|
-|                             |SPNR=47.78|dB|
+|                             |SPNR=-3.97|dB|
 |Signal to Gaussian noise ratio |rg=100000|nm<sup>2</sup>/emitter|
-|                             |SGNR=50.00|dB|
+|                             |SGNR=-1.75|dB|
 |Total signal to noise ratio |r=37500|nm<sup>2</sup>/emitter|
-|                           |SNR=45.74|dB|
+|                           |SNR=-6.01|dB|
 |Effective camera offset |Coff=819.2 |photons/pixel|
 
 The mean of Gaussian noise mu includes the effect of camera offset. When mu is solely contributed by the camera offset, i.e. the Gaussian noise has a zero mean, the effective camera offset is Coff=Dt\*Dx\*Dy\*mu. 
